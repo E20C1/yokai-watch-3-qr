@@ -23,8 +23,21 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          cat .bootstrap/part* > /tmp/yw3qr.b64
+          # One bootstrap chunk lost one byte while being written through the API.
+          # Repair the known byte before concatenation, then verify the archive normally.
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path('.bootstrap/part04')
+          s = p.read_text()
+          if len(s) == 11999:
+              s = s[:82] + 'k' + s[82:]
+              p.write_text(s)
+          if len(s) != 12000:
+              raise SystemExit(f'unexpected part04 length: {len(s)}')
+          PY
+          cat .bootstrap/part0{0,1,2,3,4,5,6} > /tmp/yw3qr.b64
           base64 -d /tmp/yw3qr.b64 > /tmp/yw3qr.tgz
+          tar -tzf /tmp/yw3qr.tgz >/dev/null
           tar -xzf /tmp/yw3qr.tgz -C .
           rm -rf .bootstrap
       - name: Validate dataset and JavaScript
