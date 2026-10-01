@@ -1,0 +1,50 @@
+name: Bootstrap static app
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - ".bootstrap/**"
+      - ".github/workflows/bootstrap.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  expand:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Expand source bundle
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .bootstrap/part* > /tmp/yw3qr.b64
+          base64 -d /tmp/yw3qr.b64 > /tmp/yw3qr.tgz
+          tar -xzf /tmp/yw3qr.tgz -C .
+          rm -rf .bootstrap
+      - name: Validate dataset and JavaScript
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 tools/validate_dataset.py
+          python3 tools/qr_v2.py Q1B --variation 0000 | grep -F 'Q1B00008CLTN07O0A2VJ3EU5L3LETAB3G'
+          node --check src/qr-v2.js
+          node --check src/app.js
+      - name: Commit generated project
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "feat: build Yo-kai Watch 3 JP 4.0 QR lab"
+          git push
