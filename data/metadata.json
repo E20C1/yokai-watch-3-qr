@@ -1,0 +1,29 @@
+{
+  "title": "Yo-kai Watch 3 Sukiyaki Ver.4.0 QR2 table",
+  "region": "JP",
+  "gameVersion": "4.0",
+  "qr2Entries": 2143,
+  "sourceConfig": "qr_config_0.01r.cfg.bin",
+  "sourceConfigSha256": "971d3447f1dc49305f3bd4f72c6881fda02cface81d941fb082fcfbf15a8a134",
+  "derivedCsv": "yw3_sukiyaki_jp_final_qr2_info.csv",
+  "itemNameCoverage": {
+    "mappedUniqueItems": 140,
+    "uniqueItemsInQr2": 175
+  },
+  "stats": {
+    "item2NonZero": 51,
+    "flag1NonZero": 195,
+    "flag2NonZero": 2,
+    "randomTableNonZero": 51
+  },
+  "generator": {
+    "format": "V2",
+    "typeLength": 3,
+    "variationLength": 4,
+    "checksumLength": 26,
+    "testVector": {
+      "input": "Q1B0000",
+      "code": "Q1B00008CLTN07O0A2VJ3EU5L3LETAB3G"
+    }
+  }
+}

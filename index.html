@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="妖怪ウォッチ3 スキヤキ Ver.4.0向け QR2_INFO explorer / generator / analyzer">
+  <title>YW3 QR Lab — JP Sukiyaki Ver.4.0</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <div class="app-shell" id="app">
+    <header class="site-header">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">QR</div>
+        <div>
+          <div class="eyebrow">Yo-kai Watch 3 research utility</div>
+          <h1>YW3 QR Lab</h1>
+        </div>
+      </div>
+      <div class="dataset-chip">
+        <span>Dataset</span>
+        <strong id="datasetVersion">loading…</strong>
+      </div>
+    </header>
+
+    <div class="notice">
+      <strong>対象:</strong> 日本版『妖怪ウォッチ3 スキヤキ』Ver.4.0 の QR2_INFO。
+      生成機能は公開されているLevel-5 V2 QR方式を再実装しています。実機互換性は継続検証中です。
+    </div>
+
+    <nav class="tabs" aria-label="Main navigation">
+      <button type="button" class="tab-button active" data-tab="generator">Generator</button>
+      <button type="button" class="tab-button" data-tab="explorer">Explorer</button>
+      <button type="button" class="tab-button" data-tab="analyzer">Analyzer</button>
+      <button type="button" class="tab-button" data-tab="research">Research</button>
+    </nav>
+
+    <main>
+      <section class="tab-panel" id="tab-generator">
+        <div class="hero-grid">
+          <section class="panel">
+            <div class="panel-head">
+              <div>
+                <div class="eyebrow">1. Find an effect</div>
+                <h2>QR効果を検索</h2>
+              </div>
+              <span class="count-pill"><span id="entryCount">—</span> entries</span>
+            </div>
+            <label class="field">
+              <span>アイテム名 / Item ID / Type / Flag</span>
+              <input id="generatorQuery" type="search" placeholder="例: Forbidden Fruit / C6458704 / Q1B">
+            </label>
+            <div id="generatorMatches" class="result-list"></div>
+          </section>
+
+          <section class="panel selected-panel">
+            <div class="eyebrow">2. Selected QR2_INFO</div>
+            <div id="selectedEntry"></div>
+
+            <div class="form-grid">
+              <label class="field">
+                <span>Type selection</span>
+                <select id="typeMode">
+                  <option value="first">範囲の先頭</option>
+                  <option value="random">範囲内からランダム</option>
+                  <option value="manual">手動指定</option>
+                </select>
+              </label>
+              <label class="field" id="manualTypeWrap" hidden>
+                <span>Manual Type</span>
+                <input id="manualType" maxlength="3" value="000">
+              </label>
+              <label class="field">
+                <span>Variation mode</span>
+                <select id="variationMode">
+                  <option value="random">ランダム</option>
+                  <option value="sequential">連番</option>
+                  <option value="fixed">固定</option>
+                </select>
+              </label>
+              <label class="field" id="variationSeedWrap" hidden>
+                <span id="variationSeedLabel">Start variation</span>
+                <input id="variationSeed" maxlength="4" value="0000">
+              </label>
+              <label class="field">
+                <span>生成枚数 (max 200)</span>
+                <input id="amount" type="number" min="1" max="200" value="1">
+              </label>
+            </div>
+
+            <div class="button-row">
+              <button id="generate" type="button" class="primary">QRを生成</button>
+              <button id="exportCodes" type="button" class="secondary" disabled>コード一覧を書き出す</button>
+              <button id="clearGenerated" type="button" class="ghost">Clear</button>
+            </div>
+          </section>
+        </div>
+
+        <section class="panel output-panel">
+          <div class="panel-head">
+            <div>
+              <div class="eyebrow">3. Output</div>
+              <h2>生成結果</h2>
+            </div>
+            <span class="subtle">QRTool互換: <code>n123git.sayshi/&lt;V2 code&gt;</code></span>
+          </div>
+          <div id="generatedGrid" class="qr-grid"></div>
+        </section>
+      </section>
+
+      <section class="tab-panel" id="tab-explorer" hidden>
+        <section class="panel">
+          <div class="panel-head">
+            <div>
+              <div class="eyebrow">JP Ver.4.0</div>
+              <h2>QR2_INFO Explorer</h2>
+            </div>
+            <span id="explorerCount" class="count-pill">—</span>
+          </div>
+          <div class="toolbar">
+            <label class="field grow">
+              <span>Search</span>
+              <input id="explorerQuery" type="search" placeholder="item / hex / Type / flag">
+            </label>
+            <label class="field">
+              <span>Filter</span>
+              <select id="specialFilter">
+                <option value="all">All</option>
+                <option value="simple">Simple rewards</option>
+                <option value="flags">Flag entries</option>
+                <option value="item2">Two-item entries</option>
+                <option value="random">Random table entries</option>
+                <option value="unmapped">Unmapped item names</option>
+              </select>
+            </label>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Type</th>
+                  <th>Effect</th>
+                  <th>Item ID</th>
+                  <th>Special</th>
+                </tr>
+              </thead>
+              <tbody id="explorerBody"></tbody>
+            </table>
+          </div>
+          <button id="showMore" class="secondary wide" type="button">さらに100件表示</button>
+        </section>
+      </section>
+
+      <section class="tab-panel" id="tab-analyzer" hidden>
+        <div class="hero-grid">
+          <section class="panel">
+            <div class="eyebrow">Decode / verify</div>
+            <h2>QR Analyzer</h2>
+            <p class="lead">QR文字列を貼り付けるか、QR画像をドロップすると、V2 checksumを検証し日本版4.0のType範囲へ照合します。</p>
+            <label class="field">
+              <span>QR payload / 33-character code</span>
+              <textarea id="analyzerText" rows="5" placeholder="n123git.sayshi/Q1B00008CLTN07O0A2VJ3EU5L3LETAB3G"></textarea>
+            </label>
+            <button id="analyzeText" type="button" class="primary">解析</button>
+
+            <div id="dropZone" class="drop-zone">
+              <strong>QR画像をドロップ</strong>
+              <span>または画像を貼り付け / 選択</span>
+              <label class="file-button">
+                画像を選択
+                <input id="imageInput" type="file" accept="image/*" hidden>
+              </label>
+            </div>
+            <canvas id="decodeCanvas" hidden></canvas>
+          </section>
+
+          <section class="panel">
+            <div class="eyebrow">Analysis</div>
+            <h2>解析結果</h2>
+            <div id="analysisResult" class="empty-state">まだ解析していません。</div>
+          </section>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="tab-research" hidden>
+        <section class="panel">
+          <div class="eyebrow">Dataset overview</div>
+          <h2>解析データ</h2>
+          <div class="stat-grid">
+            <div class="stat"><span>QR2_INFO</span><strong id="statEntries">—</strong></div>
+            <div class="stat"><span>Item2 != 0</span><strong id="statItem2">—</strong></div>
+            <div class="stat"><span>Flag1 != 0</span><strong id="statFlag1">—</strong></div>
+            <div class="stat"><span>Flag2 != 0</span><strong id="statFlag2">—</strong></div>
+            <div class="stat"><span>Random table != 0</span><strong id="statRandom">—</strong></div>
+            <div class="stat"><span>Generator self-test</span><strong id="selfTest">—</strong></div>
+          </div>
+
+          <div class="research-grid">
+            <div>
+              <h3>Source config</h3>
+              <p><code>qr_config_0.01r.cfg.bin</code></p>
+              <p class="hash"><code id="sourceHash">—</code></p>
+              <p>SHA-256でデータセットの出典を固定しています。リポジトリにはゲーム本体や元バイナリを含めず、解析済みメタデータのみ格納します。</p>
+            </div>
+            <div>
+              <h3>Item name coverage</h3>
+              <p><strong id="mappedItems">—</strong> unique IDs mapped</p>
+              <p>表示名は公開されているYW3 Item ID資料を基礎にしています。未対応IDはHexのまま表示し、推測で名称を付けません。</p>
+            </div>
+            <div>
+              <h3>V2 layout</h3>
+              <pre><code>Type       3 chars (base36)
+Variation  4 chars (base36)
+Checksum  26 chars
+--------------------
+Code      33 chars</code></pre>
+            </div>
+            <div>
+              <h3>Compatibility status</h3>
+              <p>チェックサム生成は既知のテストベクタで自己検証します。日本版スキヤキVer.4.0実機での網羅的なQR受理テストは別途継続します。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="eyebrow">Important</div>
+          <h2>このツールができること / できないこと</h2>
+          <div class="prose">
+            <p>本ツールは日本版Ver.4.0の既存 <code>QR2_INFO</code> エントリを選択して、それに対応するTypeのV2 QRを生成します。ゲームに存在しない任意のItem IDをQR文字列へ直接埋め込むものではありません。</p>
+            <p>Flag付きエントリはゲーム状態へ影響する可能性があるため、意味が未特定のFlagを含むQRは内容を確認した上で使用してください。セーブデータのバックアップを推奨します。</p>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <div id="status" class="status-bar" data-kind="info">Loading dataset…</div>
+
+    <footer class="site-footer">
+      <span>Research utility. Not affiliated with LEVEL-5, Nintendo, or the Yo-kai Watch rights holders.</span>
+      <a href="https://github.com/E20C1/yokai-watch-3-qr">GitHub</a>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pako@2.1.0/dist/pako.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js"></script>
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>
