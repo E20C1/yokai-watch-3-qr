@@ -1,5 +1,6 @@
 from pathlib import Path
 
+# This script is intentionally reproducible and safe to rerun from GitHub Actions.
 path = Path("src/app.js")
 app = path.read_text(encoding="utf-8")
 
