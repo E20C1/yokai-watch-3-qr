@@ -1,0 +1,6028 @@
+{
+  "provenance": {
+    "repository": "Yu08083/Yokai2-QR",
+    "path": "yw3/catalog.json",
+    "branch": "main",
+    "commit": "04d7c9783a66e7216ad020b1775417462b5b8a5d",
+    "blob_sha": "003a0a0588ca2ba2a4eb7243d1c80e753e139446",
+    "license": "MIT",
+    "retrieved_at": "2026-10-02T10:07:09+00:00",
+    "note": "Derived mapping only; upstream QR images are not copied."
+  },
+  "game_id": "yw3",
+  "title": "妖怪ウォッチ3",
+  "default_version": "update",
+  "verified_note": "Upstream README states listed QR reward contents were checked on real hardware.",
+  "reward_signatures": [
+    {
+      "reward_key": "0:0:0:0:16:0:1:1:0",
+      "label": "ランダム報酬",
+      "name": "ランダム報酬",
+      "item_id": 0,
+      "grants": [],
+      "random_table": 0
+    },
+    {
+      "reward_key": "0:0:0:0:16:0:1:1:2287510399",
+      "label": "抽選：超・赤コイン・超・黄色コイン・超・オレンジコイン・超・桃コイン・超・緑コイン・超・青コイン・超・紫コイン・超・水色コイン",
+      "name": "抽選：超・赤コイン・超・黄色コイン・超・オレンジコイン・超・桃コイン・超・緑コイン・超・青コイン・超・紫コイン・超・水色コイン",
+      "item_id": 0,
+      "grants": [],
+      "random_table": 2287510399
+    },
+    {
+      "reward_key": "0:0:0:0:16:0:1:1:3732982570",
+      "label": "抽選：極・赤コイン・極・黄色コイン・極・オレンジコイン・極・桃コイン・極・緑コイン・極・青コイン・極・紫コイン・極・水色コイン",
+      "name": "抽選：極・赤コイン・極・黄色コイン・極・オレンジコイン・極・桃コイン・極・緑コイン・極・青コイン・極・紫コイン・極・水色コイン",
+      "item_id": 0,
+      "grants": [],
+      "random_table": 3732982570
+    },
+    {
+      "reward_key": "1011035457:0:0:0:0:0:1:1:0",
+      "label": "せんぷうコイン",
+      "name": "せんぷうコイン",
+      "item_id": 1011035457,
+      "grants": [
+        {
+          "item_id": 1011035457,
+          "name": "せんぷうコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1065723321:0:0:0:2:0:1:1:0",
+      "label": "ブラックコイン",
+      "name": "ブラックコイン",
+      "item_id": 1065723321,
+      "grants": [
+        {
+          "item_id": 1065723321,
+          "name": "ブラックコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1074912595:2592718716:0:0:0:0:1:1:0",
+      "label": "フユニャンレコード ＋ 赤コイン",
+      "name": "フユニャンレコード ＋ 赤コイン",
+      "item_id": 1074912595,
+      "grants": [
+        {
+          "item_id": 1074912595,
+          "name": "フユニャンレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 2592718716,
+          "name": "赤コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1093504136:0:0:0:6:0:1:1:0",
+      "label": "惨劇ストーン∞",
+      "name": "惨劇ストーン∞",
+      "item_id": 1093504136,
+      "grants": [
+        {
+          "item_id": 1093504136,
+          "name": "惨劇ストーン∞",
+          "quantity": 1,
+          "kind": "ITEM_IMPORTANT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1093982468:0:0:0:0:0:1:1:0",
+      "label": "サンサンコイン",
+      "name": "サンサンコイン",
+      "item_id": 1093982468,
+      "grants": [
+        {
+          "item_id": 1093982468,
+          "name": "サンサンコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1093982468:0:1107272909:0:1:1:1:1:0",
+      "label": "サンサンコイン",
+      "name": "サンサンコイン",
+      "item_id": 1093982468,
+      "grants": [
+        {
+          "item_id": 1093982468,
+          "name": "サンサンコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1180245277:0:0:0:0:0:1:1:0",
+      "label": "おみやげコイン（Ｋ）",
+      "name": "おみやげコイン（Ｋ）",
+      "item_id": 1180245277,
+      "grants": [
+        {
+          "item_id": 1180245277,
+          "name": "おみやげコイン（Ｋ）",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1199315274:3940764659:0:0:0:0:1:1:0",
+      "label": "ジバニャンレコード ＋ 桃コイン",
+      "name": "ジバニャンレコード ＋ 桃コイン",
+      "item_id": 1199315274,
+      "grants": [
+        {
+          "item_id": 1199315274,
+          "name": "ジバニャンレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 3940764659,
+          "name": "桃コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1216517423:0:0:0:2:0:1:1:0",
+      "label": "超ブラックコイン",
+      "name": "超ブラックコイン",
+      "item_id": 1216517423,
+      "grants": [
+        {
+          "item_id": 1216517423,
+          "name": "超ブラックコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1262755287:0:0:0:0:0:1:1:0",
+      "label": "天ぷらコイン",
+      "name": "天ぷらコイン",
+      "item_id": 1262755287,
+      "grants": [
+        {
+          "item_id": 1262755287,
+          "name": "天ぷらコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1277811150:0:0:0:0:0:1:1:0",
+      "label": "どきどきコイン（怪）",
+      "name": "どきどきコイン（怪）",
+      "item_id": 1277811150,
+      "grants": [
+        {
+          "item_id": 1277811150,
+          "name": "どきどきコイン（怪）",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1293886077:0:0:0:2:0:1:1:0",
+      "label": "ズラビスストーン",
+      "name": "ズラビスストーン",
+      "item_id": 1293886077,
+      "grants": [
+        {
+          "item_id": 1293886077,
+          "name": "ズラビスストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1293886077:0:2589211382:0:2:1:1:1:0",
+      "label": "ズラビスストーン",
+      "name": "ズラビスストーン",
+      "item_id": 1293886077,
+      "grants": [
+        {
+          "item_id": 1293886077,
+          "name": "ズラビスストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1293886077:0:3061949410:0:8:1:1:1:0",
+      "label": "ズラビスストーン",
+      "name": "ズラビスストーン",
+      "item_id": 1293886077,
+      "grants": [
+        {
+          "item_id": 1293886077,
+          "name": "ズラビスストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1293886077:0:3221557296:0:2:1:1:1:0",
+      "label": "ズラビスストーン",
+      "name": "ズラビスストーン",
+      "item_id": 1293886077,
+      "grants": [
+        {
+          "item_id": 1293886077,
+          "name": "ズラビスストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1293886077:0:4160324341:0:8:1:1:1:0",
+      "label": "ズラビスストーン",
+      "name": "ズラビスストーン",
+      "item_id": 1293886077,
+      "grants": [
+        {
+          "item_id": 1293886077,
+          "name": "ズラビスストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1293886077:0:4185602169:0:2:1:1:1:0",
+      "label": "ズラビスストーン",
+      "name": "ズラビスストーン",
+      "item_id": 1293886077,
+      "grants": [
+        {
+          "item_id": 1293886077,
+          "name": "ズラビスストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1293886077:0:585653651:0:2:1:1:1:0",
+      "label": "ズラビスストーン",
+      "name": "ズラビスストーン",
+      "item_id": 1293886077,
+      "grants": [
+        {
+          "item_id": 1293886077,
+          "name": "ズラビスストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1293886077:0:811463293:0:2:1:1:1:0",
+      "label": "ズラビスストーン",
+      "name": "ズラビスストーン",
+      "item_id": 1293886077,
+      "grants": [
+        {
+          "item_id": 1293886077,
+          "name": "ズラビスストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "130221032:0:0:0:0:0:1:1:0",
+      "label": "おみやげコイン（Ｆ）",
+      "name": "おみやげコイン（Ｆ）",
+      "item_id": 130221032,
+      "grants": [
+        {
+          "item_id": 130221032,
+          "name": "おみやげコイン（Ｆ）",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1369023598:0:0:0:16:0:1:1:0",
+      "label": "超・オレンジコイン",
+      "name": "超・オレンジコイン",
+      "item_id": 1369023598,
+      "grants": [
+        {
+          "item_id": 1369023598,
+          "name": "超・オレンジコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "138252173:1955061328:0:0:0:0:1:1:0",
+      "label": "レツオニレコード ＋ オレンジコイン",
+      "name": "レツオニレコード ＋ オレンジコイン",
+      "item_id": 138252173,
+      "grants": [
+        {
+          "item_id": 138252173,
+          "name": "レツオニレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 1955061328,
+          "name": "オレンジコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1440267145:0:0:0:2:0:1:1:0",
+      "label": "極楽玉",
+      "name": "極楽玉",
+      "item_id": 1440267145,
+      "grants": [
+        {
+          "item_id": 1440267145,
+          "name": "極楽玉",
+          "quantity": 1,
+          "kind": "ITEM_EQUIPMENT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1458386427:0:0:0:2:0:1:1:0",
+      "label": "鉄狐ストーン∞",
+      "name": "鉄狐ストーン∞",
+      "item_id": 1458386427,
+      "grants": [
+        {
+          "item_id": 1458386427,
+          "name": "鉄狐ストーン∞",
+          "quantity": 1,
+          "kind": "ITEM_IMPORTANT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1479534661:0:0:0:16:0:1:1:0",
+      "label": "トレジャーコイン",
+      "name": "トレジャーコイン",
+      "item_id": 1479534661,
+      "grants": [
+        {
+          "item_id": 1479534661,
+          "name": "トレジャーコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1479534661:1542021309:0:0:16:0:1:1:0",
+      "label": "トレジャーコイン ＋ スペシャルコイン",
+      "name": "トレジャーコイン ＋ スペシャルコイン",
+      "item_id": 1479534661,
+      "grants": [
+        {
+          "item_id": 1479534661,
+          "name": "トレジャーコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        },
+        {
+          "item_id": 1542021309,
+          "name": "スペシャルコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1493888018:82651871:0:0:0:0:1:1:0",
+      "label": "ＵＳＡピョンレコード ＋ 青コイン",
+      "name": "ＵＳＡピョンレコード ＋ 青コイン",
+      "item_id": 1493888018,
+      "grants": [
+        {
+          "item_id": 1493888018,
+          "name": "ＵＳＡピョンレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 82651871,
+          "name": "青コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "152603610:0:0:0:2:0:1:1:0",
+      "label": "ドリームコイン・紳士",
+      "name": "ドリームコイン・紳士",
+      "item_id": 152603610,
+      "grants": [
+        {
+          "item_id": 152603610,
+          "name": "ドリームコイン・紳士",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "152603610:0:1675124661:0:2:1:1:1:0",
+      "label": "ドリームコイン・紳士",
+      "name": "ドリームコイン・紳士",
+      "item_id": 152603610,
+      "grants": [
+        {
+          "item_id": 152603610,
+          "name": "ドリームコイン・紳士",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "152603610:0:170116478:0:2:1:1:1:0",
+      "label": "ドリームコイン・紳士",
+      "name": "ドリームコイン・紳士",
+      "item_id": 152603610,
+      "grants": [
+        {
+          "item_id": 152603610,
+          "name": "ドリームコイン・紳士",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "152603610:0:1704863002:0:2:1:1:1:0",
+      "label": "ドリームコイン・紳士",
+      "name": "ドリームコイン・紳士",
+      "item_id": 152603610,
+      "grants": [
+        {
+          "item_id": 152603610,
+          "name": "ドリームコイン・紳士",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "152603610:0:3026557739:0:2:1:1:1:0",
+      "label": "ドリームコイン・紳士",
+      "name": "ドリームコイン・紳士",
+      "item_id": 152603610,
+      "grants": [
+        {
+          "item_id": 152603610,
+          "name": "ドリームコイン・紳士",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "152603610:0:3098056892:0:2:1:1:1:0",
+      "label": "ドリームコイン・紳士",
+      "name": "ドリームコイン・紳士",
+      "item_id": 152603610,
+      "grants": [
+        {
+          "item_id": 152603610,
+          "name": "ドリームコイン・紳士",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "152603610:0:3694265682:0:2:1:1:1:0",
+      "label": "ドリームコイン・紳士",
+      "name": "ドリームコイン・紳士",
+      "item_id": 152603610,
+      "grants": [
+        {
+          "item_id": 152603610,
+          "name": "ドリームコイン・紳士",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1542021309:0:0:0:0:0:1:1:0",
+      "label": "スペシャルコイン",
+      "name": "スペシャルコイン",
+      "item_id": 1542021309,
+      "grants": [
+        {
+          "item_id": 1542021309,
+          "name": "スペシャルコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1598172252:0:0:0:2:0:1:1:0",
+      "label": "わくわくコイン（天）",
+      "name": "わくわくコイン（天）",
+      "item_id": 1598172252,
+      "grants": [
+        {
+          "item_id": 1598172252,
+          "name": "わくわくコイン（天）",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1617514004:0:0:0:0:0:1:1:0",
+      "label": "ドリームコイン・武",
+      "name": "ドリームコイン・武",
+      "item_id": 1617514004,
+      "grants": [
+        {
+          "item_id": 1617514004,
+          "name": "ドリームコイン・武",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1617514004:0:1248444851:0:0:1:1:1:0",
+      "label": "ドリームコイン・武",
+      "name": "ドリームコイン・武",
+      "item_id": 1617514004,
+      "grants": [
+        {
+          "item_id": 1617514004,
+          "name": "ドリームコイン・武",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1617514004:0:1271383267:0:0:1:1:1:0",
+      "label": "ドリームコイン・武",
+      "name": "ドリームコイン・武",
+      "item_id": 1617514004,
+      "grants": [
+        {
+          "item_id": 1617514004,
+          "name": "ドリームコイン・武",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1617514004:0:1490841181:0:0:1:1:1:0",
+      "label": "ドリームコイン・武",
+      "name": "ドリームコイン・武",
+      "item_id": 1617514004,
+      "grants": [
+        {
+          "item_id": 1617514004,
+          "name": "ドリームコイン・武",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1617514004:0:1493044394:0:0:1:1:1:0",
+      "label": "ドリームコイン・武",
+      "name": "ドリームコイン・武",
+      "item_id": 1617514004,
+      "grants": [
+        {
+          "item_id": 1617514004,
+          "name": "ドリームコイン・武",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1617514004:0:1862442607:0:0:1:1:1:0",
+      "label": "ドリームコイン・武",
+      "name": "ドリームコイン・武",
+      "item_id": 1617514004,
+      "grants": [
+        {
+          "item_id": 1617514004,
+          "name": "ドリームコイン・武",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1617514004:0:2130644474:0:0:1:1:1:0",
+      "label": "ドリームコイン・武",
+      "name": "ドリームコイン・武",
+      "item_id": 1617514004,
+      "grants": [
+        {
+          "item_id": 1617514004,
+          "name": "ドリームコイン・武",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1617514004:0:2283140534:0:0:1:1:1:0",
+      "label": "ドリームコイン・武",
+      "name": "ドリームコイン・武",
+      "item_id": 1617514004,
+      "grants": [
+        {
+          "item_id": 1617514004,
+          "name": "ドリームコイン・武",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1617514004:0:2702714927:0:0:1:1:1:0",
+      "label": "ドリームコイン・武",
+      "name": "ドリームコイン・武",
+      "item_id": 1617514004,
+      "grants": [
+        {
+          "item_id": 1617514004,
+          "name": "ドリームコイン・武",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1617514004:0:3024615900:0:0:1:1:1:0",
+      "label": "ドリームコイン・武",
+      "name": "ドリームコイン・武",
+      "item_id": 1617514004,
+      "grants": [
+        {
+          "item_id": 1617514004,
+          "name": "ドリームコイン・武",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1617514004:0:3057508477:0:0:1:1:1:0",
+      "label": "ドリームコイン・武",
+      "name": "ドリームコイン・武",
+      "item_id": 1617514004,
+      "grants": [
+        {
+          "item_id": 1617514004,
+          "name": "ドリームコイン・武",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1617514004:0:3084002017:0:0:1:1:1:0",
+      "label": "ドリームコイン・武",
+      "name": "ドリームコイン・武",
+      "item_id": 1617514004,
+      "grants": [
+        {
+          "item_id": 1617514004,
+          "name": "ドリームコイン・武",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1617514004:0:3087210862:0:0:1:1:1:0",
+      "label": "ドリームコイン・武",
+      "name": "ドリームコイン・武",
+      "item_id": 1617514004,
+      "grants": [
+        {
+          "item_id": 1617514004,
+          "name": "ドリームコイン・武",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1617514004:0:3661674672:0:0:1:1:1:0",
+      "label": "ドリームコイン・武",
+      "name": "ドリームコイン・武",
+      "item_id": 1617514004,
+      "grants": [
+        {
+          "item_id": 1617514004,
+          "name": "ドリームコイン・武",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1617514004:0:508440919:0:0:1:1:1:0",
+      "label": "ドリームコイン・武",
+      "name": "ドリームコイン・武",
+      "item_id": 1617514004,
+      "grants": [
+        {
+          "item_id": 1617514004,
+          "name": "ドリームコイン・武",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1617514004:0:574513098:0:0:1:1:1:0",
+      "label": "ドリームコイン・武",
+      "name": "ドリームコイン・武",
+      "item_id": 1617514004,
+      "grants": [
+        {
+          "item_id": 1617514004,
+          "name": "ドリームコイン・武",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1617514004:0:795727353:0:0:1:1:1:0",
+      "label": "ドリームコイン・武",
+      "name": "ドリームコイン・武",
+      "item_id": 1617514004,
+      "grants": [
+        {
+          "item_id": 1617514004,
+          "name": "ドリームコイン・武",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1632389699:3940764659:0:0:0:0:1:1:0",
+      "label": "ニャニャンレコード ＋ 桃コイン",
+      "name": "ニャニャンレコード ＋ 桃コイン",
+      "item_id": 1632389699,
+      "grants": [
+        {
+          "item_id": 1632389699,
+          "name": "ニャニャンレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 3940764659,
+          "name": "桃コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1692096377:0:3129942706:0:0:0:1:1:0",
+      "label": "ジョーカーのカード",
+      "name": "ジョーカーのカード",
+      "item_id": 1692096377,
+      "grants": [
+        {
+          "item_id": 1692096377,
+          "name": "ジョーカーのカード",
+          "quantity": 1,
+          "kind": "ITEM_IMPORTANT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1713475162:2648996709:0:0:0:0:1:1:0",
+      "label": "たべものレコード ＋ 緑コイン",
+      "name": "たべものレコード ＋ 緑コイン",
+      "item_id": 1713475162,
+      "grants": [
+        {
+          "item_id": 1713475162,
+          "name": "たべものレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 2648996709,
+          "name": "緑コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1714581950:0:0:0:2:0:10:1:0",
+      "label": "妖気のつぶ ×10",
+      "name": "妖気のつぶ ×10",
+      "item_id": 1714581950,
+      "grants": [
+        {
+          "item_id": 1714581950,
+          "name": "妖気のつぶ",
+          "quantity": 10,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1728350733:0:0:0:0:0:1:1:0",
+      "label": "わくわくコイン（鳥）",
+      "name": "わくわくコイン（鳥）",
+      "item_id": 1728350733,
+      "grants": [
+        {
+          "item_id": 1728350733,
+          "name": "わくわくコイン（鳥）",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1743706379:0:0:0:2:0:1:1:0",
+      "label": "黄金のアンク",
+      "name": "黄金のアンク",
+      "item_id": 1743706379,
+      "grants": [
+        {
+          "item_id": 1743706379,
+          "name": "黄金のアンク",
+          "quantity": 1,
+          "kind": "ITEM_EQUIPMENT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1776222783:0:0:0:2:0:1:1:0",
+      "label": "ドリームコイン・姫",
+      "name": "ドリームコイン・姫",
+      "item_id": 1776222783,
+      "grants": [
+        {
+          "item_id": 1776222783,
+          "name": "ドリームコイン・姫",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1776222783:0:2474914667:0:2:1:1:1:0",
+      "label": "ドリームコイン・姫",
+      "name": "ドリームコイン・姫",
+      "item_id": 1776222783,
+      "grants": [
+        {
+          "item_id": 1776222783,
+          "name": "ドリームコイン・姫",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1776222783:0:2803265969:0:2:1:1:1:0",
+      "label": "ドリームコイン・姫",
+      "name": "ドリームコイン・姫",
+      "item_id": 1776222783,
+      "grants": [
+        {
+          "item_id": 1776222783,
+          "name": "ドリームコイン・姫",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1776222783:0:3366687189:0:2:1:1:1:0",
+      "label": "ドリームコイン・姫",
+      "name": "ドリームコイン・姫",
+      "item_id": 1776222783,
+      "grants": [
+        {
+          "item_id": 1776222783,
+          "name": "ドリームコイン・姫",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1776222783:0:4232496615:0:2:1:1:1:0",
+      "label": "ドリームコイン・姫",
+      "name": "ドリームコイン・姫",
+      "item_id": 1776222783,
+      "grants": [
+        {
+          "item_id": 1776222783,
+          "name": "ドリームコイン・姫",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1776222783:0:725111822:0:2:1:1:1:0",
+      "label": "ドリームコイン・姫",
+      "name": "ドリームコイン・姫",
+      "item_id": 1776222783,
+      "grants": [
+        {
+          "item_id": 1776222783,
+          "name": "ドリームコイン・姫",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1798271348:4101840740:0:0:16:0:1:1:0",
+      "label": "ボケルＳ∞の欠片１ ＋ 極・水色コイン",
+      "name": "ボケルＳ∞の欠片１ ＋ 極・水色コイン",
+      "item_id": 1798271348,
+      "grants": [
+        {
+          "item_id": 1798271348,
+          "name": "ボケルＳ∞の欠片１",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        },
+        {
+          "item_id": 4101840740,
+          "name": "極・水色コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1816311149:1929558918:0:0:16:0:1:1:0",
+      "label": "日ノ鳥Ｓ∞の欠片１ ＋ 極・赤コイン",
+      "name": "日ノ鳥Ｓ∞の欠片１ ＋ 極・赤コイン",
+      "item_id": 1816311149,
+      "grants": [
+        {
+          "item_id": 1816311149,
+          "name": "日ノ鳥Ｓ∞の欠片１",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        },
+        {
+          "item_id": 1929558918,
+          "name": "極・赤コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1835866962:0:3006885529:0:0:0:1:1:0",
+      "label": "クイーンのカード",
+      "name": "クイーンのカード",
+      "item_id": 1835866962,
+      "grants": [
+        {
+          "item_id": 1835866962,
+          "name": "クイーンのカード",
+          "quantity": 1,
+          "kind": "ITEM_IMPORTANT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1836338910:0:0:0:16:0:1:1:0",
+      "label": "極・紫コイン",
+      "name": "極・紫コイン",
+      "item_id": 1836338910,
+      "grants": [
+        {
+          "item_id": 1836338910,
+          "name": "極・紫コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1851299104:0:2953634027:2980730744:2:1:1:1:0",
+      "label": "議長の錫杖",
+      "name": "議長の錫杖",
+      "item_id": 1851299104,
+      "grants": [
+        {
+          "item_id": 1851299104,
+          "name": "議長の錫杖",
+          "quantity": 1,
+          "kind": "ITEM_EQUIPMENT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1891906430:0:0:0:0:0:1:1:0",
+      "label": "おみやげコイン（Ｌ）",
+      "name": "おみやげコイン（Ｌ）",
+      "item_id": 1891906430,
+      "grants": [
+        {
+          "item_id": 1891906430,
+          "name": "おみやげコイン（Ｌ）",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1916026933:0:0:0:16:0:1:1:0",
+      "label": "ボケルストーン",
+      "name": "ボケルストーン",
+      "item_id": 1916026933,
+      "grants": [
+        {
+          "item_id": 1916026933,
+          "name": "ボケルストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1929558918:0:0:0:16:0:1:1:0",
+      "label": "極・赤コイン",
+      "name": "極・赤コイン",
+      "item_id": 1929558918,
+      "grants": [
+        {
+          "item_id": 1929558918,
+          "name": "極・赤コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1944721993:0:0:0:0:0:1:1:0",
+      "label": "紫コイン",
+      "name": "紫コイン",
+      "item_id": 1944721993,
+      "grants": [
+        {
+          "item_id": 1944721993,
+          "name": "紫コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1944721993:0:0:0:16:0:1:1:0",
+      "label": "紫コイン",
+      "name": "紫コイン",
+      "item_id": 1944721993,
+      "grants": [
+        {
+          "item_id": 1944721993,
+          "name": "紫コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1953464223:0:0:0:16:0:1:1:0",
+      "label": "超・緑コイン",
+      "name": "超・緑コイン",
+      "item_id": 1953464223,
+      "grants": [
+        {
+          "item_id": 1953464223,
+          "name": "超・緑コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1955061328:0:0:0:0:0:1:1:0",
+      "label": "オレンジコイン",
+      "name": "オレンジコイン",
+      "item_id": 1955061328,
+      "grants": [
+        {
+          "item_id": 1955061328,
+          "name": "オレンジコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1955061328:0:0:0:16:0:1:1:0",
+      "label": "オレンジコイン",
+      "name": "オレンジコイン",
+      "item_id": 1955061328,
+      "grants": [
+        {
+          "item_id": 1955061328,
+          "name": "オレンジコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1968800812:0:1157222389:0:6:1:1:1:0",
+      "label": "ノストラダマストーン",
+      "name": "ノストラダマストーン",
+      "item_id": 1968800812,
+      "grants": [
+        {
+          "item_id": 1968800812,
+          "name": "ノストラダマストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1968800812:0:1471869778:0:6:1:1:1:0",
+      "label": "ノストラダマストーン",
+      "name": "ノストラダマストーン",
+      "item_id": 1968800812,
+      "grants": [
+        {
+          "item_id": 1968800812,
+          "name": "ノストラダマストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1968800812:0:1575157428:0:6:1:1:1:0",
+      "label": "ノストラダマストーン",
+      "name": "ノストラダマストーン",
+      "item_id": 1968800812,
+      "grants": [
+        {
+          "item_id": 1968800812,
+          "name": "ノストラダマストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1968800812:0:1834353638:0:6:1:1:1:0",
+      "label": "ノストラダマストーン",
+      "name": "ノストラダマストーン",
+      "item_id": 1968800812,
+      "grants": [
+        {
+          "item_id": 1968800812,
+          "name": "ノストラダマストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1968800812:0:1843832486:0:6:1:1:1:0",
+      "label": "ノストラダマストーン",
+      "name": "ノストラダマストーン",
+      "item_id": 1968800812,
+      "grants": [
+        {
+          "item_id": 1968800812,
+          "name": "ノストラダマストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1968800812:0:1962776551:0:6:1:1:1:0",
+      "label": "ノストラダマストーン",
+      "name": "ノストラダマストーン",
+      "item_id": 1968800812,
+      "grants": [
+        {
+          "item_id": 1968800812,
+          "name": "ノストラダマストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1968800812:0:196630834:0:6:1:1:1:0",
+      "label": "ノストラダマストーン",
+      "name": "ノストラダマストーン",
+      "item_id": 1968800812,
+      "grants": [
+        {
+          "item_id": 1968800812,
+          "name": "ノストラダマストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1968800812:0:2387840793:0:6:1:1:1:0",
+      "label": "ノストラダマストーン",
+      "name": "ノストラダマストーン",
+      "item_id": 1968800812,
+      "grants": [
+        {
+          "item_id": 1968800812,
+          "name": "ノストラダマストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1968800812:0:2632327415:0:6:1:1:1:0",
+      "label": "ノストラダマストーン",
+      "name": "ノストラダマストーン",
+      "item_id": 1968800812,
+      "grants": [
+        {
+          "item_id": 1968800812,
+          "name": "ノストラダマストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1968800812:0:3410844411:0:6:1:1:1:0",
+      "label": "ノストラダマストーン",
+      "name": "ノストラダマストーン",
+      "item_id": 1968800812,
+      "grants": [
+        {
+          "item_id": 1968800812,
+          "name": "ノストラダマストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1968800812:0:3528879034:0:6:1:1:1:0",
+      "label": "ノストラダマストーン",
+      "name": "ノストラダマストーン",
+      "item_id": 1968800812,
+      "grants": [
+        {
+          "item_id": 1968800812,
+          "name": "ノストラダマストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1968800812:0:3628770226:0:6:1:1:1:0",
+      "label": "ノストラダマストーン",
+      "name": "ノストラダマストーン",
+      "item_id": 1968800812,
+      "grants": [
+        {
+          "item_id": 1968800812,
+          "name": "ノストラダマストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1968800812:0:3642630513:0:8:1:1:1:0",
+      "label": "ノストラダマストーン",
+      "name": "ノストラダマストーン",
+      "item_id": 1968800812,
+      "grants": [
+        {
+          "item_id": 1968800812,
+          "name": "ノストラダマストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1968800812:0:4923045:0:8:1:1:1:0",
+      "label": "ノストラダマストーン",
+      "name": "ノストラダマストーン",
+      "item_id": 1968800812,
+      "grants": [
+        {
+          "item_id": 1968800812,
+          "name": "ノストラダマストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1968800812:0:543564956:0:8:1:1:1:0",
+      "label": "ノストラダマストーン",
+      "name": "ノストラダマストーン",
+      "item_id": 1968800812,
+      "grants": [
+        {
+          "item_id": 1968800812,
+          "name": "ノストラダマストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1968800812:0:609896338:0:6:1:1:1:0",
+      "label": "ノストラダマストーン",
+      "name": "ノストラダマストーン",
+      "item_id": 1968800812,
+      "grants": [
+        {
+          "item_id": 1968800812,
+          "name": "ノストラダマストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1968800812:0:657463582:0:6:1:1:1:0",
+      "label": "ノストラダマストーン",
+      "name": "ノストラダマストーン",
+      "item_id": 1968800812,
+      "grants": [
+        {
+          "item_id": 1968800812,
+          "name": "ノストラダマストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1968800812:0:764330140:0:6:1:1:1:0",
+      "label": "ノストラダマストーン",
+      "name": "ノストラダマストーン",
+      "item_id": 1968800812,
+      "grants": [
+        {
+          "item_id": 1968800812,
+          "name": "ノストラダマストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "1968800812:0:964498909:0:8:1:1:1:0",
+      "label": "ノストラダマストーン",
+      "name": "ノストラダマストーン",
+      "item_id": 1968800812,
+      "grants": [
+        {
+          "item_id": 1968800812,
+          "name": "ノストラダマストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2017756390:0:2786128173:0:2:0:1:1:0",
+      "label": "スピーチ姫パス",
+      "name": "スピーチ姫パス",
+      "item_id": 2017756390,
+      "grants": [
+        {
+          "item_id": 2017756390,
+          "name": "スピーチ姫パス",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2018999042:3814000600:0:0:0:0:1:1:0",
+      "label": "ミズかきレコード ＋ 水色コイン",
+      "name": "ミズかきレコード ＋ 水色コイン",
+      "item_id": 2018999042,
+      "grants": [
+        {
+          "item_id": 2018999042,
+          "name": "ミズかきレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 3814000600,
+          "name": "水色コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2037546837:0:0:0:2:0:1:1:0",
+      "label": "ドリームコインＧ３",
+      "name": "ドリームコインＧ３",
+      "item_id": 2037546837,
+      "grants": [
+        {
+          "item_id": 2037546837,
+          "name": "ドリームコインＧ３",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2037546837:0:2067135933:0:2:1:1:1:0",
+      "label": "ドリームコインＧ３",
+      "name": "ドリームコインＧ３",
+      "item_id": 2037546837,
+      "grants": [
+        {
+          "item_id": 2037546837,
+          "name": "ドリームコインＧ３",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2037546837:0:4146026129:0:2:1:1:1:0",
+      "label": "ドリームコインＧ３",
+      "name": "ドリームコインＧ３",
+      "item_id": 2037546837,
+      "grants": [
+        {
+          "item_id": 2037546837,
+          "name": "ドリームコインＧ３",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2058680237:0:0:0:16:0:1:1:0",
+      "label": "極・緑コイン",
+      "name": "極・緑コイン",
+      "item_id": 2058680237,
+      "grants": [
+        {
+          "item_id": 2058680237,
+          "name": "極・緑コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2116008780:0:0:0:2:0:1:1:0",
+      "label": "ドリームコイン・自慢",
+      "name": "ドリームコイン・自慢",
+      "item_id": 2116008780,
+      "grants": [
+        {
+          "item_id": 2116008780,
+          "name": "ドリームコイン・自慢",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2116008780:0:1343794814:0:2:1:1:1:0",
+      "label": "ドリームコイン・自慢",
+      "name": "ドリームコイン・自慢",
+      "item_id": 2116008780,
+      "grants": [
+        {
+          "item_id": 2116008780,
+          "name": "ドリームコイン・自慢",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2116008780:0:158071045:0:2:1:1:1:0",
+      "label": "ドリームコイン・自慢",
+      "name": "ドリームコイン・自慢",
+      "item_id": 2116008780,
+      "grants": [
+        {
+          "item_id": 2116008780,
+          "name": "ドリームコイン・自慢",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2116008780:0:1777903455:0:2:1:1:1:0",
+      "label": "ドリームコイン・自慢",
+      "name": "ドリームコイン・自慢",
+      "item_id": 2116008780,
+      "grants": [
+        {
+          "item_id": 2116008780,
+          "name": "ドリームコイン・自慢",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2116008780:0:2055949765:0:2:1:1:1:0",
+      "label": "ドリームコイン・自慢",
+      "name": "ドリームコイン・自慢",
+      "item_id": 2116008780,
+      "grants": [
+        {
+          "item_id": 2116008780,
+          "name": "ドリームコイン・自慢",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2116008780:0:2187283610:0:2:1:1:1:0",
+      "label": "ドリームコイン・自慢",
+      "name": "ドリームコイン・自慢",
+      "item_id": 2116008780,
+      "grants": [
+        {
+          "item_id": 2116008780,
+          "name": "ドリームコイン・自慢",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2116008780:0:3258395296:0:2:1:1:1:0",
+      "label": "ドリームコイン・自慢",
+      "name": "ドリームコイン・自慢",
+      "item_id": 2116008780,
+      "grants": [
+        {
+          "item_id": 2116008780,
+          "name": "ドリームコイン・自慢",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2116008780:0:3920924214:0:2:1:1:1:0",
+      "label": "ドリームコイン・自慢",
+      "name": "ドリームコイン・自慢",
+      "item_id": 2116008780,
+      "grants": [
+        {
+          "item_id": 2116008780,
+          "name": "ドリームコイン・自慢",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2116008780:0:974605137:0:2:1:1:1:0",
+      "label": "ドリームコイン・自慢",
+      "name": "ドリームコイン・自慢",
+      "item_id": 2116008780,
+      "grants": [
+        {
+          "item_id": 2116008780,
+          "name": "ドリームコイン・自慢",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2130045002:0:0:0:0:0:1:1:0",
+      "label": "三成の御旗",
+      "name": "三成の御旗",
+      "item_id": 2130045002,
+      "grants": [
+        {
+          "item_id": 2130045002,
+          "name": "三成の御旗",
+          "quantity": 1,
+          "kind": "ITEM_EQUIPMENT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2130045002:0:0:0:2:0:1:1:0",
+      "label": "三成の御旗",
+      "name": "三成の御旗",
+      "item_id": 2130045002,
+      "grants": [
+        {
+          "item_id": 2130045002,
+          "name": "三成の御旗",
+          "quantity": 1,
+          "kind": "ITEM_EQUIPMENT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2133410047:0:2709337396:0:0:0:1:1:0",
+      "label": "ラストブシニャンパス",
+      "name": "ラストブシニャンパス",
+      "item_id": 2133410047,
+      "grants": [
+        {
+          "item_id": 2133410047,
+          "name": "ラストブシニャンパス",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2134556443:2592718716:0:0:0:0:1:1:0",
+      "label": "タロニャンレコードＡ ＋ 赤コイン",
+      "name": "タロニャンレコードＡ ＋ 赤コイン",
+      "item_id": 2134556443,
+      "grants": [
+        {
+          "item_id": 2134556443,
+          "name": "タロニャンレコードＡ",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 2592718716,
+          "name": "赤コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2153182220:0:2790135213:0:2:1:1:1:0",
+      "label": "ずばばんアーム",
+      "name": "ずばばんアーム",
+      "item_id": 2153182220,
+      "grants": [
+        {
+          "item_id": 2153182220,
+          "name": "ずばばんアーム",
+          "quantity": 1,
+          "kind": "ITEM_EQUIPMENT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2174329693:82651871:0:0:0:0:1:1:0",
+      "label": "ヘヤノスミスレコード ＋ 青コイン",
+      "name": "ヘヤノスミスレコード ＋ 青コイン",
+      "item_id": 2174329693,
+      "grants": [
+        {
+          "item_id": 2174329693,
+          "name": "ヘヤノスミスレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 82651871,
+          "name": "青コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2186073153:0:0:0:16:0:1:1:0",
+      "label": "伝説ストーン",
+      "name": "伝説ストーン",
+      "item_id": 2186073153,
+      "grants": [
+        {
+          "item_id": 2186073153,
+          "name": "伝説ストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2204334718:0:1563889589:0:0:0:1:1:0",
+      "label": "エースのカード",
+      "name": "エースのカード",
+      "item_id": 2204334718,
+      "grants": [
+        {
+          "item_id": 2204334718,
+          "name": "エースのカード",
+          "quantity": 1,
+          "kind": "ITEM_IMPORTANT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2205822962:0:0:0:16:0:1:1:0",
+      "label": "ごちそうコイン",
+      "name": "ごちそうコイン",
+      "item_id": 2205822962,
+      "grants": [
+        {
+          "item_id": 2205822962,
+          "name": "ごちそうコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2233536600:229885755:0:0:16:0:1:1:0",
+      "label": "クレクレＳ∞の欠片１ ＋ 極・桃コイン",
+      "name": "クレクレＳ∞の欠片１ ＋ 極・桃コイン",
+      "item_id": 2233536600,
+      "grants": [
+        {
+          "item_id": 2233536600,
+          "name": "クレクレＳ∞の欠片１",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        },
+        {
+          "item_id": 229885755,
+          "name": "極・桃コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2268803093:0:0:0:0:0:1:1:0",
+      "label": "メリケンロッド",
+      "name": "メリケンロッド",
+      "item_id": 2268803093,
+      "grants": [
+        {
+          "item_id": 2268803093,
+          "name": "メリケンロッド",
+          "quantity": 1,
+          "kind": "ITEM_EQUIPMENT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2268803093:0:0:0:2:0:1:1:0",
+      "label": "メリケンロッド",
+      "name": "メリケンロッド",
+      "item_id": 2268803093,
+      "grants": [
+        {
+          "item_id": 2268803093,
+          "name": "メリケンロッド",
+          "quantity": 1,
+          "kind": "ITEM_EQUIPMENT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2284842870:3940764659:0:0:0:0:1:1:0",
+      "label": "コトオワレコード ＋ 桃コイン",
+      "name": "コトオワレコード ＋ 桃コイン",
+      "item_id": 2284842870,
+      "grants": [
+        {
+          "item_id": 2284842870,
+          "name": "コトオワレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 3940764659,
+          "name": "桃コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "229885755:0:0:0:16:0:1:1:0",
+      "label": "極・桃コイン",
+      "name": "極・桃コイン",
+      "item_id": 229885755,
+      "grants": [
+        {
+          "item_id": 229885755,
+          "name": "極・桃コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2299194145:0:0:0:0:0:1:1:0",
+      "label": "わくわくコイン（月）",
+      "name": "わくわくコイン（月）",
+      "item_id": 2299194145,
+      "grants": [
+        {
+          "item_id": 2299194145,
+          "name": "わくわくコイン（月）",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2358729843:1929558918:0:0:16:0:1:1:0",
+      "label": "エルドラＳ∞の欠片１ ＋ 極・赤コイン",
+      "name": "エルドラＳ∞の欠片１ ＋ 極・赤コイン",
+      "item_id": 2358729843,
+      "grants": [
+        {
+          "item_id": 2358729843,
+          "name": "エルドラＳ∞の欠片１",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        },
+        {
+          "item_id": 1929558918,
+          "name": "極・赤コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2389126968:0:0:0:0:0:1:1:0",
+      "label": "ドリームコイン・白金",
+      "name": "ドリームコイン・白金",
+      "item_id": 2389126968,
+      "grants": [
+        {
+          "item_id": 2389126968,
+          "name": "ドリームコイン・白金",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2389126968:0:1089829574:0:0:1:1:1:0",
+      "label": "ドリームコイン・白金",
+      "name": "ドリームコイン・白金",
+      "item_id": 2389126968,
+      "grants": [
+        {
+          "item_id": 2389126968,
+          "name": "ドリームコイン・白金",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2389126968:0:1226964424:0:0:1:1:1:0",
+      "label": "ドリームコイン・白金",
+      "name": "ドリームコイン・白金",
+      "item_id": 2389126968,
+      "grants": [
+        {
+          "item_id": 2389126968,
+          "name": "ドリームコイン・白金",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2389126968:0:1246470980:0:0:1:1:1:0",
+      "label": "ドリームコイン・白金",
+      "name": "ドリームコイン・白金",
+      "item_id": 2389126968,
+      "grants": [
+        {
+          "item_id": 2389126968,
+          "name": "ドリームコイン・白金",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2389126968:0:245622255:0:0:1:1:1:0",
+      "label": "ドリームコイン・白金",
+      "name": "ドリームコイン・白金",
+      "item_id": 2389126968,
+      "grants": [
+        {
+          "item_id": 2389126968,
+          "name": "ドリームコイン・白金",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2389126968:0:2591447041:0:0:1:1:1:0",
+      "label": "ドリームコイン・白金",
+      "name": "ドリームコイン・白金",
+      "item_id": 2389126968,
+      "grants": [
+        {
+          "item_id": 2389126968,
+          "name": "ドリームコイン・白金",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2389126968:0:2762616164:0:0:1:1:1:0",
+      "label": "ドリームコイン・白金",
+      "name": "ドリームコイン・白金",
+      "item_id": 2389126968,
+      "grants": [
+        {
+          "item_id": 2389126968,
+          "name": "ドリームコイン・白金",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2389126968:0:2805207878:0:0:1:1:1:0",
+      "label": "ドリームコイン・白金",
+      "name": "ドリームコイン・白金",
+      "item_id": 2389126968,
+      "grants": [
+        {
+          "item_id": 2389126968,
+          "name": "ドリームコイン・白金",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2389126968:0:3407334656:0:0:1:1:1:0",
+      "label": "ドリームコイン・白金",
+      "name": "ドリームコイン・白金",
+      "item_id": 2389126968,
+      "grants": [
+        {
+          "item_id": 2389126968,
+          "name": "ドリームコイン・白金",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2403478383:1955061328:0:0:0:0:1:1:0",
+      "label": "ドンカムレコード ＋ オレンジコイン",
+      "name": "ドンカムレコード ＋ オレンジコイン",
+      "item_id": 2403478383,
+      "grants": [
+        {
+          "item_id": 2403478383,
+          "name": "ドンカムレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 1955061328,
+          "name": "オレンジコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2417089120:0:0:0:0:0:1:1:0",
+      "label": "ドリームコインＧ１",
+      "name": "ドリームコインＧ１",
+      "item_id": 2417089120,
+      "grants": [
+        {
+          "item_id": 2417089120,
+          "name": "ドリームコインＧ１",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2417089120:0:1224974143:0:0:1:1:1:0",
+      "label": "ドリームコインＧ１",
+      "name": "ドリームコインＧ１",
+      "item_id": 2417089120,
+      "grants": [
+        {
+          "item_id": 2417089120,
+          "name": "ドリームコインＧ１",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2417089120:0:3307811859:0:0:1:1:1:0",
+      "label": "ドリームコインＧ１",
+      "name": "ドリームコインＧ１",
+      "item_id": 2417089120,
+      "grants": [
+        {
+          "item_id": 2417089120,
+          "name": "ドリームコインＧ１",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "242569155:0:0:0:2:0:1:1:0",
+      "label": "ドリームコインＧ４",
+      "name": "ドリームコインＧ４",
+      "item_id": 242569155,
+      "grants": [
+        {
+          "item_id": 242569155,
+          "name": "ドリームコインＧ４",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "242569155:0:531240660:0:2:1:1:1:0",
+      "label": "ドリームコインＧ４",
+      "name": "ドリームコインＧ４",
+      "item_id": 242569155,
+      "grants": [
+        {
+          "item_id": 242569155,
+          "name": "ドリームコインＧ４",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2436161079:3940764659:0:0:0:0:1:1:0",
+      "label": "モグモグレコード ＋ 桃コイン",
+      "name": "モグモグレコード ＋ 桃コイン",
+      "item_id": 2436161079,
+      "grants": [
+        {
+          "item_id": 2436161079,
+          "name": "モグモグレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 3940764659,
+          "name": "桃コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2509008178:0:0:0:16:0:1:1:0",
+      "label": "ラスブシストーン",
+      "name": "ラスブシストーン",
+      "item_id": 2509008178,
+      "grants": [
+        {
+          "item_id": 2509008178,
+          "name": "ラスブシストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2521490890:0:1209962497:0:0:0:1:1:0",
+      "label": "キラコマパス",
+      "name": "キラコマパス",
+      "item_id": 2521490890,
+      "grants": [
+        {
+          "item_id": 2521490890,
+          "name": "キラコマパス",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2522421806:3814000600:0:0:0:0:1:1:0",
+      "label": "ツイトルズレコード ＋ 水色コイン",
+      "name": "ツイトルズレコード ＋ 水色コイン",
+      "item_id": 2522421806,
+      "grants": [
+        {
+          "item_id": 2522421806,
+          "name": "ツイトルズレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 3814000600,
+          "name": "水色コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2558693916:3940764659:0:0:0:0:1:1:0",
+      "label": "オールスターレコード ＋ 桃コイン",
+      "name": "オールスターレコード ＋ 桃コイン",
+      "item_id": 2558693916,
+      "grants": [
+        {
+          "item_id": 2558693916,
+          "name": "オールスターレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 3940764659,
+          "name": "桃コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "256095344:0:3507995067:0:0:0:1:1:0",
+      "label": "ブルジョワＧパス",
+      "name": "ブルジョワＧパス",
+      "item_id": 256095344,
+      "grants": [
+        {
+          "item_id": 256095344,
+          "name": "ブルジョワＧパス",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "256920468:58781382:0:0:0:0:1:1:0",
+      "label": "ピントクルレコード ＋ 黄色コイン",
+      "name": "ピントクルレコード ＋ 黄色コイン",
+      "item_id": 256920468,
+      "grants": [
+        {
+          "item_id": 256920468,
+          "name": "ピントクルレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 58781382,
+          "name": "黄色コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2590056115:0:0:0:16:0:1:1:0",
+      "label": "超・紫コイン",
+      "name": "超・紫コイン",
+      "item_id": 2590056115,
+      "grants": [
+        {
+          "item_id": 2590056115,
+          "name": "超・紫コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2592718716:0:0:0:0:0:1:1:0",
+      "label": "赤コイン",
+      "name": "赤コイン",
+      "item_id": 2592718716,
+      "grants": [
+        {
+          "item_id": 2592718716,
+          "name": "赤コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2592718716:0:0:0:16:0:1:1:0",
+      "label": "赤コイン",
+      "name": "赤コイン",
+      "item_id": 2592718716,
+      "grants": [
+        {
+          "item_id": 2592718716,
+          "name": "赤コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2606228736:0:0:0:2:0:1:1:0",
+      "label": "先代閻魔大王の手形",
+      "name": "先代閻魔大王の手形",
+      "item_id": 2606228736,
+      "grants": [
+        {
+          "item_id": 2606228736,
+          "name": "先代閻魔大王の手形",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2621055257:0:0:0:16:0:1:1:0",
+      "label": "日ノ鳥ストーン",
+      "name": "日ノ鳥ストーン",
+      "item_id": 2621055257,
+      "grants": [
+        {
+          "item_id": 2621055257,
+          "name": "日ノ鳥ストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2634865322:0:0:0:16:0:1:1:0",
+      "label": "極・オレンジコイン",
+      "name": "極・オレンジコイン",
+      "item_id": 2634865322,
+      "grants": [
+        {
+          "item_id": 2634865322,
+          "name": "極・オレンジコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2648996709:0:0:0:0:0:1:1:0",
+      "label": "緑コイン",
+      "name": "緑コイン",
+      "item_id": 2648996709,
+      "grants": [
+        {
+          "item_id": 2648996709,
+          "name": "緑コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2648996709:0:0:0:16:0:1:1:0",
+      "label": "緑コイン",
+      "name": "緑コイン",
+      "item_id": 2648996709,
+      "grants": [
+        {
+          "item_id": 2648996709,
+          "name": "緑コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2684135905:0:1101585450:0:2:0:1:1:0",
+      "label": "自慢ハッタンパス",
+      "name": "自慢ハッタンパス",
+      "item_id": 2684135905,
+      "grants": [
+        {
+          "item_id": 2684135905,
+          "name": "自慢ハッタンパス",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "268679835:0:0:0:0:0:1:1:0",
+      "label": "わくわくコイン（風）",
+      "name": "わくわくコイン（風）",
+      "item_id": 268679835,
+      "grants": [
+        {
+          "item_id": 268679835,
+          "name": "わくわくコイン（風）",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2697213005:2648996709:0:0:0:0:1:1:0",
+      "label": "ひも爺レコード ＋ 緑コイン",
+      "name": "ひも爺レコード ＋ 緑コイン",
+      "item_id": 2697213005,
+      "grants": [
+        {
+          "item_id": 2697213005,
+          "name": "ひも爺レコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 2648996709,
+          "name": "緑コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2735817553:0:0:0:2:0:1:1:0",
+      "label": "リアクションストーン",
+      "name": "リアクションストーン",
+      "item_id": 2735817553,
+      "grants": [
+        {
+          "item_id": 2735817553,
+          "name": "リアクションストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2735817553:0:1518924756:0:2:1:1:1:0",
+      "label": "リアクションストーン",
+      "name": "リアクションストーン",
+      "item_id": 2735817553,
+      "grants": [
+        {
+          "item_id": 2735817553,
+          "name": "リアクションストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2735817553:0:2362511561:0:8:1:1:1:0",
+      "label": "リアクションストーン",
+      "name": "リアクションストーン",
+      "item_id": 2735817553,
+      "grants": [
+        {
+          "item_id": 2735817553,
+          "name": "リアクションストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2735817553:0:2719496037:0:2:1:1:1:0",
+      "label": "リアクションストーン",
+      "name": "リアクションストーン",
+      "item_id": 2735817553,
+      "grants": [
+        {
+          "item_id": 2735817553,
+          "name": "リアクションストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2735817553:0:2964166795:0:2:1:1:1:0",
+      "label": "リアクションストーン",
+      "name": "リアクションストーン",
+      "item_id": 2735817553,
+      "grants": [
+        {
+          "item_id": 2735817553,
+          "name": "リアクションストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2735817553:0:3674382281:0:2:1:1:1:0",
+      "label": "リアクションストーン",
+      "name": "リアクションストーン",
+      "item_id": 2735817553,
+      "grants": [
+        {
+          "item_id": 2735817553,
+          "name": "リアクションストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2735817553:0:446976000:0:2:1:1:1:0",
+      "label": "リアクションストーン",
+      "name": "リアクションストーン",
+      "item_id": 2735817553,
+      "grants": [
+        {
+          "item_id": 2735817553,
+          "name": "リアクションストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2759624520:0:0:0:2:0:1:1:0",
+      "label": "鉄鬼ストーン",
+      "name": "鉄鬼ストーン",
+      "item_id": 2759624520,
+      "grants": [
+        {
+          "item_id": 2759624520,
+          "name": "鉄鬼ストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2773122299:0:0:0:0:0:1:1:0",
+      "label": "さすらいコイン",
+      "name": "さすらいコイン",
+      "item_id": 2773122299,
+      "grants": [
+        {
+          "item_id": 2773122299,
+          "name": "さすらいコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2823694781:791206099:0:0:16:0:1:1:0",
+      "label": "地獄ストーン∞ ＋ エンブレムコイン",
+      "name": "地獄ストーン∞ ＋ エンブレムコイン",
+      "item_id": 2823694781,
+      "grants": [
+        {
+          "item_id": 2823694781,
+          "name": "地獄ストーン∞",
+          "quantity": 1,
+          "kind": "ITEM_IMPORTANT"
+        },
+        {
+          "item_id": 791206099,
+          "name": "エンブレムコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2824305713:0:0:0:0:0:1:1:0",
+      "label": "さくらＥＸコイン",
+      "name": "さくらＥＸコイン",
+      "item_id": 2824305713,
+      "grants": [
+        {
+          "item_id": 2824305713,
+          "name": "さくらＥＸコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "283765149:0:4256381913:0:2:1:1:1:0",
+      "label": "大王の勾玉",
+      "name": "大王の勾玉",
+      "item_id": 283765149,
+      "grants": [
+        {
+          "item_id": 283765149,
+          "name": "大王の勾玉",
+          "quantity": 1,
+          "kind": "ITEM_EQUIPMENT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2842851430:58781382:0:0:0:0:1:1:0",
+      "label": "ピントコーンレコード ＋ 黄色コイン",
+      "name": "ピントコーンレコード ＋ 黄色コイン",
+      "item_id": 2842851430,
+      "grants": [
+        {
+          "item_id": 2842851430,
+          "name": "ピントコーンレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 58781382,
+          "name": "黄色コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2870289768:0:0:0:0:0:1:1:0",
+      "label": "山田レーダー",
+      "name": "山田レーダー",
+      "item_id": 2870289768,
+      "grants": [
+        {
+          "item_id": 2870289768,
+          "name": "山田レーダー",
+          "quantity": 1,
+          "kind": "ITEM_IMPORTANT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "287751884:3940764659:0:0:0:0:1:1:0",
+      "label": "ＣＧＢレコード ＋ 桃コイン",
+      "name": "ＣＧＢレコード ＋ 桃コイン",
+      "item_id": 287751884,
+      "grants": [
+        {
+          "item_id": 287751884,
+          "name": "ＣＧＢレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 3940764659,
+          "name": "桃コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2915748707:0:0:0:2:0:1:1:0",
+      "label": "覚醒日ノ神の手形",
+      "name": "覚醒日ノ神の手形",
+      "item_id": 2915748707,
+      "grants": [
+        {
+          "item_id": 2915748707,
+          "name": "覚醒日ノ神の手形",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2921315455:2592718716:0:0:0:0:1:1:0",
+      "label": "メラメラレコード ＋ 赤コイン",
+      "name": "メラメラレコード ＋ 赤コイン",
+      "item_id": 2921315455,
+      "grants": [
+        {
+          "item_id": 2921315455,
+          "name": "メラメラレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 2592718716,
+          "name": "赤コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2939861032:0:0:0:2:0:1:1:0",
+      "label": "ヌー２３号のコイン",
+      "name": "ヌー２３号のコイン",
+      "item_id": 2939861032,
+      "grants": [
+        {
+          "item_id": 2939861032,
+          "name": "ヌー２３号のコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2959690023:3940764659:0:0:0:0:1:1:0",
+      "label": "うた吉レコード ＋ 桃コイン",
+      "name": "うた吉レコード ＋ 桃コイン",
+      "item_id": 2959690023,
+      "grants": [
+        {
+          "item_id": 2959690023,
+          "name": "うた吉レコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 3940764659,
+          "name": "桃コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2959690023:3940764659:1367847255:0:0:0:1:1:0",
+      "label": "うた吉レコード ＋ 桃コイン",
+      "name": "うた吉レコード ＋ 桃コイン",
+      "item_id": 2959690023,
+      "grants": [
+        {
+          "item_id": 2959690023,
+          "name": "うた吉レコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 3940764659,
+          "name": "桃コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2959690023:3940764659:3364806893:0:0:0:1:1:0",
+      "label": "うた吉レコード ＋ 桃コイン",
+      "name": "うた吉レコード ＋ 桃コイン",
+      "item_id": 2959690023,
+      "grants": [
+        {
+          "item_id": 2959690023,
+          "name": "うた吉レコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 3940764659,
+          "name": "桃コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2959690023:3940764659:645956033:0:0:0:1:1:0",
+      "label": "うた吉レコード ＋ 桃コイン",
+      "name": "うた吉レコード ＋ 桃コイン",
+      "item_id": 2959690023,
+      "grants": [
+        {
+          "item_id": 2959690023,
+          "name": "うた吉レコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 3940764659,
+          "name": "桃コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2974567792:0:0:0:0:0:1:1:0",
+      "label": "封印されしコイン",
+      "name": "封印されしコイン",
+      "item_id": 2974567792,
+      "grants": [
+        {
+          "item_id": 2974567792,
+          "name": "封印されしコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "2982536637:0:0:0:0:0:1:1:0",
+      "label": "パーツのチケット①",
+      "name": "パーツのチケット①",
+      "item_id": 2982536637,
+      "grants": [
+        {
+          "item_id": 2982536637,
+          "name": "パーツのチケット①",
+          "quantity": 1,
+          "kind": "ITEM_IMPORTANT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3033659938:0:0:0:2:0:1:1:0",
+      "label": "ゴーキングストーン",
+      "name": "ゴーキングストーン",
+      "item_id": 3033659938,
+      "grants": [
+        {
+          "item_id": 3033659938,
+          "name": "ゴーキングストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3033659938:0:1070534620:0:2:1:1:1:0",
+      "label": "ゴーキングストーン",
+      "name": "ゴーキングストーン",
+      "item_id": 3033659938,
+      "grants": [
+        {
+          "item_id": 3033659938,
+          "name": "ゴーキングストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3033659938:0:1278196508:0:2:1:1:1:0",
+      "label": "ゴーキングストーン",
+      "name": "ゴーキングストーン",
+      "item_id": 3033659938,
+      "grants": [
+        {
+          "item_id": 3033659938,
+          "name": "ゴーキングストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3033659938:0:2338179533:0:8:1:1:1:0",
+      "label": "ゴーキングストーン",
+      "name": "ゴーキングストーン",
+      "item_id": 3033659938,
+      "grants": [
+        {
+          "item_id": 3033659938,
+          "name": "ゴーキングストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3033659938:0:2450447293:0:2:1:1:1:0",
+      "label": "ゴーキングストーン",
+      "name": "ゴーキングストーン",
+      "item_id": 3033659938,
+      "grants": [
+        {
+          "item_id": 3033659938,
+          "name": "ゴーキングストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3033659938:0:2552415624:0:8:1:1:1:0",
+      "label": "ゴーキングストーン",
+      "name": "ゴーキングストーン",
+      "item_id": 3033659938,
+      "grants": [
+        {
+          "item_id": 3033659938,
+          "name": "ゴーキングストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3033659938:0:3370365668:0:8:1:1:1:0",
+      "label": "ゴーキングストーン",
+      "name": "ゴーキングストーン",
+      "item_id": 3033659938,
+      "grants": [
+        {
+          "item_id": 3033659938,
+          "name": "ゴーキングストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3033659938:0:944713735:0:8:1:1:1:0",
+      "label": "ゴーキングストーン",
+      "name": "ゴーキングストーン",
+      "item_id": 3033659938,
+      "grants": [
+        {
+          "item_id": 3033659938,
+          "name": "ゴーキングストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3055651177:0:0:0:16:0:1:1:0",
+      "label": "超・赤コイン",
+      "name": "超・赤コイン",
+      "item_id": 3055651177,
+      "grants": [
+        {
+          "item_id": 3055651177,
+          "name": "超・赤コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3070528830:1944721993:0:0:0:0:1:1:0",
+      "label": "ドンヨリレコード ＋ 紫コイン",
+      "name": "ドンヨリレコード ＋ 紫コイン",
+      "item_id": 3070528830,
+      "grants": [
+        {
+          "item_id": 3070528830,
+          "name": "ドンヨリレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 1944721993,
+          "name": "紫コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3221470632:3814000600:0:0:0:0:1:1:0",
+      "label": "ナガバナレコード ＋ 水色コイン",
+      "name": "ナガバナレコード ＋ 水色コイン",
+      "item_id": 3221470632,
+      "grants": [
+        {
+          "item_id": 3221470632,
+          "name": "ナガバナレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 3814000600,
+          "name": "水色コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3240540671:0:0:0:16:0:1:1:0",
+      "label": "レジェンドコイン",
+      "name": "レジェンドコイン",
+      "item_id": 3240540671,
+      "grants": [
+        {
+          "item_id": 3240540671,
+          "name": "レジェンドコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3285633716:0:0:0:2:0:1:1:0",
+      "label": "カーメンストーン",
+      "name": "カーメンストーン",
+      "item_id": 3285633716,
+      "grants": [
+        {
+          "item_id": 3285633716,
+          "name": "カーメンストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3285633716:0:1134502986:0:8:1:1:1:0",
+      "label": "カーメンストーン",
+      "name": "カーメンストーン",
+      "item_id": 3285633716,
+      "grants": [
+        {
+          "item_id": 3285633716,
+          "name": "カーメンストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3285633716:0:1211218661:0:8:1:1:1:0",
+      "label": "カーメンストーン",
+      "name": "カーメンストーン",
+      "item_id": 3285633716,
+      "grants": [
+        {
+          "item_id": 3285633716,
+          "name": "カーメンストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3285633716:0:1349709752:0:2:1:1:1:0",
+      "label": "カーメンストーン",
+      "name": "カーメンストーン",
+      "item_id": 3285633716,
+      "grants": [
+        {
+          "item_id": 3285633716,
+          "name": "カーメンストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3285633716:0:135397358:0:2:1:1:1:0",
+      "label": "カーメンストーン",
+      "name": "カーメンストーン",
+      "item_id": 3285633716,
+      "grants": [
+        {
+          "item_id": 3285633716,
+          "name": "カーメンストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3285633716:0:1406055277:0:2:1:1:1:0",
+      "label": "カーメンストーン",
+      "name": "カーメンストーン",
+      "item_id": 3285633716,
+      "grants": [
+        {
+          "item_id": 3285633716,
+          "name": "カーメンストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3285633716:0:3987378127:0:8:1:1:1:0",
+      "label": "カーメンストーン",
+      "name": "カーメンストーン",
+      "item_id": 3285633716,
+      "grants": [
+        {
+          "item_id": 3285633716,
+          "name": "カーメンストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3285633716:0:403196920:0:2:1:1:1:0",
+      "label": "カーメンストーン",
+      "name": "カーメンストーン",
+      "item_id": 3285633716,
+      "grants": [
+        {
+          "item_id": 3285633716,
+          "name": "カーメンストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3285633716:0:4105289358:0:2:1:1:1:0",
+      "label": "カーメンストーン",
+      "name": "カーメンストーン",
+      "item_id": 3285633716,
+      "grants": [
+        {
+          "item_id": 3285633716,
+          "name": "カーメンストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3285633716:0:814477348:0:2:1:1:1:0",
+      "label": "カーメンストーン",
+      "name": "カーメンストーン",
+      "item_id": 3285633716,
+      "grants": [
+        {
+          "item_id": 3285633716,
+          "name": "カーメンストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3326445316:0:0:0:2:0:1:1:0",
+      "label": "禁断の果実",
+      "name": "禁断の果実",
+      "item_id": 3326445316,
+      "grants": [
+        {
+          "item_id": 3326445316,
+          "name": "禁断の果実",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3326836198:0:0:0:0:0:1:1:0",
+      "label": "地獄コイン",
+      "name": "地獄コイン",
+      "item_id": 3326836198,
+      "grants": [
+        {
+          "item_id": 3326836198,
+          "name": "地獄コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3326836198:0:0:0:16:0:1:1:0",
+      "label": "地獄コイン",
+      "name": "地獄コイン",
+      "item_id": 3326836198,
+      "grants": [
+        {
+          "item_id": 3326836198,
+          "name": "地獄コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "333211631:0:3448246820:0:0:0:1:1:0",
+      "label": "１０のカード",
+      "name": "１０のカード",
+      "item_id": 333211631,
+      "grants": [
+        {
+          "item_id": 333211631,
+          "name": "１０のカード",
+          "quantity": 1,
+          "kind": "ITEM_IMPORTANT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3334657323:0:0:0:0:0:1:1:0",
+      "label": "パーツのチケット②",
+      "name": "パーツのチケット②",
+      "item_id": 3334657323,
+      "grants": [
+        {
+          "item_id": 3334657323,
+          "name": "パーツのチケット②",
+          "quantity": 1,
+          "kind": "ITEM_IMPORTANT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3411442988:0:0:0:0:0:1:1:0",
+      "label": "５つ星コイン",
+      "name": "５つ星コイン",
+      "item_id": 3411442988,
+      "grants": [
+        {
+          "item_id": 3411442988,
+          "name": "５つ星コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3440198278:0:324613965:0:2:0:1:1:0",
+      "label": "ジェントル面犬パス",
+      "name": "ジェントル面犬パス",
+      "item_id": 3440198278,
+      "grants": [
+        {
+          "item_id": 3440198278,
+          "name": "ジェントル面犬パス",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3528281197:0:0:0:0:0:1:1:0",
+      "label": "古びたコイン",
+      "name": "古びたコイン",
+      "item_id": 3528281197,
+      "grants": [
+        {
+          "item_id": 3528281197,
+          "name": "古びたコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3548100574:0:0:0:2:0:1:1:0",
+      "label": "Ｓストーン",
+      "name": "Ｓストーン",
+      "item_id": 3548100574,
+      "grants": [
+        {
+          "item_id": 3548100574,
+          "name": "Ｓストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3558241223:0:0:0:2:0:1:1:0",
+      "label": "パンドラストーン",
+      "name": "パンドラストーン",
+      "item_id": 3558241223,
+      "grants": [
+        {
+          "item_id": 3558241223,
+          "name": "パンドラストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3558241223:0:1027700435:0:2:1:1:1:0",
+      "label": "パンドラストーン",
+      "name": "パンドラストーン",
+      "item_id": 3558241223,
+      "grants": [
+        {
+          "item_id": 3558241223,
+          "name": "パンドラストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3558241223:0:1624483296:0:8:1:1:1:0",
+      "label": "パンドラストーン",
+      "name": "パンドラストーン",
+      "item_id": 3558241223,
+      "grants": [
+        {
+          "item_id": 3558241223,
+          "name": "パンドラストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3558241223:0:1626784983:0:8:1:1:1:0",
+      "label": "パンドラストーン",
+      "name": "パンドラストーン",
+      "item_id": 3558241223,
+      "grants": [
+        {
+          "item_id": 3558241223,
+          "name": "パンドラストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3558241223:0:1993321847:0:2:1:1:1:0",
+      "label": "パンドラストーン",
+      "name": "パンドラストーン",
+      "item_id": 3558241223,
+      "grants": [
+        {
+          "item_id": 3558241223,
+          "name": "パンドラストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3558241223:0:2215431228:0:2:1:1:1:0",
+      "label": "パンドラストーン",
+      "name": "パンドラストーン",
+      "item_id": 3558241223,
+      "grants": [
+        {
+          "item_id": 3558241223,
+          "name": "パンドラストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3558241223:0:2247954870:0:8:1:1:1:0",
+      "label": "パンドラストーン",
+      "name": "パンドラストーン",
+      "item_id": 3558241223,
+      "grants": [
+        {
+          "item_id": 3558241223,
+          "name": "パンドラストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3558241223:0:2272487609:0:2:1:1:1:0",
+      "label": "パンドラストーン",
+      "name": "パンドラストーン",
+      "item_id": 3558241223,
+      "grants": [
+        {
+          "item_id": 3558241223,
+          "name": "パンドラストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3558241223:0:2298851995:0:8:1:1:1:0",
+      "label": "パンドラストーン",
+      "name": "パンドラストーン",
+      "item_id": 3558241223,
+      "grants": [
+        {
+          "item_id": 3558241223,
+          "name": "パンドラストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3558241223:0:2429059459:0:8:1:1:1:0",
+      "label": "パンドラストーン",
+      "name": "パンドラストーン",
+      "item_id": 3558241223,
+      "grants": [
+        {
+          "item_id": 3558241223,
+          "name": "パンドラストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3558241223:0:2709915975:0:2:1:1:1:0",
+      "label": "パンドラストーン",
+      "name": "パンドラストーン",
+      "item_id": 3558241223,
+      "grants": [
+        {
+          "item_id": 3558241223,
+          "name": "パンドラストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3558241223:0:2932413344:0:8:1:1:1:0",
+      "label": "パンドラストーン",
+      "name": "パンドラストーン",
+      "item_id": 3558241223,
+      "grants": [
+        {
+          "item_id": 3558241223,
+          "name": "パンドラストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3558241223:0:312698995:0:2:1:1:1:0",
+      "label": "パンドラストーン",
+      "name": "パンドラストーン",
+      "item_id": 3558241223,
+      "grants": [
+        {
+          "item_id": 3558241223,
+          "name": "パンドラストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3558241223:0:3764390200:0:2:1:1:1:0",
+      "label": "パンドラストーン",
+      "name": "パンドラストーン",
+      "item_id": 3558241223,
+      "grants": [
+        {
+          "item_id": 3558241223,
+          "name": "パンドラストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3558241223:0:4277864354:0:8:1:1:1:0",
+      "label": "パンドラストーン",
+      "name": "パンドラストーン",
+      "item_id": 3558241223,
+      "grants": [
+        {
+          "item_id": 3558241223,
+          "name": "パンドラストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3575679092:0:0:0:0:0:1:1:0",
+      "label": "すしコイン",
+      "name": "すしコイン",
+      "item_id": 3575679092,
+      "grants": [
+        {
+          "item_id": 3575679092,
+          "name": "すしコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3580487064:0:0:0:0:0:1:1:0",
+      "label": "メリケン粉",
+      "name": "メリケン粉",
+      "item_id": 3580487064,
+      "grants": [
+        {
+          "item_id": 3580487064,
+          "name": "メリケン粉",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3580487064:0:0:0:2:0:1:1:0",
+      "label": "メリケン粉",
+      "name": "メリケン粉",
+      "item_id": 3580487064,
+      "grants": [
+        {
+          "item_id": 3580487064,
+          "name": "メリケン粉",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3619882203:82651871:0:0:0:0:1:1:0",
+      "label": "ヒキコウモリレコード ＋ 青コイン",
+      "name": "ヒキコウモリレコード ＋ 青コイン",
+      "item_id": 3619882203,
+      "grants": [
+        {
+          "item_id": 3619882203,
+          "name": "ヒキコウモリレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 82651871,
+          "name": "青コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3627911358:0:0:0:2:0:1:1:0",
+      "label": "鉄なべコイン",
+      "name": "鉄なべコイン",
+      "item_id": 3627911358,
+      "grants": [
+        {
+          "item_id": 3627911358,
+          "name": "鉄なべコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3642264809:2592718716:0:0:0:0:1:1:0",
+      "label": "ブリーズレコード ＋ 赤コイン",
+      "name": "ブリーズレコード ＋ 赤コイン",
+      "item_id": 3642264809,
+      "grants": [
+        {
+          "item_id": 3642264809,
+          "name": "ブリーズレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 2592718716,
+          "name": "赤コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3670932469:0:0:0:2:0:1:1:0",
+      "label": "ぬらり神の手形",
+      "name": "ぬらり神の手形",
+      "item_id": 3670932469,
+      "grants": [
+        {
+          "item_id": 3670932469,
+          "name": "ぬらり神の手形",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3732228336:1955061328:0:0:0:0:1:1:0",
+      "label": "グレるレコード ＋ オレンジコイン",
+      "name": "グレるレコード ＋ オレンジコイン",
+      "item_id": 3732228336,
+      "grants": [
+        {
+          "item_id": 3732228336,
+          "name": "グレるレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 1955061328,
+          "name": "オレンジコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "374045397:82651871:0:0:0:0:1:1:0",
+      "label": "アメコメレコード ＋ 青コイン",
+      "name": "アメコメレコード ＋ 青コイン",
+      "item_id": 374045397,
+      "grants": [
+        {
+          "item_id": 374045397,
+          "name": "アメコメレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 82651871,
+          "name": "青コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3746581671:0:0:0:0:0:1:1:0",
+      "label": "めでたいコイン",
+      "name": "めでたいコイン",
+      "item_id": 3746581671,
+      "grants": [
+        {
+          "item_id": 3746581671,
+          "name": "めでたいコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3746581671:0:0:0:2:0:1:1:0",
+      "label": "めでたいコイン",
+      "name": "めでたいコイン",
+      "item_id": 3746581671,
+      "grants": [
+        {
+          "item_id": 3746581671,
+          "name": "めでたいコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3766169327:0:0:0:0:0:1:1:0",
+      "label": "おかわりコイン",
+      "name": "おかわりコイン",
+      "item_id": 3766169327,
+      "grants": [
+        {
+          "item_id": 3766169327,
+          "name": "おかわりコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3779974492:0:1058644119:0:0:0:1:1:0",
+      "label": "プラチナ鬼パス",
+      "name": "プラチナ鬼パス",
+      "item_id": 3779974492,
+      "grants": [
+        {
+          "item_id": 3779974492,
+          "name": "プラチナ鬼パス",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3781044920:3940764659:0:0:0:0:1:1:0",
+      "label": "サマウォレコード ＋ 桃コイン",
+      "name": "サマウォレコード ＋ 桃コイン",
+      "item_id": 3781044920,
+      "grants": [
+        {
+          "item_id": 3781044920,
+          "name": "サマウォレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 3940764659,
+          "name": "桃コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3800784292:0:0:0:16:0:1:1:0",
+      "label": "地獄ストーン",
+      "name": "地獄ストーン",
+      "item_id": 3800784292,
+      "grants": [
+        {
+          "item_id": 3800784292,
+          "name": "地獄ストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3814000600:0:0:0:0:0:1:1:0",
+      "label": "水色コイン",
+      "name": "水色コイン",
+      "item_id": 3814000600,
+      "grants": [
+        {
+          "item_id": 3814000600,
+          "name": "水色コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3814000600:0:0:0:16:0:1:1:0",
+      "label": "水色コイン",
+      "name": "水色コイン",
+      "item_id": 3814000600,
+      "grants": [
+        {
+          "item_id": 3814000600,
+          "name": "水色コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3862163105:3940764659:0:0:0:0:1:1:0",
+      "label": "いろクロレコード ＋ 桃コイン",
+      "name": "いろクロレコード ＋ 桃コイン",
+      "item_id": 3862163105,
+      "grants": [
+        {
+          "item_id": 3862163105,
+          "name": "いろクロレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 3940764659,
+          "name": "桃コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3877038838:0:0:0:0:0:1:1:0",
+      "label": "ドリームコインＧ２",
+      "name": "ドリームコインＧ２",
+      "item_id": 3877038838,
+      "grants": [
+        {
+          "item_id": 3877038838,
+          "name": "ドリームコインＧ２",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3877038838:0:1878458049:0:0:1:1:1:0",
+      "label": "ドリームコインＧ２",
+      "name": "ドリームコインＧ２",
+      "item_id": 3877038838,
+      "grants": [
+        {
+          "item_id": 3877038838,
+          "name": "ドリームコインＧ２",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3877038838:0:559153478:0:0:1:1:1:0",
+      "label": "ドリームコインＧ２",
+      "name": "ドリームコインＧ２",
+      "item_id": 3877038838,
+      "grants": [
+        {
+          "item_id": 3877038838,
+          "name": "ドリームコインＧ２",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3908802935:0:917499068:0:2:0:1:1:0",
+      "label": "トリベアパス",
+      "name": "トリベアパス",
+      "item_id": 3908802935,
+      "grants": [
+        {
+          "item_id": 3908802935,
+          "name": "トリベアパス",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3926649404:0:0:0:16:0:1:1:0",
+      "label": "極・黄色コイン",
+      "name": "極・黄色コイン",
+      "item_id": 3926649404,
+      "grants": [
+        {
+          "item_id": 3926649404,
+          "name": "極・黄色コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "393117314:0:0:0:0:0:1:1:0",
+      "label": "ドリームコイン・光",
+      "name": "ドリームコイン・光",
+      "item_id": 393117314,
+      "grants": [
+        {
+          "item_id": 393117314,
+          "name": "ドリームコイン・光",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "393117314:0:1083432415:0:0:1:1:1:0",
+      "label": "ドリームコイン・光",
+      "name": "ドリームコイン・光",
+      "item_id": 393117314,
+      "grants": [
+        {
+          "item_id": 393117314,
+          "name": "ドリームコイン・光",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "393117314:0:1318130734:0:0:1:1:1:0",
+      "label": "ドリームコイン・光",
+      "name": "ドリームコイン・光",
+      "item_id": 393117314,
+      "grants": [
+        {
+          "item_id": 393117314,
+          "name": "ドリームコイン・光",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "393117314:0:1699227459:0:0:1:1:1:0",
+      "label": "ドリームコイン・光",
+      "name": "ドリームコイン・光",
+      "item_id": 393117314,
+      "grants": [
+        {
+          "item_id": 393117314,
+          "name": "ドリームコイン・光",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "393117314:0:1706837997:0:0:1:1:1:0",
+      "label": "ドリームコイン・光",
+      "name": "ドリームコイン・光",
+      "item_id": 393117314,
+      "grants": [
+        {
+          "item_id": 393117314,
+          "name": "ドリームコイン・光",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "393117314:0:2189241965:0:0:1:1:1:0",
+      "label": "ドリームコイン・光",
+      "name": "ドリームコイン・光",
+      "item_id": 393117314,
+      "grants": [
+        {
+          "item_id": 393117314,
+          "name": "ドリームコイン・光",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "393117314:0:2814407656:0:0:1:1:1:0",
+      "label": "ドリームコイン・光",
+      "name": "ドリームコイン・光",
+      "item_id": 393117314,
+      "grants": [
+        {
+          "item_id": 393117314,
+          "name": "ドリームコイン・光",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "393117314:0:307106827:0:0:1:1:1:0",
+      "label": "ドリームコイン・光",
+      "name": "ドリームコイン・光",
+      "item_id": 393117314,
+      "grants": [
+        {
+          "item_id": 393117314,
+          "name": "ドリームコイン・光",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "393117314:0:3133490000:0:0:1:1:1:0",
+      "label": "ドリームコイン・光",
+      "name": "ドリームコイン・光",
+      "item_id": 393117314,
+      "grants": [
+        {
+          "item_id": 393117314,
+          "name": "ドリームコイン・光",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "393117314:0:3956184983:0:0:1:1:1:0",
+      "label": "ドリームコイン・光",
+      "name": "ドリームコイン・光",
+      "item_id": 393117314,
+      "grants": [
+        {
+          "item_id": 393117314,
+          "name": "ドリームコイン・光",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "393117314:0:397989038:0:0:1:1:1:0",
+      "label": "ドリームコイン・光",
+      "name": "ドリームコイン・光",
+      "item_id": 393117314,
+      "grants": [
+        {
+          "item_id": 393117314,
+          "name": "ドリームコイン・光",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "393117314:0:4167794516:0:0:1:1:1:0",
+      "label": "ドリームコイン・光",
+      "name": "ドリームコイン・光",
+      "item_id": 393117314,
+      "grants": [
+        {
+          "item_id": 393117314,
+          "name": "ドリームコイン・光",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "393117314:0:4288897982:0:0:1:1:1:0",
+      "label": "ドリームコイン・光",
+      "name": "ドリームコイン・光",
+      "item_id": 393117314,
+      "grants": [
+        {
+          "item_id": 393117314,
+          "name": "ドリームコイン・光",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "393117314:0:868469855:0:0:1:1:1:0",
+      "label": "ドリームコイン・光",
+      "name": "ドリームコイン・光",
+      "item_id": 393117314,
+      "grants": [
+        {
+          "item_id": 393117314,
+          "name": "ドリームコイン・光",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3940764659:0:0:0:0:0:1:1:0",
+      "label": "桃コイン",
+      "name": "桃コイン",
+      "item_id": 3940764659,
+      "grants": [
+        {
+          "item_id": 3940764659,
+          "name": "桃コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3940764659:0:0:0:16:0:1:1:0",
+      "label": "桃コイン",
+      "name": "桃コイン",
+      "item_id": 3940764659,
+      "grants": [
+        {
+          "item_id": 3940764659,
+          "name": "桃コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3946647951:0:0:0:16:0:1:1:0",
+      "label": "クレクレストーン",
+      "name": "クレクレストーン",
+      "item_id": 3946647951,
+      "grants": [
+        {
+          "item_id": 3946647951,
+          "name": "クレクレストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3964720534:0:0:0:2:0:1:1:0",
+      "label": "覚醒エンマの手形",
+      "name": "覚醒エンマの手形",
+      "item_id": 3964720534,
+      "grants": [
+        {
+          "item_id": 3964720534,
+          "name": "覚醒エンマの手形",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "39761082:0:0:0:6:0:1:1:0",
+      "label": "シヴァラクストーン",
+      "name": "シヴァラクストーン",
+      "item_id": 39761082,
+      "grants": [
+        {
+          "item_id": 39761082,
+          "name": "シヴァラクストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "39761082:0:0:0:8:0:1:1:0",
+      "label": "シヴァラクストーン",
+      "name": "シヴァラクストーン",
+      "item_id": 39761082,
+      "grants": [
+        {
+          "item_id": 39761082,
+          "name": "シヴァラクストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "39761082:0:1701463476:0:6:1:1:1:0",
+      "label": "シヴァラクストーン",
+      "name": "シヴァラクストーン",
+      "item_id": 39761082,
+      "grants": [
+        {
+          "item_id": 39761082,
+          "name": "シヴァラクストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "39761082:0:18053817:0:6:1:1:1:0",
+      "label": "シヴァラクストーン",
+      "name": "シヴァラクストーン",
+      "item_id": 39761082,
+      "grants": [
+        {
+          "item_id": 39761082,
+          "name": "シヴァラクストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "39761082:0:1893963294:0:8:1:1:1:0",
+      "label": "シヴァラクストーン",
+      "name": "シヴァラクストーン",
+      "item_id": 39761082,
+      "grants": [
+        {
+          "item_id": 39761082,
+          "name": "シヴァラクストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "39761082:0:1926343822:0:8:1:1:1:0",
+      "label": "シヴァラクストーン",
+      "name": "シヴァラクストーン",
+      "item_id": 39761082,
+      "grants": [
+        {
+          "item_id": 39761082,
+          "name": "シヴァラクストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "39761082:0:2011163226:0:6:1:1:1:0",
+      "label": "シヴァラクストーン",
+      "name": "シヴァラクストーン",
+      "item_id": 39761082,
+      "grants": [
+        {
+          "item_id": 39761082,
+          "name": "シヴァラクストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "39761082:0:220182842:0:6:1:1:1:0",
+      "label": "シヴァラクストーン",
+      "name": "シヴァラクストーン",
+      "item_id": 39761082,
+      "grants": [
+        {
+          "item_id": 39761082,
+          "name": "シヴァラクストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "39761082:0:2630107648:0:8:1:1:1:0",
+      "label": "シヴァラクストーン",
+      "name": "シヴァラクストーン",
+      "item_id": 39761082,
+      "grants": [
+        {
+          "item_id": 39761082,
+          "name": "シヴァラクストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "39761082:0:2675243018:0:6:1:1:1:0",
+      "label": "シヴァラクストーン",
+      "name": "シヴァラクストーン",
+      "item_id": 39761082,
+      "grants": [
+        {
+          "item_id": 39761082,
+          "name": "シヴァラクストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "39761082:0:2785726531:0:6:1:1:1:0",
+      "label": "シヴァラクストーン",
+      "name": "シヴァラクストーン",
+      "item_id": 39761082,
+      "grants": [
+        {
+          "item_id": 39761082,
+          "name": "シヴァラクストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "39761082:0:2946142883:0:6:1:1:1:0",
+      "label": "シヴァラクストーン",
+      "name": "シヴァラクストーン",
+      "item_id": 39761082,
+      "grants": [
+        {
+          "item_id": 39761082,
+          "name": "シヴァラクストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "39761082:0:3256462984:0:6:1:1:1:0",
+      "label": "シヴァラクストーン",
+      "name": "シヴァラクストーン",
+      "item_id": 39761082,
+      "grants": [
+        {
+          "item_id": 39761082,
+          "name": "シヴァラクストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "39761082:0:3479407935:0:6:1:1:1:0",
+      "label": "シヴァラクストーン",
+      "name": "シヴァラクストーン",
+      "item_id": 39761082,
+      "grants": [
+        {
+          "item_id": 39761082,
+          "name": "シヴァラクストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "39761082:0:3522724773:0:6:1:1:1:0",
+      "label": "シヴァラクストーン",
+      "name": "シヴァラクストーン",
+      "item_id": 39761082,
+      "grants": [
+        {
+          "item_id": 39761082,
+          "name": "シヴァラクストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "39761082:0:3680778448:0:6:1:1:1:0",
+      "label": "シヴァラクストーン",
+      "name": "シヴァラクストーン",
+      "item_id": 39761082,
+      "grants": [
+        {
+          "item_id": 39761082,
+          "name": "シヴァラクストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "39761082:0:3859026272:0:6:1:1:1:0",
+      "label": "シヴァラクストーン",
+      "name": "シヴァラクストーン",
+      "item_id": 39761082,
+      "grants": [
+        {
+          "item_id": 39761082,
+          "name": "シヴァラクストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "39761082:0:678749926:0:8:1:1:1:0",
+      "label": "シヴァラクストーン",
+      "name": "シヴァラクストーン",
+      "item_id": 39761082,
+      "grants": [
+        {
+          "item_id": 39761082,
+          "name": "シヴァラクストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "39761082:0:919440011:0:6:1:1:1:0",
+      "label": "シヴァラクストーン",
+      "name": "シヴァラクストーン",
+      "item_id": 39761082,
+      "grants": [
+        {
+          "item_id": 39761082,
+          "name": "シヴァラクストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "3982896677:0:0:0:16:0:1:1:0",
+      "label": "超・青コイン",
+      "name": "超・青コイン",
+      "item_id": 3982896677,
+      "grants": [
+        {
+          "item_id": 3982896677,
+          "name": "超・青コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4018512522:2592718716:0:0:0:0:1:1:0",
+      "label": "タロニャンレコードＢ ＋ 赤コイン",
+      "name": "タロニャンレコードＢ ＋ 赤コイン",
+      "item_id": 4018512522,
+      "grants": [
+        {
+          "item_id": 4018512522,
+          "name": "タロニャンレコードＢ",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 2592718716,
+          "name": "赤コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4030464131:0:0:0:0:0:1:1:0",
+      "label": "メリケンブレード",
+      "name": "メリケンブレード",
+      "item_id": 4030464131,
+      "grants": [
+        {
+          "item_id": 4030464131,
+          "name": "メリケンブレード",
+          "quantity": 1,
+          "kind": "ITEM_EQUIPMENT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4030464131:0:0:0:2:0:1:1:0",
+      "label": "メリケンブレード",
+      "name": "メリケンブレード",
+      "item_id": 4030464131,
+      "grants": [
+        {
+          "item_id": 4030464131,
+          "name": "メリケンブレード",
+          "quantity": 1,
+          "kind": "ITEM_EQUIPMENT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4062585038:791206099:0:0:16:0:1:1:0",
+      "label": "クレクレＳ∞の欠片２ ＋ エンブレムコイン",
+      "name": "クレクレＳ∞の欠片２ ＋ エンブレムコイン",
+      "item_id": 4062585038,
+      "grants": [
+        {
+          "item_id": 4062585038,
+          "name": "クレクレＳ∞の欠片２",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        },
+        {
+          "item_id": 791206099,
+          "name": "エンブレムコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4077489905:0:761133882:0:2:0:1:1:0",
+      "label": "ムゲン地獄の調査報告書",
+      "name": "ムゲン地獄の調査報告書",
+      "item_id": 4077489905,
+      "grants": [
+        {
+          "item_id": 4077489905,
+          "name": "ムゲン地獄の調査報告書",
+          "quantity": 1,
+          "kind": "ITEM_IMPORTANT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4100213480:0:707804963:0:0:0:1:1:0",
+      "label": "ジャックのカード",
+      "name": "ジャックのカード",
+      "item_id": 4100213480,
+      "grants": [
+        {
+          "item_id": 4100213480,
+          "name": "ジャックのカード",
+          "quantity": 1,
+          "kind": "ITEM_IMPORTANT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4101840740:0:0:0:16:0:1:1:0",
+      "label": "極・水色コイン",
+      "name": "極・水色コイン",
+      "item_id": 4101840740,
+      "grants": [
+        {
+          "item_id": 4101840740,
+          "name": "極・水色コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4115391703:0:0:0:16:0:1:1:0",
+      "label": "秘宝ストーン",
+      "name": "秘宝ストーン",
+      "item_id": 4115391703,
+      "grants": [
+        {
+          "item_id": 4115391703,
+          "name": "秘宝ストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4137587659:1944721993:0:0:0:0:1:1:0",
+      "label": "ミスイヌレコード ＋ 紫コイン",
+      "name": "ミスイヌレコード ＋ 紫コイン",
+      "item_id": 4137587659,
+      "grants": [
+        {
+          "item_id": 4137587659,
+          "name": "ミスイヌレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 1944721993,
+          "name": "紫コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4149331098:0:0:0:2:0:1:1:0",
+      "label": "覚醒エンマ魔笛",
+      "name": "覚醒エンマ魔笛",
+      "item_id": 4149331098,
+      "grants": [
+        {
+          "item_id": 4149331098,
+          "name": "覚醒エンマ魔笛",
+          "quantity": 1,
+          "kind": "ITEM_EQUIPMENT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4183826350:0:0:0:0:0:1:1:0",
+      "label": "ドリームコイン・富",
+      "name": "ドリームコイン・富",
+      "item_id": 4183826350,
+      "grants": [
+        {
+          "item_id": 4183826350,
+          "name": "ドリームコイン・富",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4183826350:0:1076066463:0:0:1:1:1:0",
+      "label": "ドリームコイン・富",
+      "name": "ドリームコイン・富",
+      "item_id": 4183826350,
+      "grants": [
+        {
+          "item_id": 4183826350,
+          "name": "ドリームコイン・富",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4183826350:0:113099082:0:0:1:1:1:0",
+      "label": "ドリームコイン・富",
+      "name": "ドリームコイン・富",
+      "item_id": 4183826350,
+      "grants": [
+        {
+          "item_id": 4183826350,
+          "name": "ドリームコイン・富",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4183826350:0:2255472971:0:0:1:1:1:0",
+      "label": "ドリームコイン・富",
+      "name": "ドリームコイン・富",
+      "item_id": 4183826350,
+      "grants": [
+        {
+          "item_id": 4183826350,
+          "name": "ドリームコイン・富",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4183826350:0:2580153556:0:0:1:1:1:0",
+      "label": "ドリームコイン・富",
+      "name": "ドリームコイン・富",
+      "item_id": 4183826350,
+      "grants": [
+        {
+          "item_id": 4183826350,
+          "name": "ドリームコイン・富",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4183826350:0:285616240:0:0:1:1:1:0",
+      "label": "ドリームコイン・富",
+      "name": "ドリームコイン・富",
+      "item_id": 4183826350,
+      "grants": [
+        {
+          "item_id": 4183826350,
+          "name": "ドリームコイン・富",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4183826350:0:2981181817:0:0:1:1:1:0",
+      "label": "ドリームコイン・富",
+      "name": "ドリームコイン・富",
+      "item_id": 4183826350,
+      "grants": [
+        {
+          "item_id": 4183826350,
+          "name": "ドリームコイン・富",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4183826350:0:4016887281:0:0:1:1:1:0",
+      "label": "ドリームコイン・富",
+      "name": "ドリームコイン・富",
+      "item_id": 4183826350,
+      "grants": [
+        {
+          "item_id": 4183826350,
+          "name": "ドリームコイン・富",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4183826350:0:528225421:0:0:1:1:1:0",
+      "label": "ドリームコイン・富",
+      "name": "ドリームコイン・富",
+      "item_id": 4183826350,
+      "grants": [
+        {
+          "item_id": 4183826350,
+          "name": "ドリームコイン・富",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4183826350:0:572276029:0:0:1:1:1:0",
+      "label": "ドリームコイン・富",
+      "name": "ドリームコイン・富",
+      "item_id": 4183826350,
+      "grants": [
+        {
+          "item_id": 4183826350,
+          "name": "ドリームコイン・富",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4183826350:0:651745346:0:0:1:1:1:0",
+      "label": "ドリームコイン・富",
+      "name": "ドリームコイン・富",
+      "item_id": 4183826350,
+      "grants": [
+        {
+          "item_id": 4183826350,
+          "name": "ドリームコイン・富",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4220546277:791206099:0:0:16:0:1:1:0",
+      "label": "エルドラＳ∞の欠片２ ＋ エンブレムコイン",
+      "name": "エルドラＳ∞の欠片２ ＋ エンブレムコイン",
+      "item_id": 4220546277,
+      "grants": [
+        {
+          "item_id": 4220546277,
+          "name": "エルドラＳ∞の欠片２",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        },
+        {
+          "item_id": 791206099,
+          "name": "エンブレムコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "425698742:0:0:0:0:0:1:1:0",
+      "label": "メリケンシールド",
+      "name": "メリケンシールド",
+      "item_id": 425698742,
+      "grants": [
+        {
+          "item_id": 425698742,
+          "name": "メリケンシールド",
+          "quantity": 1,
+          "kind": "ITEM_EQUIPMENT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "425698742:0:0:0:2:0:1:1:0",
+      "label": "メリケンシールド",
+      "name": "メリケンシールド",
+      "item_id": 425698742,
+      "grants": [
+        {
+          "item_id": 425698742,
+          "name": "メリケンシールド",
+          "quantity": 1,
+          "kind": "ITEM_EQUIPMENT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4262321079:0:0:0:0:0:1:1:0",
+      "label": "ぐうたらコイン",
+      "name": "ぐうたらコイン",
+      "item_id": 4262321079,
+      "grants": [
+        {
+          "item_id": 4262321079,
+          "name": "ぐうたらコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4280868832:2592718716:0:0:0:0:1:1:0",
+      "label": "アッチィレコード ＋ 赤コイン",
+      "name": "アッチィレコード ＋ 赤コイン",
+      "item_id": 4280868832,
+      "grants": [
+        {
+          "item_id": 4280868832,
+          "name": "アッチィレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 2592718716,
+          "name": "赤コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "443165636:0:3292421647:0:0:0:1:1:0",
+      "label": "キングのカード",
+      "name": "キングのカード",
+      "item_id": 443165636,
+      "grants": [
+        {
+          "item_id": 443165636,
+          "name": "キングのカード",
+          "quantity": 1,
+          "kind": "ITEM_IMPORTANT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "443776584:0:0:0:16:0:1:1:0",
+      "label": "極・青コイン",
+      "name": "極・青コイン",
+      "item_id": 443776584,
+      "grants": [
+        {
+          "item_id": 443776584,
+          "name": "極・青コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4494583:0:1589147141:0:2:1:1:1:0",
+      "label": "偉人バッジ",
+      "name": "偉人バッジ",
+      "item_id": 4494583,
+      "grants": [
+        {
+          "item_id": 4494583,
+          "name": "偉人バッジ",
+          "quantity": 1,
+          "kind": "ITEM_EQUIPMENT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4494583:0:1673459884:0:8:1:1:1:0",
+      "label": "偉人バッジ",
+      "name": "偉人バッジ",
+      "item_id": 4494583,
+      "grants": [
+        {
+          "item_id": 4494583,
+          "name": "偉人バッジ",
+          "quantity": 1,
+          "kind": "ITEM_EQUIPMENT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "4494583:0:3115261404:0:8:1:1:1:0",
+      "label": "偉人バッジ",
+      "name": "偉人バッジ",
+      "item_id": 4494583,
+      "grants": [
+        {
+          "item_id": 4494583,
+          "name": "偉人バッジ",
+          "quantity": 1,
+          "kind": "ITEM_EQUIPMENT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "457541115:791206099:0:0:16:0:1:1:0",
+      "label": "日ノ鳥Ｓ∞の欠片２ ＋ エンブレムコイン",
+      "name": "日ノ鳥Ｓ∞の欠片２ ＋ エンブレムコイン",
+      "item_id": 457541115,
+      "grants": [
+        {
+          "item_id": 457541115,
+          "name": "日ノ鳥Ｓ∞の欠片２",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        },
+        {
+          "item_id": 791206099,
+          "name": "エンブレムコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "472400354:791206099:0:0:16:0:1:1:0",
+      "label": "ボケルＳ∞の欠片２ ＋ エンブレムコイン",
+      "name": "ボケルＳ∞の欠片２ ＋ エンブレムコイン",
+      "item_id": 472400354,
+      "grants": [
+        {
+          "item_id": 472400354,
+          "name": "ボケルＳ∞の欠片２",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        },
+        {
+          "item_id": 791206099,
+          "name": "エンブレムコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "517485225:0:0:0:2:0:1:1:0",
+      "label": "ドリームコイン・知",
+      "name": "ドリームコイン・知",
+      "item_id": 517485225,
+      "grants": [
+        {
+          "item_id": 517485225,
+          "name": "ドリームコイン・知",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "517485225:0:1389908464:0:2:1:1:1:0",
+      "label": "ドリームコイン・知",
+      "name": "ドリームコイン・知",
+      "item_id": 517485225,
+      "grants": [
+        {
+          "item_id": 517485225,
+          "name": "ドリームコイン・知",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "517485225:0:465105394:0:2:1:1:1:0",
+      "label": "ドリームコイン・知",
+      "name": "ドリームコイン・知",
+      "item_id": 517485225,
+      "grants": [
+        {
+          "item_id": 517485225,
+          "name": "ドリームコイン・知",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "57167625:0:0:0:16:0:1:1:0",
+      "label": "超・桃コイン",
+      "name": "超・桃コイン",
+      "item_id": 57167625,
+      "grants": [
+        {
+          "item_id": 57167625,
+          "name": "超・桃コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "573954073:0:0:0:0:0:1:1:0",
+      "label": "１つ星コイン",
+      "name": "１つ星コイン",
+      "item_id": 573954073,
+      "grants": [
+        {
+          "item_id": 573954073,
+          "name": "１つ星コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "573954073:0:0:0:16:0:1:1:0",
+      "label": "１つ星コイン",
+      "name": "１つ星コイン",
+      "item_id": 573954073,
+      "grants": [
+        {
+          "item_id": 573954073,
+          "name": "１つ星コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "58781382:0:0:0:0:0:1:1:0",
+      "label": "黄色コイン",
+      "name": "黄色コイン",
+      "item_id": 58781382,
+      "grants": [
+        {
+          "item_id": 58781382,
+          "name": "黄色コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "58781382:0:0:0:16:0:1:1:0",
+      "label": "黄色コイン",
+      "name": "黄色コイン",
+      "item_id": 58781382,
+      "grants": [
+        {
+          "item_id": 58781382,
+          "name": "黄色コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "647927032:0:0:0:16:0:1:1:0",
+      "label": "超・黄色コイン",
+      "name": "超・黄色コイン",
+      "item_id": 647927032,
+      "grants": [
+        {
+          "item_id": 647927032,
+          "name": "超・黄色コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "67472144:0:0:0:16:0:1:1:0",
+      "label": "超・水色コイン",
+      "name": "超・水色コイン",
+      "item_id": 67472144,
+      "grants": [
+        {
+          "item_id": 67472144,
+          "name": "超・水色コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "675617994:0:0:0:2:0:1:1:0",
+      "label": "鬼ガシャコイン",
+      "name": "鬼ガシャコイン",
+      "item_id": 675617994,
+      "grants": [
+        {
+          "item_id": 675617994,
+          "name": "鬼ガシャコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "675617994:0:1211980858:0:2:1:1:1:0",
+      "label": "鬼ガシャコイン",
+      "name": "鬼ガシャコイン",
+      "item_id": 675617994,
+      "grants": [
+        {
+          "item_id": 675617994,
+          "name": "鬼ガシャコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "675617994:0:3396193259:0:2:1:1:1:0",
+      "label": "鬼ガシャコイン",
+      "name": "鬼ガシャコイン",
+      "item_id": 675617994,
+      "grants": [
+        {
+          "item_id": 675617994,
+          "name": "鬼ガシャコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "675617994:0:3638060037:0:2:1:1:1:0",
+      "label": "鬼ガシャコイン",
+      "name": "鬼ガシャコイン",
+      "item_id": 675617994,
+      "grants": [
+        {
+          "item_id": 675617994,
+          "name": "鬼ガシャコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "675617994:0:716356824:0:2:1:1:1:0",
+      "label": "鬼ガシャコイン",
+      "name": "鬼ガシャコイン",
+      "item_id": 675617994,
+      "grants": [
+        {
+          "item_id": 675617994,
+          "name": "鬼ガシャコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "675617994:0:763011122:0:2:1:1:1:0",
+      "label": "鬼ガシャコイン",
+      "name": "鬼ガシャコイン",
+      "item_id": 675617994,
+      "grants": [
+        {
+          "item_id": 675617994,
+          "name": "鬼ガシャコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "677136710:0:4127734925:926012418:2:1:1:1:0",
+      "label": "ガッツなメンコ",
+      "name": "ガッツなメンコ",
+      "item_id": 677136710,
+      "grants": [
+        {
+          "item_id": 677136710,
+          "name": "ガッツなメンコ",
+          "quantity": 1,
+          "kind": "ITEM_IMPORTANT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "753815595:0:0:0:0:0:1:1:0",
+      "label": "どきどきコイン（妖）",
+      "name": "どきどきコイン（妖）",
+      "item_id": 753815595,
+      "grants": [
+        {
+          "item_id": 753815595,
+          "name": "どきどきコイン（妖）",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "772660356:2592718716:0:0:0:0:1:1:0",
+      "label": "ブシニャンレコード ＋ 赤コイン",
+      "name": "ブシニャンレコード ＋ 赤コイン",
+      "item_id": 772660356,
+      "grants": [
+        {
+          "item_id": 772660356,
+          "name": "ブシニャンレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 2592718716,
+          "name": "赤コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "791206099:0:0:0:0:0:1:1:0",
+      "label": "エンブレムコイン",
+      "name": "エンブレムコイン",
+      "item_id": 791206099,
+      "grants": [
+        {
+          "item_id": 791206099,
+          "name": "エンブレムコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "813378012:3940764659:0:0:0:0:1:1:0",
+      "label": "コマさんレコード ＋ 桃コイン",
+      "name": "コマさんレコード ＋ 桃コイン",
+      "item_id": 813378012,
+      "grants": [
+        {
+          "item_id": 813378012,
+          "name": "コマさんレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 3940764659,
+          "name": "桃コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "82651871:0:0:0:0:0:1:1:0",
+      "label": "青コイン",
+      "name": "青コイン",
+      "item_id": 82651871,
+      "grants": [
+        {
+          "item_id": 82651871,
+          "name": "青コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "82651871:0:0:0:16:0:1:1:0",
+      "label": "青コイン",
+      "name": "青コイン",
+      "item_id": 82651871,
+      "grants": [
+        {
+          "item_id": 82651871,
+          "name": "青コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "828255627:0:0:0:0:0:1:1:0",
+      "label": "おみやげコイン（Ｓ）",
+      "name": "おみやげコイン（Ｓ）",
+      "item_id": 828255627,
+      "grants": [
+        {
+          "item_id": 828255627,
+          "name": "おみやげコイン（Ｓ）",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "87257251:0:0:0:16:0:1:1:0",
+      "label": "エルドラストーン",
+      "name": "エルドラストーン",
+      "item_id": 87257251,
+      "grants": [
+        {
+          "item_id": 87257251,
+          "name": "エルドラストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "905273706:0:0:0:0:0:1:1:0",
+      "label": "わくわくコイン（花）",
+      "name": "わくわくコイン（花）",
+      "item_id": 905273706,
+      "grants": [
+        {
+          "item_id": 905273706,
+          "name": "わくわくコイン（花）",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "908770334:0:0:0:2:0:1:1:0",
+      "label": "鉄竜ストーン∞",
+      "name": "鉄竜ストーン∞",
+      "item_id": 908770334,
+      "grants": [
+        {
+          "item_id": 908770334,
+          "name": "鉄竜ストーン∞",
+          "quantity": 1,
+          "kind": "ITEM_IMPORTANT"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "909371794:0:0:0:0:0:1:1:0",
+      "label": "まんぷくコイン",
+      "name": "まんぷくコイン",
+      "item_id": 909371794,
+      "grants": [
+        {
+          "item_id": 909371794,
+          "name": "まんぷくコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "924249541:58781382:0:0:0:0:1:1:0",
+      "label": "バクロレコード ＋ 黄色コイン",
+      "name": "バクロレコード ＋ 黄色コイン",
+      "item_id": 924249541,
+      "grants": [
+        {
+          "item_id": 924249541,
+          "name": "バクロレコード",
+          "quantity": 1,
+          "kind": "ITEM_FLAG_MANAGE"
+        },
+        {
+          "item_id": 58781382,
+          "name": "黄色コイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "955331628:791206099:0:0:16:0:1:1:0",
+      "label": "伝説ストーン∞ ＋ エンブレムコイン",
+      "name": "伝説ストーン∞ ＋ エンブレムコイン",
+      "item_id": 955331628,
+      "grants": [
+        {
+          "item_id": 955331628,
+          "name": "伝説ストーン∞",
+          "quantity": 1,
+          "kind": "ITEM_IMPORTANT"
+        },
+        {
+          "item_id": 791206099,
+          "name": "エンブレムコイン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "974656235:0:0:0:2:0:1:1:0",
+      "label": "ニャステトストーン",
+      "name": "ニャステトストーン",
+      "item_id": 974656235,
+      "grants": [
+        {
+          "item_id": 974656235,
+          "name": "ニャステトストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "974656235:0:0:0:8:0:1:1:0",
+      "label": "ニャステトストーン",
+      "name": "ニャステトストーン",
+      "item_id": 974656235,
+      "grants": [
+        {
+          "item_id": 974656235,
+          "name": "ニャステトストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "974656235:0:1026242325:0:2:1:1:1:0",
+      "label": "ニャステトストーン",
+      "name": "ニャステトストーン",
+      "item_id": 974656235,
+      "grants": [
+        {
+          "item_id": 974656235,
+          "name": "ニャステトストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "974656235:0:1138483620:0:2:1:1:1:0",
+      "label": "ニャステトストーン",
+      "name": "ニャステトストーン",
+      "item_id": 974656235,
+      "grants": [
+        {
+          "item_id": 974656235,
+          "name": "ニャステトストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "974656235:0:1591660828:0:2:1:1:1:0",
+      "label": "ニャステトストーン",
+      "name": "ニャステトストーン",
+      "item_id": 974656235,
+      "grants": [
+        {
+          "item_id": 974656235,
+          "name": "ニャステトストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "974656235:0:1876204598:0:2:1:1:1:0",
+      "label": "ニャステトストーン",
+      "name": "ニャステトストーン",
+      "item_id": 974656235,
+      "grants": [
+        {
+          "item_id": 974656235,
+          "name": "ニャステトストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "974656235:0:1908142594:0:2:1:1:1:0",
+      "label": "ニャステトストーン",
+      "name": "ニャステトストーン",
+      "item_id": 974656235,
+      "grants": [
+        {
+          "item_id": 974656235,
+          "name": "ニャステトストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "974656235:0:1995296640:0:2:1:1:1:0",
+      "label": "ニャステトストーン",
+      "name": "ニャステトストーン",
+      "item_id": 974656235,
+      "grants": [
+        {
+          "item_id": 974656235,
+          "name": "ニャステトストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "974656235:0:2936320971:0:8:1:1:1:0",
+      "label": "ニャステトストーン",
+      "name": "ニャステトストーン",
+      "item_id": 974656235,
+      "grants": [
+        {
+          "item_id": 974656235,
+          "name": "ニャステトストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "974656235:0:3344943981:0:2:1:1:1:0",
+      "label": "ニャステトストーン",
+      "name": "ニャステトストーン",
+      "item_id": 974656235,
+      "grants": [
+        {
+          "item_id": 974656235,
+          "name": "ニャステトストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "974656235:0:39536322:0:2:1:1:1:0",
+      "label": "ニャステトストーン",
+      "name": "ニャステトストーン",
+      "item_id": 974656235,
+      "grants": [
+        {
+          "item_id": 974656235,
+          "name": "ニャステトストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "974656235:0:828584312:0:2:1:1:1:0",
+      "label": "ニャステトストーン",
+      "name": "ニャステトストーン",
+      "item_id": 974656235,
+      "grants": [
+        {
+          "item_id": 974656235,
+          "name": "ニャステトストーン",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    },
+    {
+      "reward_key": "992930136:0:0:0:0:0:1:1:0",
+      "label": "どきどきコイン（魂）",
+      "name": "どきどきコイン（魂）",
+      "item_id": 992930136,
+      "grants": [
+        {
+          "item_id": 992930136,
+          "name": "どきどきコイン（魂）",
+          "quantity": 1,
+          "kind": "ITEM_CONSUME"
+        }
+      ],
+      "random_table": 0
+    }
+  ],
+  "item_names_for_jp40": {
+    "0x004494F7": "偉人バッジ",
+    "0x025EB4BA": "シヴァラクストーン",
+    "0x03684F09": "超・桃コイン",
+    "0x0380EEC6": "黄色コイン",
+    "0x04058B10": "超・水色コイン",
+    "0x04ED2ADF": "青コイン",
+    "0x053370A3": "エルドラストーン",
+    "0x07C303E8": "おみやげコイン（Ｆ）",
+    "0x083D8F8D": "レツオニレコード",
+    "0x09188BDA": "ドリームコイン・紳士",
+    "0x0DB3C73B": "極・桃コイン",
+    "0x0E754FC3": "ドリームコインＧ４",
+    "0x0F43B470": "ブルジョワＧパス",
+    "0x0F504B94": "ピントクルレコード",
+    "0x1003BA9B": "わくわくコイン（風）",
+    "0x10E9E99D": "大王の勾玉",
+    "0x1126BECC": "ＣＧＢレコード",
+    "0x13DC67EF": "１０のカード",
+    "0x164B7AD5": "アメコメレコード",
+    "0x176E7E82": "ドリームコイン・光",
+    "0x195FA5B6": "メリケンシールド",
+    "0x1A6A2BC4": "キングのカード",
+    "0x1A737E48": "極・青コイン",
+    "0x1B4585FB": "日ノ鳥Ｓ∞の欠片２",
+    "0x1C2841E2": "ボケルＳ∞の欠片２",
+    "0x1ED832A9": "ドリームコイン・知",
+    "0x2235D819": "１つ星コイン",
+    "0x269E94F8": "超・黄色コイン",
+    "0x28451CCA": "鬼ガシャコイン",
+    "0x285C4946": "ガッツなメンコ",
+    "0x2CEE502B": "どきどきコイン（妖）",
+    "0x2E0DDC84": "ブシニャンレコード",
+    "0x2F28D8D3": "エンブレムコイン",
+    "0x307B29DC": "コマさんレコード",
+    "0x315E2D8B": "おみやげコイン（Ｓ）",
+    "0x35F5616A": "わくわくコイン（花）",
+    "0x362ABC1E": "鉄竜ストーン∞",
+    "0x3633E992": "まんぷくコイン",
+    "0x3716EDC5": "バクロレコード",
+    "0x38F1342C": "伝説ストーン∞",
+    "0x3A1812EB": "ニャステトストーン",
+    "0x3B2EE958": "どきどきコイン（魂）",
+    "0x3C432D41": "せんぷうコイン",
+    "0x3F85A5B9": "ブラックコイン",
+    "0x4011DD53": "フユニャンレコード",
+    "0x412D8C88": "惨劇ストーン∞",
+    "0x4134D904": "サンサンコイン",
+    "0x46591D1D": "おみやげコイン（Ｋ）",
+    "0x477C194A": "ジバニャンレコード",
+    "0x4882952F": "超ブラックコイン",
+    "0x4B441DD7": "天ぷらコイン",
+    "0x4C29D9CE": "どきどきコイン（怪）",
+    "0x4D1F227D": "ズラビスストーン",
+    "0x5199A46E": "超・オレンジコイン",
+    "0x55D8BB89": "極楽玉",
+    "0x56ED35FB": "鉄狐ストーン∞",
+    "0x582FE845": "トレジャーコイン",
+    "0x590AEC12": "ＵＳＡピョンレコード",
+    "0x5BE960BD": "スペシャルコイン",
+    "0x5F422C5C": "わくわくコイン（天）",
+    "0x60694E14": "ドリームコイン・武",
+    "0x614C4A43": "ニャニャンレコード",
+    "0x64DB5779": "ジョーカーのカード",
+    "0x66218E5A": "たべものレコード",
+    "0x663271BE": "妖気のつぶ",
+    "0x67048A0D": "わくわくコイン（鳥）",
+    "0x67EED90B": "黄金のアンク",
+    "0x69DF023F": "ドリームコイン・姫",
+    "0x6B2F7174": "ボケルＳ∞の欠片１",
+    "0x6C42B56D": "日ノ鳥Ｓ∞の欠片１",
+    "0x6D6D1B52": "クイーンのカード",
+    "0x6D744EDE": "極・紫コイン",
+    "0x6E589520": "議長の錫杖",
+    "0x70C4337E": "おみやげコイン（Ｌ）",
+    "0x72344035": "ボケルストーン",
+    "0x7302BB86": "極・赤コイン",
+    "0x73EA1A49": "紫コイン",
+    "0x746F7F9F": "超・緑コイン",
+    "0x7487DE50": "オレンジコイン",
+    "0x7559842C": "ノストラダマストーン",
+    "0x784484E6": "スピーチ姫パス",
+    "0x78577B02": "ミズかきレコード",
+    "0x79727F55": "ドリームコインＧ３",
+    "0x7AB4F7AD": "極・緑コイン",
+    "0x7E1FBB4C": "ドリームコイン・自慢",
+    "0x7EF5E84A": "三成の御旗",
+    "0x7F2940FF": "ラストブシニャンパス",
+    "0x7F3ABF1B": "タロニャンレコードＡ",
+    "0x8056F40C": "ずばばんアーム",
+    "0x8199A35D": "ヘヤノスミスレコード",
+    "0x824CD441": "伝説ストーン",
+    "0x83637A7E": "エースのカード",
+    "0x837A2FF2": "ごちそうコイン",
+    "0x85211058": "クレクレＳ∞の欠片１",
+    "0x873B3015": "メリケンロッド",
+    "0x882FEF76": "コトオワレコード",
+    "0x890AEB21": "わくわくコイン（月）",
+    "0x8C975C73": "エルドラＳ∞の欠片１",
+    "0x8E672F38": "ドリームコイン・白金",
+    "0x8F422B6F": "ドンカムレコード",
+    "0x9011DA60": "ドリームコインＧ１",
+    "0x9134DE37": "モグモグレコード",
+    "0x958C6D32": "ラスブシストーン",
+    "0x964AE5CA": "キラコマパス",
+    "0x96591A2E": "ツイトルズレコード",
+    "0x9882921C": "オールスターレコード",
+    "0x9A611EB3": "超・紫コイン",
+    "0x9A89BF7C": "赤コイン",
+    "0x9B57E500": "先代閻魔大王の手形",
+    "0x9C3A2119": "日ノ鳥ストーン",
+    "0x9D0CDAAA": "極・オレンジコイン",
+    "0x9DE47B65": "緑コイン",
+    "0x9FFCA9E1": "自慢ハッタンパス",
+    "0xA0C4344D": "ひも爺レコード",
+    "0xA3114351": "リアクションストーン",
+    "0xA47C8748": "鉄鬼ストーン",
+    "0xA54A7CFB": "さすらいコイン",
+    "0xA84E29BD": "地獄ストーン∞",
+    "0xA8577C31": "さくらＥＸコイン",
+    "0xA9727866": "ピントコーンレコード",
+    "0xAB152568": "山田レーダー",
+    "0xADCACB63": "覚醒日ノ神の手形",
+    "0xAE1FBC7F": "メラメラレコード",
+    "0xAF3AB828": "ヌー２３号のコイン",
+    "0xB0694927": "うた吉レコード",
+    "0xB14C4D70": "封印されしコイン",
+    "0xB1C5E5BD": "パーツのチケット①",
+    "0xB4D1FA22": "ゴーキングストーン",
+    "0xB6218969": "超・赤コイン",
+    "0xB7048D3E": "ドンヨリレコード",
+    "0xC003BDA8": "ナガバナレコード",
+    "0xC126B9FF": "レジェンドコイン",
+    "0xC3D6CAB4": "カーメンストーン",
+    "0xC6458704": "禁断の果実",
+    "0xC64B7DE6": "地獄コイン",
+    "0xC6C2D52B": "パーツのチケット②",
+    "0xCB567D2C": "５つ星コイン",
+    "0xCD0D4286": "ジェントル面犬パス",
+    "0xD24D4C6D": "古びたコイン",
+    "0xD37BB7DE": "Ｓストーン",
+    "0xD41673C7": "パンドラストーン",
+    "0xD5208874": "すしコイン",
+    "0xD569E598": "メリケン粉",
+    "0xD7C304DB": "ヒキコウモリレコード",
+    "0xD83D88BE": "鉄なべコイン",
+    "0xD9188CE9": "ブリーズレコード",
+    "0xDACDFBF5": "ぬらり神の手形",
+    "0xDE7548F0": "グレるレコード",
+    "0xDF504CA7": "めでたいコイン",
+    "0xE07B2EEF": "おかわりコイン",
+    "0xE14DD55C": "プラチナ鬼パス",
+    "0xE15E2AB8": "サマウォレコード",
+    "0xE28B5DA4": "地獄ストーン",
+    "0xE35507D8": "水色コイン",
+    "0xE633EEA1": "いろクロレコード",
+    "0xE716EAF6": "ドリームコインＧ２",
+    "0xE8FB9977": "トリベアパス",
+    "0xEA0BEA3C": "極・黄色コイン",
+    "0xEAE34BF3": "桃コイン",
+    "0xEB3D118F": "クレクレストーン",
+    "0xEC50D596": "覚醒エンマの手形",
+    "0xED662E25": "超・青コイン",
+    "0xEF85A28A": "タロニャンレコードＢ",
+    "0xF03C0083": "メリケンブレード",
+    "0xF22620CE": "クレクレＳ∞の欠片２",
+    "0xF3098EF1": "ムゲン地獄の調査報告書",
+    "0xF4644AE8": "ジャックのカード",
+    "0xF47D1F64": "極・水色コイン",
+    "0xF54BE4D7": "秘宝ストーン",
+    "0xF69E93CB": "ミスイヌレコード",
+    "0xF751C49A": "覚醒エンマ魔笛",
+    "0xF9601FAE": "ドリームコイン・富",
+    "0xFB906CE5": "エルドラＳ∞の欠片２",
+    "0xFE0DDBB7": "ぐうたらコイン",
+    "0xFF28DFE0": "アッチィレコード"
+  },
+  "unresolved_jp40_item_ids": []
+}

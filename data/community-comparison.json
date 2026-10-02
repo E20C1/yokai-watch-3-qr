@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-10-02T10:07:09+00:00",
+  "provenance": {
+    "repository": "Yu08083/Yokai2-QR",
+    "path": "yw3/catalog.json",
+    "branch": "main",
+    "commit": "04d7c9783a66e7216ad020b1775417462b5b8a5d",
+    "blob_sha": "003a0a0588ca2ba2a4eb7243d1c80e753e139446",
+    "license": "MIT",
+    "retrieved_at": "2026-10-02T10:07:09+00:00",
+    "note": "Derived mapping only; upstream QR images are not copied."
+  },
+  "counts": {
+    "ours_qr2_rows": 2143,
+    "community_update_rows": 2143,
+    "ours_unique_reward_signatures": 371,
+    "community_unique_reward_signatures": 371,
+    "exact_reward_signatures": 371,
+    "community_only_reward_signatures": 0,
+    "ours_only_reward_signatures": 0,
+    "ours_type_values": 26503,
+    "community_type_values": 26503,
+    "union_type_values": 26503,
+    "jp40_item_ids": 175,
+    "community_named_jp40_item_ids": 175,
+    "community_unresolved_jp40_item_ids": 0
+  },
+  "type_classification": {
+    "exact": 26503,
+    "multiple_candidate": 0,
+    "community_only": 0,
+    "ours_only": 0,
+    "conflict": 0
+  },
+  "community_only_reward_keys": [],
+  "ours_only_reward_keys": [],
+  "sample_type_conflicts": [],
+  "unresolved_item_ids": []
+}
