@@ -1,0 +1,35 @@
+name: Apply grouped reward browser
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - ".github/workflows/grouped-reward-view.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Apply grouped reward view
+        run: python3 tools/add_grouped_reward_view.py
+      - name: Validate JavaScript
+        run: node --check src/app.js
+      - name: Commit grouped reward view
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/app.js index.html assets/styles.css
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "feat: group QR effects by reward with expandable Type ranges"
+            git push
+          fi
