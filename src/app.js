@@ -36,10 +36,10 @@ function hexKey(value) {
 
 function itemInfo(id) {
   const key = hexKey(id);
-  if (key === ZERO) return { name: "—", category: "None", mapped: true };
+  if (key === ZERO) return { name: "—", name_en: "—", category: "なし", category_en: "None", mapped: true };
   const mapped = state.itemNames[key];
   if (mapped) return { ...mapped, mapped: true };
-  return { name: `Unknown item ${key}`, category: "Unmapped", mapped: false };
+  return { name: `未特定アイテム ${key}`, name_en: `Unknown item ${key}`, category: "未特定", category_en: "Unmapped", mapped: false };
 }
 
 function itemLabel(id, qty = 1) {
@@ -57,17 +57,17 @@ function effectText(row) {
   const parts = [];
   if (row.item1 !== ZERO) parts.push(itemLabel(row.item1, row.qty1));
   if (row.item2 !== ZERO) parts.push(itemLabel(row.item2, row.qty2));
-  if (!parts.length) parts.push("No item reward");
+  if (!parts.length) parts.push("アイテム報酬なし");
   return parts.join(" + ");
 }
 
 function specialBadges(row) {
   const badges = [];
-  if (row.item2 !== ZERO) badges.push("2 items");
+  if (row.item2 !== ZERO) badges.push("2アイテム");
   if (row.flag1 !== ZERO) badges.push("Flag1");
   if (row.flag2 !== ZERO) badges.push("Flag2");
-  if (row.randomTable !== ZERO) badges.push("Random table");
-  if (row.u1 || row.u2) badges.push(`u:${row.u1}/${row.u2}`);
+  if (row.randomTable !== ZERO) badges.push("抽選テーブル");
+  if (row.u1 || row.u2) badges.push(`内部:${row.u1}/${row.u2}`);
   return badges;
 }
 
@@ -87,8 +87,12 @@ function rowSearchText(row) {
     row.randomTable,
     a.name,
     a.category,
+    a.name_en,
+    a.category_en,
     b.name,
     b.category,
+    b.name_en,
+    b.category_en,
     effectText(row),
   ]
     .join(" ")
@@ -150,7 +154,7 @@ function renderMetadata() {
   const ok = generated === test.code;
   $("#selfTest").textContent = ok ? "PASS" : "FAIL";
   $("#selfTest").className = ok ? "status-pass" : "status-fail";
-  if (!ok) setStatus("Generator self-test failed. Do not use generated QRs.", "error");
+  if (!ok) setStatus("生成エンジンの自己テストに失敗しました。QRを使用しないでください。", "error");
 }
 
 function selectedRowCard(row) {
@@ -167,7 +171,7 @@ function selectedRowCard(row) {
         <div class="eyebrow">QR2_INFO #${row.index}</div>
         <h3>${escapeHtml(effectText(row))}</h3>
       </div>
-      <div class="badge-row">${badges || '<span class="badge muted">simple reward</span>'}</div>
+      <div class="badge-row">${badges || '<span class="badge muted">通常報酬</span>'}</div>
     </div>
     <div class="kv-grid">
       <div><span>Type range</span><strong>${row.typeStart} – ${row.typeEnd}</strong></div>
@@ -227,7 +231,7 @@ function renderGeneratorMatches(query) {
             <small>Type ${row.typeStart}–${row.typeEnd} · #${row.index}</small>
           </span>
           <span class="result-meta">
-            ${mapped ? "" : '<span class="badge warning">unmapped</span>'}
+            ${mapped ? "" : '<span class="badge warning">未特定</span>'}
             ${specialBadges(row).map((x) => `<span class="badge">${escapeHtml(x)}</span>`).join("")}
           </span>
         </button>`;
@@ -327,7 +331,7 @@ function renderGenerated() {
 
 function generateBatch() {
   try {
-    if (!state.selected) throw new Error("Select a QR entry first.");
+    if (!state.selected) throw new Error("先にQRエントリを選択してください。");
     const amount = Math.max(1, Math.min(200, Number($("#amount").value) || 1));
     $("#amount").value = amount;
 
@@ -346,7 +350,7 @@ function generateBatch() {
 
     renderGenerated();
     setStatus(
-      `Generated ${state.generated.length} QR${state.generated.length === 1 ? "" : "s"} for Type ${type}.`,
+      `Type ${type} のQRを ${state.generated.length} 枚生成しました。`,
       "success"
     );
   } catch (error) {
@@ -415,7 +419,7 @@ function renderExplorer(reset = false) {
 
 function analysisHtml(result, matches = []) {
   if (!result.valid) {
-    return `<div class="analysis-bad"><strong>Invalid / unsupported</strong><p>${escapeHtml(result.reason || "Checksum mismatch.")}</p></div>`;
+    return `<div class="analysis-bad"><strong>無効 / 未対応</strong><p>${escapeHtml(result.reason || "Checksum mismatch.")}</p></div>`;
   }
 
   const matching = matches
@@ -431,7 +435,7 @@ function analysisHtml(result, matches = []) {
   return `
     <div class="analysis-good">
       <div class="selection-head">
-        <div><div class="eyebrow">V2 checksum</div><h3>Valid</h3></div>
+        <div><div class="eyebrow">V2 checksum</div><h3>有効</h3></div>
         <span class="badge success">PASS</span>
       </div>
       <div class="kv-grid">
@@ -442,7 +446,7 @@ function analysisHtml(result, matches = []) {
       </div>
       <div class="analysis-matches">
         <h4>JP Ver.4.0 lookup</h4>
-        ${matching || '<div class="empty-state compact">No QR2_INFO range contains this Type.</div>'}
+        ${matching || '<div class="empty-state compact">このTypeに対応するQR2_INFO範囲がありません。</div>'}
       </div>
     </div>`;
 }
@@ -481,11 +485,11 @@ async function decodeImageFile(file) {
     const decoded = globalThis.jsQR(image.data, canvas.width, canvas.height, {
       inversionAttempts: "attemptBoth",
     });
-    if (!decoded) throw new Error("QR code was not detected in the image.");
+    if (!decoded) throw new Error("画像からQRコードを検出できませんでした。");
 
     $("#analyzerText").value = decoded.data;
     analyzeText(decoded.data);
-    setStatus("QR image decoded.", "success");
+    setStatus("QR画像を読み取りました。", "success");
   } catch (error) {
     setStatus(error.message, "error");
   }
@@ -583,7 +587,7 @@ async function boot() {
     ]);
 
     if (!namesResponse.ok || !metaResponse.ok) {
-      throw new Error("Failed to load local data files.");
+      throw new Error("ローカルデータファイルの読み込みに失敗しました。");
     }
 
     state.rows = loadedRows;
@@ -601,7 +605,7 @@ async function boot() {
 
     const requested = location.hash.replace("#", "");
     switchTab(["generator", "explorer", "analyzer", "research"].includes(requested) ? requested : "generator");
-    setStatus("JP Ver.4.0 dataset loaded.", "success");
+    setStatus("日本版 Ver.4.0 データセットを読み込みました。", "success");
   } catch (error) {
     console.error(error);
     setStatus(error.message, "error");

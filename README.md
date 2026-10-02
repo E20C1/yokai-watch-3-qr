@@ -119,3 +119,8 @@ Flag付きエントリはゲーム状態へ影響する可能性があります�
 This is an independent research utility. It is not affiliated with LEVEL-5, Nintendo, or the Yo-kai Watch rights holders.
 
 Code in this repository is MIT licensed. Game names, trademarks, and original game data belong to their respective owners.
+
+
+## Japanese item-name localization
+
+日本版 Ver.4.0 の名称を主表示にし、英語名を検索用エイリアスとして保持します。照合方法と出典は [`docs/japanese-item-names.md`](docs/japanese-item-names.md) を参照してください。

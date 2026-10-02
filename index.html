@@ -31,10 +31,10 @@
     </div>
 
     <nav class="tabs" aria-label="Main navigation">
-      <button type="button" class="tab-button active" data-tab="generator">Generator</button>
-      <button type="button" class="tab-button" data-tab="explorer">Explorer</button>
-      <button type="button" class="tab-button" data-tab="analyzer">Analyzer</button>
-      <button type="button" class="tab-button" data-tab="research">Research</button>
+      <button type="button" class="tab-button active" data-tab="generator">生成</button>
+      <button type="button" class="tab-button" data-tab="explorer">一覧</button>
+      <button type="button" class="tab-button" data-tab="analyzer">解析</button>
+      <button type="button" class="tab-button" data-tab="research">研究データ</button>
     </nav>
 
     <main>
@@ -43,25 +43,25 @@
           <section class="panel">
             <div class="panel-head">
               <div>
-                <div class="eyebrow">1. Find an effect</div>
+                <div class="eyebrow">1. 効果を探す</div>
                 <h2>QR効果を検索</h2>
               </div>
-              <span class="count-pill"><span id="entryCount">—</span> entries</span>
+              <span class="count-pill"><span id="entryCount">—</span> 件</span>
             </div>
             <label class="field">
               <span>アイテム名 / Item ID / Type / Flag</span>
-              <input id="generatorQuery" type="search" placeholder="例: Forbidden Fruit / C6458704 / Q1B">
+              <input id="generatorQuery" type="search" placeholder="例: 禁断の果実 / Forbidden Fruit / C6458704 / Q1B">
             </label>
             <div id="generatorMatches" class="result-list"></div>
           </section>
 
           <section class="panel selected-panel">
-            <div class="eyebrow">2. Selected QR2_INFO</div>
+            <div class="eyebrow">2. 選択中の QR2_INFO</div>
             <div id="selectedEntry"></div>
 
             <div class="form-grid">
               <label class="field">
-                <span>Type selection</span>
+                <span>Typeの選択</span>
                 <select id="typeMode">
                   <option value="first">範囲の先頭</option>
                   <option value="random">範囲内からランダム</option>
@@ -69,11 +69,11 @@
                 </select>
               </label>
               <label class="field" id="manualTypeWrap" hidden>
-                <span>Manual Type</span>
+                <span>Typeを手動指定</span>
                 <input id="manualType" maxlength="3" value="000">
               </label>
               <label class="field">
-                <span>Variation mode</span>
+                <span>Variation方式</span>
                 <select id="variationMode">
                   <option value="random">ランダム</option>
                   <option value="sequential">連番</option>
@@ -81,7 +81,7 @@
                 </select>
               </label>
               <label class="field" id="variationSeedWrap" hidden>
-                <span id="variationSeedLabel">Start variation</span>
+                <span id="variationSeedLabel">開始Variation</span>
                 <input id="variationSeed" maxlength="4" value="0000">
               </label>
               <label class="field">
@@ -93,7 +93,7 @@
             <div class="button-row">
               <button id="generate" type="button" class="primary">QRを生成</button>
               <button id="exportCodes" type="button" class="secondary" disabled>コード一覧を書き出す</button>
-              <button id="clearGenerated" type="button" class="ghost">Clear</button>
+              <button id="clearGenerated" type="button" class="ghost">クリア</button>
             </div>
           </section>
         </div>
@@ -101,7 +101,7 @@
         <section class="panel output-panel">
           <div class="panel-head">
             <div>
-              <div class="eyebrow">3. Output</div>
+              <div class="eyebrow">3. 出力</div>
               <h2>生成結果</h2>
             </div>
             <span class="subtle">QRTool互換: <code>n123git.sayshi/&lt;V2 code&gt;</code></span>
@@ -115,24 +115,24 @@
           <div class="panel-head">
             <div>
               <div class="eyebrow">JP Ver.4.0</div>
-              <h2>QR2_INFO Explorer</h2>
+              <h2>QR2_INFO 一覧</h2>
             </div>
             <span id="explorerCount" class="count-pill">—</span>
           </div>
           <div class="toolbar">
             <label class="field grow">
-              <span>Search</span>
-              <input id="explorerQuery" type="search" placeholder="item / hex / Type / flag">
+              <span>検索</span>
+              <input id="explorerQuery" type="search" placeholder="アイテム名 / 英語名 / Hex / Type / Flag">
             </label>
             <label class="field">
-              <span>Filter</span>
+              <span>フィルター</span>
               <select id="specialFilter">
-                <option value="all">All</option>
-                <option value="simple">Simple rewards</option>
-                <option value="flags">Flag entries</option>
-                <option value="item2">Two-item entries</option>
-                <option value="random">Random table entries</option>
-                <option value="unmapped">Unmapped item names</option>
+                <option value="all">すべて</option>
+                <option value="simple">通常報酬</option>
+                <option value="flags">Flagあり</option>
+                <option value="item2">2アイテム報酬</option>
+                <option value="random">抽選テーブル使用</option>
+                <option value="unmapped">名称未特定</option>
               </select>
             </label>
           </div>
@@ -142,9 +142,9 @@
                 <tr>
                   <th>#</th>
                   <th>Type</th>
-                  <th>Effect</th>
+                  <th>効果</th>
                   <th>Item ID</th>
-                  <th>Special</th>
+                  <th>特殊</th>
                 </tr>
               </thead>
               <tbody id="explorerBody"></tbody>
@@ -157,7 +157,7 @@
       <section class="tab-panel" id="tab-analyzer" hidden>
         <div class="hero-grid">
           <section class="panel">
-            <div class="eyebrow">Decode / verify</div>
+            <div class="eyebrow">復号 / 検証</div>
             <h2>QR Analyzer</h2>
             <p class="lead">QR文字列を貼り付けるか、QR画像をドロップすると、V2 checksumを検証し日本版4.0のType範囲へ照合します。</p>
             <label class="field">
@@ -178,7 +178,7 @@
           </section>
 
           <section class="panel">
-            <div class="eyebrow">Analysis</div>
+            <div class="eyebrow">解析</div>
             <h2>解析結果</h2>
             <div id="analysisResult" class="empty-state">まだ解析していません。</div>
           </section>
@@ -187,7 +187,7 @@
 
       <section class="tab-panel" id="tab-research" hidden>
         <section class="panel">
-          <div class="eyebrow">Dataset overview</div>
+          <div class="eyebrow">データセット概要</div>
           <h2>解析データ</h2>
           <div class="stat-grid">
             <div class="stat"><span>QR2_INFO</span><strong id="statEntries">—</strong></div>
@@ -206,12 +206,12 @@
               <p>SHA-256でデータセットの出典を固定しています。リポジトリにはゲーム本体や元バイナリを含めず、解析済みメタデータのみ格納します。</p>
             </div>
             <div>
-              <h3>Item name coverage</h3>
-              <p><strong id="mappedItems">—</strong> unique IDs mapped</p>
-              <p>表示名は公開されているYW3 Item ID資料を基礎にしています。未対応IDはHexのまま表示し、推測で名称を付けません。</p>
+              <h3>アイテム名対応状況</h3>
+              <p><strong id="mappedItems">—</strong> 件のIDを名称解決済み</p>
+              <p>主表示は日本版Ver.4.0の公開ゲームデータ表とYW3 Item ID表を照合した日本語名です。英語名は検索用エイリアスとして保持し、未対応IDには推測で名称を付けません。</p>
             </div>
             <div>
-              <h3>V2 layout</h3>
+              <h3>V2構造</h3>
               <pre><code>Type       3 chars (base36)
 Variation  4 chars (base36)
 Checksum  26 chars
@@ -219,7 +219,7 @@ Checksum  26 chars
 Code      33 chars</code></pre>
             </div>
             <div>
-              <h3>Compatibility status</h3>
+              <h3>互換性状況</h3>
               <p>チェックサム生成は既知のテストベクタで自己検証します。日本版スキヤキVer.4.0実機での網羅的なQR受理テストは別途継続します。</p>
             </div>
           </div>

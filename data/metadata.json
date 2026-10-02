@@ -25,5 +25,11 @@
       "input": "Q1B0000",
       "code": "Q1B00008CLTN07O0A2VJ3EU5L3LETAB3G"
     }
+  },
+  "localization": {
+    "primaryLanguage": "ja",
+    "mappedJapaneseItemNames": 140,
+    "englishAliasesRetained": true,
+    "method": "Cross-reference public JP Ver.4.0 item tables with YW3 hashed Item IDs"
   }
 }

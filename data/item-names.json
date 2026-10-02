@@ -1,562 +1,982 @@
 {
   "0xD24D4C6D": {
-    "name": "Rusted Coin",
-    "category": "Coin"
+    "name": "古びたコイン",
+    "category": "コイン",
+    "name_en": "Rusted Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xEAE34BF3": {
-    "name": "Pink Coin",
-    "category": "Coin"
+    "name": "桃コイン",
+    "category": "コイン",
+    "name_en": "Pink Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xE35507D8": {
-    "name": "Light-Blue Coin",
-    "category": "Coin"
+    "name": "水色コイン",
+    "category": "コイン",
+    "name_en": "Light-Blue Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x04ED2ADF": {
-    "name": "Blue Coin",
-    "category": "Coin"
+    "name": "青コイン",
+    "category": "コイン",
+    "name_en": "Blue Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x9DE47B65": {
-    "name": "Green Coin",
-    "category": "Coin"
+    "name": "緑コイン",
+    "category": "コイン",
+    "name_en": "Green Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x0380EEC6": {
-    "name": "Yellow Coin",
-    "category": "Coin"
+    "name": "黄色コイン",
+    "category": "コイン",
+    "name_en": "Yellow Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x9A89BF7C": {
-    "name": "Red Coin",
-    "category": "Coin"
+    "name": "赤コイン",
+    "category": "コイン",
+    "name_en": "Red Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x73EA1A49": {
-    "name": "Purple Coin",
-    "category": "Coin"
+    "name": "紫コイン",
+    "category": "コイン",
+    "name_en": "Purple Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x7487DE50": {
-    "name": "Orange Coin",
-    "category": "Coin"
+    "name": "オレンジコイン",
+    "category": "コイン",
+    "name_en": "Orange Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xC126B9FF": {
-    "name": "Legend Coin",
-    "category": "Coin"
+    "name": "レジェンドコイン",
+    "category": "コイン",
+    "name_en": "Legend Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x0DB3C73B": {
-    "name": "Ultra Pink Coin",
-    "category": "Coin"
+    "name": "極・桃コイン",
+    "category": "コイン",
+    "name_en": "Ultra Pink Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x03684F09": {
-    "name": "Super Pink Coin",
-    "category": "Coin"
+    "name": "超・桃コイン",
+    "category": "コイン",
+    "name_en": "Super Pink Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x60694E14": {
-    "name": "Brave Dream Coin",
-    "category": "Dream Coin"
+    "name": "ドリームコイン・武",
+    "category": "ドリームコイン",
+    "name_en": "Brave Dream Coin",
+    "category_en": "Dream Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x8E672F38": {
-    "name": "Platinum Dream Coin",
-    "category": "Dream Coin"
+    "name": "ドリームコイン・白金",
+    "category": "ドリームコイン",
+    "name_en": "Platinum Dream Coin",
+    "category_en": "Dream Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x176E7E82": {
-    "name": "Light Dream Coin",
-    "category": "Dream Coin"
+    "name": "ドリームコイン・光",
+    "category": "ドリームコイン",
+    "name_en": "Light Dream Coin",
+    "category_en": "Dream Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xF9601FAE": {
-    "name": "Fortune Dream Coin",
-    "category": "Dream Coin"
+    "name": "ドリームコイン・富",
+    "category": "ドリームコイン",
+    "name_en": "Fortune Dream Coin",
+    "category_en": "Dream Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x69DF023F": {
-    "name": "Princess Dream Coin",
-    "category": "Dream Coin"
+    "name": "ドリームコイン・姫",
+    "category": "ドリームコイン",
+    "name_en": "Princess Dream Coin",
+    "category_en": "Dream Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x1ED832A9": {
-    "name": "Wisdom Dream Coin",
-    "category": "Dream Coin"
+    "name": "ドリームコイン・知",
+    "category": "ドリームコイン",
+    "name_en": "Wisdom Dream Coin",
+    "category_en": "Dream Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x7E1FBB4C": {
-    "name": "Pride Dream Coin",
-    "category": "Dream Coin"
+    "name": "ドリームコイン・自慢",
+    "category": "ドリームコイン",
+    "name_en": "Pride Dream Coin",
+    "category_en": "Dream Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x09188BDA": {
-    "name": "Chivalry Dream Coin",
-    "category": "Dream Coin"
+    "name": "ドリームコイン・紳士",
+    "category": "ドリームコイン",
+    "name_en": "Chivalry Dream Coin",
+    "category_en": "Dream Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x2F28D8D3": {
-    "name": "Emblem Coin",
-    "category": "Coin"
+    "name": "エンブレムコイン",
+    "category": "コイン",
+    "name_en": "Emblem Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x025EB4BA": {
-    "name": "Rampage Stone",
-    "category": "Stone"
+    "name": "シヴァラクストーン",
+    "category": "ストーン",
+    "name_en": "Rampage Stone",
+    "category_en": "Stone",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x7559842C": {
-    "name": "Prophecy Stone",
-    "category": "Stone"
+    "name": "ノストラダマストーン",
+    "category": "ストーン",
+    "name_en": "Prophecy Stone",
+    "category_en": "Stone",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xB6218969": {
-    "name": "Super Red Coin",
-    "category": "Coin"
+    "name": "超・赤コイン",
+    "category": "コイン",
+    "name_en": "Super Red Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xDF504CA7": {
-    "name": "Joyful Coin",
-    "category": "Coin"
+    "name": "めでたいコイン",
+    "category": "コイン",
+    "name_en": "Joyful Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xD41673C7": {
-    "name": "Pandora Stone",
-    "category": "Stone"
+    "name": "パンドラストーン",
+    "category": "ストーン",
+    "name_en": "Pandora Stone",
+    "category_en": "Stone",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xF54BE4D7": {
-    "name": "Hidden Gem Stone",
-    "category": "Stone"
+    "name": "秘宝ストーン",
+    "category": "ストーン",
+    "name_en": "Hidden Gem Stone",
+    "category_en": "Stone",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x3F85A5B9": {
-    "name": "Black Coin",
-    "category": "Coin"
+    "name": "ブラックコイン",
+    "category": "コイン",
+    "name_en": "Black Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x2235D819": {
-    "name": "One-Star Coin",
-    "category": "Coin"
+    "name": "１つ星コイン",
+    "category": "コイン",
+    "name_en": "One-Star Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xED662E25": {
-    "name": "Super Blue Coin",
-    "category": "Coin"
+    "name": "超・青コイン",
+    "category": "コイン",
+    "name_en": "Super Blue Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x3A1812EB": {
-    "name": "Shelter Stone",
-    "category": "Stone"
+    "name": "ニャステトストーン",
+    "category": "ストーン",
+    "name_en": "Shelter Stone",
+    "category_en": "Stone",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xC64B7DE6": {
-    "name": "Underworld Coin",
-    "category": "Coin"
+    "name": "地獄コイン",
+    "category": "コイン",
+    "name_en": "Underworld Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x7302BB86": {
-    "name": "Ultra Red Coin",
-    "category": "Coin"
+    "name": "極・赤コイン",
+    "category": "コイン",
+    "name_en": "Ultra Red Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x269E94F8": {
-    "name": "Super Yellow Coin",
-    "category": "Coin"
+    "name": "超・黄色コイン",
+    "category": "コイン",
+    "name_en": "Super Yellow Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xF47D1F64": {
-    "name": "Ultra Light-Blue Coin",
-    "category": "Coin"
+    "name": "極・水色コイン",
+    "category": "コイン",
+    "name_en": "Ultra Light-Blue Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xC3D6CAB4": {
-    "name": "Hoary Tomb Stone",
-    "category": "Stone"
+    "name": "カーメンストーン",
+    "category": "ストーン",
+    "name_en": "Hoary Tomb Stone",
+    "category_en": "Stone",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xD569E598": {
-    "name": "Starry Spangles",
-    "category": "Consumable"
+    "name": "メリケン粉",
+    "category": "どうぐ",
+    "name_en": "Starry Spangles",
+    "category_en": "Consumable",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x9011DA60": {
-    "name": "G1 Dream Coin",
-    "category": "Dream Coin"
+    "name": "ドリームコインＧ１",
+    "category": "ドリームコイン",
+    "name_en": "G1 Dream Coin",
+    "category_en": "Dream Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xE716EAF6": {
-    "name": "G2 Dream Coin",
-    "category": "Dream Coin"
+    "name": "ドリームコインＧ２",
+    "category": "ドリームコイン",
+    "name_en": "G2 Dream Coin",
+    "category_en": "Dream Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x0E754FC3": {
-    "name": "G4 Dream Coin",
-    "category": "Dream Coin"
+    "name": "ドリームコインＧ４",
+    "category": "ドリームコイン",
+    "name_en": "G4 Dream Coin",
+    "category_en": "Dream Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x1A737E48": {
-    "name": "Ultra Blue Coin",
-    "category": "Coin"
+    "name": "極・青コイン",
+    "category": "コイン",
+    "name_en": "Ultra Blue Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x04058B10": {
-    "name": "Super Light-Blue Coin",
-    "category": "Coin"
+    "name": "超・水色コイン",
+    "category": "コイン",
+    "name_en": "Super Light-Blue Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xB4D1FA22": {
-    "name": "Sovereign Stone",
-    "category": "Stone"
+    "name": "ゴーキングストーン",
+    "category": "ストーン",
+    "name_en": "Sovereign Stone",
+    "category_en": "Stone",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x4D1F227D": {
-    "name": "Komanubis Stone",
-    "category": "Stone"
+    "name": "ズラビスストーン",
+    "category": "ストーン",
+    "name_en": "Komanubis Stone",
+    "category_en": "Stone",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x5199A46E": {
-    "name": "Super Orange Coin",
-    "category": "Coin"
+    "name": "超・オレンジコイン",
+    "category": "コイン",
+    "name_en": "Super Orange Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x9D0CDAAA": {
-    "name": "Ultra Orange Coin",
-    "category": "Coin"
+    "name": "極・オレンジコイン",
+    "category": "コイン",
+    "name_en": "Ultra Orange Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x9A611EB3": {
-    "name": "Super Purple Coin",
-    "category": "Coin"
+    "name": "超・紫コイン",
+    "category": "コイン",
+    "name_en": "Super Purple Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xEA0BEA3C": {
-    "name": "Ultra Yellow Coin",
-    "category": "Coin"
+    "name": "極・黄色コイン",
+    "category": "コイン",
+    "name_en": "Ultra Yellow Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xA3114351": {
-    "name": "Funny Stone",
-    "category": "Stone"
+    "name": "リアクションストーン",
+    "category": "ストーン",
+    "name_en": "Funny Stone",
+    "category_en": "Stone",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x4882952F": {
-    "name": "Jet Black Coin",
-    "category": "Coin"
+    "name": "超ブラックコイン",
+    "category": "コイン",
+    "name_en": "Jet Black Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x67EED90B": {
-    "name": "Golden Ankh",
-    "category": "Equipment"
+    "name": "黄金のアンク",
+    "category": "そうび",
+    "name_en": "Golden Ankh",
+    "category_en": "Equipment",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x79727F55": {
-    "name": "G3 Dream Coin",
-    "category": "Dream Coin"
+    "name": "ドリームコインＧ３",
+    "category": "ドリームコイン",
+    "name_en": "G3 Dream Coin",
+    "category_en": "Dream Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x7AB4F7AD": {
-    "name": "Ultra Green Coin",
-    "category": "Coin"
+    "name": "極・緑コイン",
+    "category": "コイン",
+    "name_en": "Ultra Green Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x746F7F9F": {
-    "name": "Super Green Coin",
-    "category": "Coin"
+    "name": "超・緑コイン",
+    "category": "コイン",
+    "name_en": "Super Green Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x28451CCA": {
-    "name": "Demonic Coin",
-    "category": "Coin"
+    "name": "鬼ガシャコイン",
+    "category": "コイン",
+    "name_en": "Demonic Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x873B3015": {
-    "name": "Stars n Stripes Rod",
-    "category": "Equipment"
+    "name": "メリケンロッド",
+    "category": "そうび",
+    "name_en": "Stars n Stripes Rod",
+    "category_en": "Equipment",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x55D8BB89": {
-    "name": "Paradise Ball",
-    "category": "Equipment"
+    "name": "極楽玉",
+    "category": "そうび",
+    "name_en": "Paradise Ball",
+    "category_en": "Equipment",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x6D744EDE": {
-    "name": "Ultra Purple Coin",
-    "category": "Coin"
+    "name": "極・紫コイン",
+    "category": "コイン",
+    "name_en": "Ultra Purple Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xB14C4D70": {
-    "name": "Sealed Coin",
-    "category": "Coin"
+    "name": "封印されしコイン",
+    "category": "コイン",
+    "name_en": "Sealed Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x004494F7": {
-    "name": "Badge of Honor",
-    "category": "Equipment"
+    "name": "偉人バッジ",
+    "category": "そうび",
+    "name_en": "Badge of Honor",
+    "category_en": "Equipment",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xF03C0083": {
-    "name": "Star-spangle Blade",
-    "category": "Equipment"
+    "name": "メリケンブレード",
+    "category": "そうび",
+    "name_en": "Star-spangle Blade",
+    "category_en": "Equipment",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x4B441DD7": {
-    "name": "Tempura Coin",
-    "category": "Coin"
+    "name": "天ぷらコイン",
+    "category": "コイン",
+    "name_en": "Tempura Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xD5208874": {
-    "name": "Sushi Coin",
-    "category": "Coin"
+    "name": "すしコイン",
+    "category": "コイン",
+    "name_en": "Sushi Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x195FA5B6": {
-    "name": "Star-spangled Shield",
-    "category": "Equipment"
+    "name": "メリケンシールド",
+    "category": "そうび",
+    "name_en": "Star-spangled Shield",
+    "category_en": "Equipment",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xFE0DDBB7": {
-    "name": "Mellow Coin",
-    "category": "Coin"
+    "name": "ぐうたらコイン",
+    "category": "コイン",
+    "name_en": "Mellow Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x7EF5E84A": {
-    "name": "Warlord's Banner",
-    "category": "Equipment"
+    "name": "三成の御旗",
+    "category": "そうび",
+    "name_en": "Warlord's Banner",
+    "category_en": "Equipment",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x4134D904": {
-    "name": "Beaming Coin",
-    "category": "Coin"
+    "name": "サンサンコイン",
+    "category": "コイン",
+    "name_en": "Beaming Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x9C3A2119": {
-    "name": "Hinixstone",
-    "category": "Stone"
+    "name": "日ノ鳥ストーン",
+    "category": "ストーン",
+    "name_en": "Hinixstone",
+    "category_en": "Stone",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xEB3D118F": {
-    "name": "Meopetra",
-    "category": "Stone"
+    "name": "クレクレストーン",
+    "category": "ストーン",
+    "name_en": "Meopetra",
+    "category_en": "Stone",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x72344035": {
-    "name": "Silly Stone",
-    "category": "Stone"
+    "name": "ボケルストーン",
+    "category": "ストーン",
+    "name_en": "Silly Stone",
+    "category_en": "Stone",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x053370A3": {
-    "name": "Gilded Stone",
-    "category": "Stone"
+    "name": "エルドラストーン",
+    "category": "ストーン",
+    "name_en": "Gilded Stone",
+    "category_en": "Stone",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x5BE960BD": {
-    "name": "Special Coin",
-    "category": "Coin"
+    "name": "スペシャルコイン",
+    "category": "コイン",
+    "name_en": "Special Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x582FE845": {
-    "name": "Treasure Coin",
-    "category": "Coin"
+    "name": "トレジャーコイン",
+    "category": "コイン",
+    "name_en": "Treasure Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x362ABC1E": {
-    "name": "∞ Steely Dragon Stone",
-    "category": "Infinite Stone"
+    "name": "鉄竜ストーン∞",
+    "category": "ストーン∞",
+    "name_en": "∞ Steely Dragon Stone",
+    "category_en": "Infinite Stone",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x56ED35FB": {
-    "name": "∞ Steely Fox Stone",
-    "category": "Infinite Stone"
+    "name": "鉄狐ストーン∞",
+    "category": "ストーン∞",
+    "name_en": "∞ Steely Fox Stone",
+    "category_en": "Infinite Stone",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xF4644AE8": {
-    "name": "Playing Card: Jack",
-    "category": "Key Item"
+    "name": "ジャックのカード",
+    "category": "たいせつ",
+    "name_en": "Playing Card: Jack",
+    "category_en": "Key Item",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x13DC67EF": {
-    "name": "Playing Card: 10",
-    "category": "Key Item"
+    "name": "１０のカード",
+    "category": "たいせつ",
+    "name_en": "Playing Card: 10",
+    "category_en": "Key Item",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x1A6A2BC4": {
-    "name": "Playing Card: King",
-    "category": "Key Item"
+    "name": "キングのカード",
+    "category": "たいせつ",
+    "name_en": "Playing Card: King",
+    "category_en": "Key Item",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x6D6D1B52": {
-    "name": "Playing Card: Queen",
-    "category": "Key Item"
+    "name": "クイーンのカード",
+    "category": "たいせつ",
+    "name_en": "Playing Card: Queen",
+    "category_en": "Key Item",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x64DB5779": {
-    "name": "Playing Card: Joker",
-    "category": "Key Item"
+    "name": "ジョーカーのカード",
+    "category": "たいせつ",
+    "name_en": "Playing Card: Joker",
+    "category_en": "Key Item",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xAB152568": {
-    "name": "Sighborg Sensor",
-    "category": "Key Item"
+    "name": "山田レーダー",
+    "category": "たいせつ",
+    "name_en": "Sighborg Sensor",
+    "category_en": "Key Item",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x285C4946": {
-    "name": "Hero's Milk Cap",
-    "category": "Key Item"
+    "name": "ガッツなメンコ",
+    "category": "たいせつ",
+    "name_en": "Hero's Milk Cap",
+    "category_en": "Key Item",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xF3098EF1": {
-    "name": "Inferno Report",
-    "category": "Key Item"
+    "name": "ムゲン地獄の調査報告書",
+    "category": "たいせつ",
+    "name_en": "Inferno Report",
+    "category_en": "Key Item",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x6E589520": {
-    "name": "Chairman's Staff",
-    "category": "Equipment"
+    "name": "議長の錫杖",
+    "category": "そうび",
+    "name_en": "Chairman's Staff",
+    "category_en": "Equipment",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x10E9E99D": {
-    "name": "Illustrious Bead",
-    "category": "Equipment"
+    "name": "大王の勾玉",
+    "category": "そうび",
+    "name_en": "Illustrious Bead",
+    "category_en": "Equipment",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x8056F40C": {
-    "name": "Maul Attachment",
-    "category": "Equipment"
+    "name": "ずばばんアーム",
+    "category": "そうび",
+    "name_en": "Maul Attachment",
+    "category_en": "Equipment",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x412D8C88": {
-    "name": "∞ Oblivion Stone",
-    "category": "Infinite Stone"
+    "name": "惨劇ストーン∞",
+    "category": "ストーン∞",
+    "name_en": "∞ Oblivion Stone",
+    "category_en": "Infinite Stone",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xF751C49A": {
-    "name": "Enchanted Flute",
-    "category": "Equipment"
+    "name": "覚醒エンマ魔笛",
+    "category": "そうび",
+    "name_en": "Enchanted Flute",
+    "category_en": "Equipment",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x6C42B56D": {
-    "name": "∞ Hinixstone Fragment 1",
-    "category": "Fragment"
+    "name": "日ノ鳥Ｓ∞の欠片１",
+    "category": "欠片",
+    "name_en": "∞ Hinixstone Fragment 1",
+    "category_en": "Fragment",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x1B4585FB": {
-    "name": "∞ Hinixstone Fragment 2",
-    "category": "Fragment"
+    "name": "日ノ鳥Ｓ∞の欠片２",
+    "category": "欠片",
+    "name_en": "∞ Hinixstone Fragment 2",
+    "category_en": "Fragment",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x85211058": {
-    "name": "∞ Meopetra Fragment 1",
-    "category": "Fragment"
+    "name": "クレクレＳ∞の欠片１",
+    "category": "欠片",
+    "name_en": "∞ Meopetra Fragment 1",
+    "category_en": "Fragment",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xF22620CE": {
-    "name": "∞ Meopetra Fragment 2",
-    "category": "Fragment"
+    "name": "クレクレＳ∞の欠片２",
+    "category": "欠片",
+    "name_en": "∞ Meopetra Fragment 2",
+    "category_en": "Fragment",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x6B2F7174": {
-    "name": "∞ Silly Stone Fragment 1",
-    "category": "Fragment"
+    "name": "ボケルＳ∞の欠片１",
+    "category": "欠片",
+    "name_en": "∞ Silly Stone Fragment 1",
+    "category_en": "Fragment",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x1C2841E2": {
-    "name": "∞ Silly Stone Fragment 2",
-    "category": "Fragment"
+    "name": "ボケルＳ∞の欠片２",
+    "category": "欠片",
+    "name_en": "∞ Silly Stone Fragment 2",
+    "category_en": "Fragment",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x8C975C73": {
-    "name": "∞ Gilded Stone Fragment 1",
-    "category": "Fragment"
+    "name": "エルドラＳ∞の欠片１",
+    "category": "欠片",
+    "name_en": "∞ Gilded Stone Fragment 1",
+    "category_en": "Fragment",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xFB906CE5": {
-    "name": "∞ Gilded Stone Fragment 2",
-    "category": "Fragment"
+    "name": "エルドラＳ∞の欠片２",
+    "category": "欠片",
+    "name_en": "∞ Gilded Stone Fragment 2",
+    "category_en": "Fragment",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xA84E29BD": {
-    "name": "∞ Underworld Stone",
-    "category": "Infinite Stone"
+    "name": "地獄ストーン∞",
+    "category": "ストーン∞",
+    "name_en": "∞ Underworld Stone",
+    "category_en": "Infinite Stone",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x38F1342C": {
-    "name": "∞ Legendary Stone",
-    "category": "Infinite Stone"
+    "name": "伝説ストーン∞",
+    "category": "ストーン∞",
+    "name_en": "∞ Legendary Stone",
+    "category_en": "Infinite Stone",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xCB567D2C": {
-    "name": "Five-Star Coin",
-    "category": "Coin"
+    "name": "５つ星コイン",
+    "category": "コイン",
+    "name_en": "Five-Star Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x2CEE502B": {
-    "name": "Yo Mystery Coin",
-    "category": "Coin"
+    "name": "どきどきコイン（妖）",
+    "category": "コイン",
+    "name_en": "Yo Mystery Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x4C29D9CE": {
-    "name": "Kai Mystery Coin",
-    "category": "Coin"
+    "name": "どきどきコイン（怪）",
+    "category": "コイン",
+    "name_en": "Kai Mystery Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x3B2EE958": {
-    "name": "Soul Mystery Coin",
-    "category": "Coin"
+    "name": "どきどきコイン（魂）",
+    "category": "コイン",
+    "name_en": "Soul Mystery Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x3C432D41": {
-    "name": "Whirlwind Coin",
-    "category": "Coin"
+    "name": "せんぷうコイン",
+    "category": "コイン",
+    "name_en": "Whirlwind Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xA54A7CFB": {
-    "name": "Wanderer Coin",
-    "category": "Coin"
+    "name": "さすらいコイン",
+    "category": "コイン",
+    "name_en": "Wanderer Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x35F5616A": {
-    "name": "Flower Excitement Coin",
-    "category": "Coin"
+    "name": "わくわくコイン（花）",
+    "category": "コイン",
+    "name_en": "Flower Excitement Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x67048A0D": {
-    "name": "Bird Excitement Coin",
-    "category": "Coin"
+    "name": "わくわくコイン（鳥）",
+    "category": "コイン",
+    "name_en": "Bird Excitement Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x1003BA9B": {
-    "name": "Wind Excitement Coin",
-    "category": "Coin"
+    "name": "わくわくコイン（風）",
+    "category": "コイン",
+    "name_en": "Wind Excitement Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x890AEB21": {
-    "name": "Moon Excitement Coin",
-    "category": "Coin"
+    "name": "わくわくコイン（月）",
+    "category": "コイン",
+    "name_en": "Moon Excitement Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xE07B2EEF": {
-    "name": "2nd Helping Coin",
-    "category": "Coin"
+    "name": "おかわりコイン",
+    "category": "コイン",
+    "name_en": "2nd Helping Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x70C4337E": {
-    "name": "L Souvenir Coin",
-    "category": "Coin"
+    "name": "おみやげコイン（Ｌ）",
+    "category": "コイン",
+    "name_en": "L Souvenir Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x07C303E8": {
-    "name": "F Souvenir Coin",
-    "category": "Coin"
+    "name": "おみやげコイン（Ｆ）",
+    "category": "コイン",
+    "name_en": "F Souvenir Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x315E2D8B": {
-    "name": "S Souvenir Coin",
-    "category": "Coin"
+    "name": "おみやげコイン（Ｓ）",
+    "category": "コイン",
+    "name_en": "S Souvenir Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x46591D1D": {
-    "name": "K Souvenir Coin",
-    "category": "Coin"
+    "name": "おみやげコイン（Ｋ）",
+    "category": "コイン",
+    "name_en": "K Souvenir Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xA8577C31": {
-    "name": "Excellent Coin",
-    "category": "Coin"
+    "name": "さくらＥＸコイン",
+    "category": "コイン",
+    "name_en": "Excellent Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x7F2940FF": {
-    "name": "Showdown Pass",
-    "category": "Pass"
+    "name": "ラストブシニャンパス",
+    "category": "パス",
+    "name_en": "Showdown Pass",
+    "category_en": "Pass",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xE14DD55C": {
-    "name": "Platinum Pass",
-    "category": "Pass"
+    "name": "プラチナ鬼パス",
+    "category": "パス",
+    "name_en": "Platinum Pass",
+    "category_en": "Pass",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x964AE5CA": {
-    "name": "Radiant Pass",
-    "category": "Pass"
+    "name": "キラコマパス",
+    "category": "パス",
+    "name_en": "Radiant Pass",
+    "category_en": "Pass",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x0F43B470": {
-    "name": "Gilded Pass",
-    "category": "Pass"
+    "name": "ブルジョワＧパス",
+    "category": "パス",
+    "name_en": "Gilded Pass",
+    "category_en": "Pass",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x3633E992": {
-    "name": "Belly Buster Coin",
-    "category": "Coin"
+    "name": "まんぷくコイン",
+    "category": "コイン",
+    "name_en": "Belly Buster Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xB1C5E5BD": {
-    "name": "Golden Ticket 1",
-    "category": "Ticket"
+    "name": "パーツのチケット①",
+    "category": "チケット",
+    "name_en": "Golden Ticket 1",
+    "category_en": "Ticket",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xC6C2D52B": {
-    "name": "Golden Ticket 2",
-    "category": "Ticket"
+    "name": "パーツのチケット②",
+    "category": "チケット",
+    "name_en": "Golden Ticket 2",
+    "category_en": "Ticket",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xC6458704": {
-    "name": "Forbidden Fruit",
-    "category": "Consumable"
+    "name": "禁断の果実",
+    "category": "どうぐ",
+    "name_en": "Forbidden Fruit",
+    "category_en": "Consumable",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x784484E6": {
-    "name": "Gabby Pass",
-    "category": "Pass"
+    "name": "スピーチ姫パス",
+    "category": "パス",
+    "name_en": "Gabby Pass",
+    "category_en": "Pass",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xE8FB9977": {
-    "name": "Teducation Pass",
-    "category": "Pass"
+    "name": "トリベアパス",
+    "category": "パス",
+    "name_en": "Teducation Pass",
+    "category_en": "Pass",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x9FFCA9E1": {
-    "name": "Big City Pass",
-    "category": "Pass"
+    "name": "自慢ハッタンパス",
+    "category": "パス",
+    "name_en": "Big City Pass",
+    "category_en": "Pass",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xCD0D4286": {
-    "name": "Sophisticated Pass",
-    "category": "Pass"
+    "name": "ジェントル面犬パス",
+    "category": "パス",
+    "name_en": "Sophisticated Pass",
+    "category_en": "Pass",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xD37BB7DE": {
-    "name": "S Stone",
-    "category": "Stone"
+    "name": "Ｓストーン",
+    "category": "ストーン",
+    "name_en": "S Stone",
+    "category_en": "Stone",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xA47C8748": {
-    "name": "Iron Ogre Stone",
-    "category": "Stone"
+    "name": "鉄鬼ストーン",
+    "category": "ストーン",
+    "name_en": "Iron Ogre Stone",
+    "category_en": "Stone",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xDACDFBF5": {
-    "name": "Righteous Tag",
-    "category": "Tag"
+    "name": "ぬらり神の手形",
+    "category": "手形",
+    "name_en": "Righteous Tag",
+    "category_en": "Tag",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xADCACB63": {
-    "name": "Innovative Tag",
-    "category": "Tag"
+    "name": "覚醒日ノ神の手形",
+    "category": "手形",
+    "name_en": "Innovative Tag",
+    "category_en": "Tag",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x9B57E500": {
-    "name": "Ancient Tag",
-    "category": "Tag"
+    "name": "先代閻魔大王の手形",
+    "category": "手形",
+    "name_en": "Ancient Tag",
+    "category_en": "Tag",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xEC50D596": {
-    "name": "Awoken Tag",
-    "category": "Tag"
+    "name": "覚醒エンマの手形",
+    "category": "手形",
+    "name_en": "Awoken Tag",
+    "category_en": "Tag",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xD83D88BE": {
-    "name": "Iron Pot Coin",
-    "category": "Coin"
+    "name": "鉄なべコイン",
+    "category": "コイン",
+    "name_en": "Iron Pot Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xAF3AB828": {
-    "name": "Fancy That! Coin",
-    "category": "Coin"
+    "name": "ヌー２３号のコイン",
+    "category": "コイン",
+    "name_en": "Fancy That! Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x663271BE": {
-    "name": "Ghastly Fragment",
-    "category": "Fragment"
+    "name": "妖気のつぶ",
+    "category": "欠片",
+    "name_en": "Ghastly Fragment",
+    "category_en": "Fragment",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x5F422C5C": {
-    "name": "Heaven Excitement Coin",
-    "category": "Coin"
+    "name": "わくわくコイン（天）",
+    "category": "コイン",
+    "name_en": "Heaven Excitement Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x837A2FF2": {
-    "name": "Feast Coin",
-    "category": "Coin"
+    "name": "ごちそうコイン",
+    "category": "コイン",
+    "name_en": "Feast Coin",
+    "category_en": "Coin",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x958C6D32": {
-    "name": "Sanguine Stone",
-    "category": "Stone"
+    "name": "ラスブシストーン",
+    "category": "ストーン",
+    "name_en": "Sanguine Stone",
+    "category_en": "Stone",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0xE28B5DA4": {
-    "name": "Underworld Stone",
-    "category": "Stone"
+    "name": "地獄ストーン",
+    "category": "ストーン",
+    "name_en": "Underworld Stone",
+    "category_en": "Stone",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   },
   "0x824CD441": {
-    "name": "Legendary Stone",
-    "category": "Stone"
+    "name": "伝説ストーン",
+    "category": "ストーン",
+    "name_en": "Legendary Stone",
+    "category_en": "Stone",
+    "source": "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
   }
 }
