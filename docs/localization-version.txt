@@ -1,0 +1,5 @@
+Japanese item-name dataset v1
+Mapped Item IDs: 140
+Primary display language: Japanese
+English names retained as search aliases
+Method: JP Ver.4.0 public game-data tables cross-referenced with YW3 hashed Item IDs
