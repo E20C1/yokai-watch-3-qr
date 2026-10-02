@@ -18,6 +18,8 @@ const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
 const state = {
   rows: [],
   itemNames: {},
+  community: null,
+  communityRewardMap: new Map(),
   metadata: null,
   selected: null,
   explorerLimit: 100,
@@ -37,6 +39,24 @@ function hexKey(value) {
     .toUpperCase()
     .padStart(8, "0");
   return `0x${body}`;
+}
+
+function rowRewardKey(row) {
+  return [
+    parseInt(row.item1, 16),
+    parseInt(row.item2, 16),
+    parseInt(row.flag1, 16),
+    parseInt(row.flag2, 16),
+    Number(row.u1),
+    Number(row.u2),
+    Number(row.qty1),
+    Number(row.qty2),
+    parseInt(row.randomTable, 16),
+  ].join(":");
+}
+
+function verifiedReward(row) {
+  return state.communityRewardMap.get(rowRewardKey(row)) || null;
 }
 
 function itemInfo(id) {
@@ -59,6 +79,8 @@ function rangeSize(row) {
 }
 
 function effectText(row) {
+  const community = verifiedReward(row);
+  if (community?.label) return community.label;
   const parts = [];
   if (row.item1 !== ZERO) parts.push(itemLabel(row.item1, row.qty1));
   if (row.item2 !== ZERO) parts.push(itemLabel(row.item2, row.qty2));
@@ -73,6 +95,7 @@ function specialBadges(row) {
   if (row.flag2 !== ZERO) badges.push("Flag2");
   if (row.randomTable !== ZERO) badges.push("抽選テーブル");
   if (row.u1 || row.u2) badges.push(`内部:${row.u1}/${row.u2}`);
+  if (verifiedReward(row)) badges.push("実機確認済み");
   return badges;
 }
 
@@ -145,8 +168,11 @@ function renderMetadata() {
   $("#datasetVersion").textContent = `${m.region} Ver.${m.gameVersion}`;
   $("#entryCount").textContent = m.qr2Entries.toLocaleString();
   $("#sourceHash").textContent = m.sourceConfigSha256;
-  $("#mappedItems").textContent =
-    `${m.itemNameCoverage.mappedUniqueItems}/${m.itemNameCoverage.uniqueItemsInQr2}`;
+  const usedItemIds = new Set(
+    state.rows.flatMap((row) => [row.item1, row.item2]).filter((id) => id !== ZERO)
+  );
+  const mappedItemIds = [...usedItemIds].filter((id) => itemInfo(id).mapped);
+  $("#mappedItems").textContent = `${mappedItemIds.length}/${usedItemIds.size}`;
 
   $("#statEntries").textContent = m.qr2Entries.toLocaleString();
   $("#statItem2").textContent = m.stats.item2NonZero.toLocaleString();
@@ -217,7 +243,9 @@ function generatorMatches(query) {
 }
 
 function rewardGroupKey(row) {
-  return [row.item1, row.qty1, row.item2, row.qty2].join("|");
+  // Community reward_group/label is the user-facing receiving content.
+  // Different internal flags can therefore live under one visible reward group.
+  return effectText(row);
 }
 
 function groupGeneratorRows(rows) {
@@ -700,19 +728,37 @@ function bindEvents() {
 
 async function boot() {
   try {
-    const [loadedRows, namesResponse, metaResponse] = await Promise.all([
+    const [loadedRows, namesResponse, metaResponse, communityResponse] = await Promise.all([
       loadQr2Dataset(),
       fetch("./data/item-names.json"),
       fetch("./data/metadata.json"),
+      fetch("./data/community-yu08083.json"),
     ]);
 
-    if (!namesResponse.ok || !metaResponse.ok) {
+    if (!namesResponse.ok || !metaResponse.ok || !communityResponse.ok) {
       throw new Error("ローカルデータファイルの読み込みに失敗しました。");
     }
 
     state.rows = loadedRows;
     state.itemNames = await namesResponse.json();
     state.metadata = await metaResponse.json();
+    state.community = await communityResponse.json();
+    state.communityRewardMap = new Map(
+      (state.community.reward_signatures || []).map((reward) => [reward.reward_key, reward])
+    );
+
+    // Prefer the community catalog's JP labels. Existing English aliases/categories stay intact.
+    for (const [id, name] of Object.entries(state.community.item_names_for_jp40 || {})) {
+      const existing = state.itemNames[id] || {};
+      state.itemNames[id] = {
+        ...existing,
+        name,
+        name_en: existing.name_en || "",
+        category: existing.category || "未分類",
+        category_en: existing.category_en || "Unclassified",
+        source: `${existing.source ? `${existing.source}; ` : ""}Yu08083/Yokai2-QR 実機確認済みYW3 catalog`,
+      };
+    }
 
     bindEvents();
     renderMetadata();
@@ -725,7 +771,7 @@ async function boot() {
 
     const requested = location.hash.replace("#", "");
     switchTab(["generator", "explorer", "analyzer", "research"].includes(requested) ? requested : "generator");
-    setStatus("日本版 Ver.4.0 データセットを読み込みました。", "success");
+    setStatus("日本版 Ver.4.0 + 有志実機確認済み報酬データを読み込みました。", "success");
   } catch (error) {
     console.error(error);
     setStatus(error.message, "error");

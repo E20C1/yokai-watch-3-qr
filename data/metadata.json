@@ -7,7 +7,7 @@
   "sourceConfigSha256": "971d3447f1dc49305f3bd4f72c6881fda02cface81d941fb082fcfbf15a8a134",
   "derivedCsv": "yw3_sukiyaki_jp_final_qr2_info.csv",
   "itemNameCoverage": {
-    "mappedUniqueItems": 140,
+    "mappedUniqueItems": 175,
     "uniqueItemsInQr2": 175
   },
   "stats": {
@@ -28,8 +28,10 @@
   },
   "localization": {
     "primaryLanguage": "ja",
-    "mappedJapaneseItemNames": 140,
+    "mappedJapaneseItemNames": 175,
     "englishAliasesRetained": true,
-    "method": "Cross-reference public JP Ver.4.0 item tables with YW3 hashed Item IDs"
+    "method": "Cross-reference public JP Ver.4.0 item tables with YW3 hashed Item IDs",
+    "communityVerifiedCatalog": "Yu08083/Yokai2-QR/yw3/catalog.json",
+    "communityCoverage": "175/175 JP4.0 QR2 item IDs; 26503/26503 Type values exact"
   }
 }

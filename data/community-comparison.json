@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T10:07:09+00:00",
+  "generated_at": "2026-10-02T10:10:18+00:00",
   "provenance": {
     "repository": "Yu08083/Yokai2-QR",
     "path": "yw3/catalog.json",
@@ -7,7 +7,7 @@
     "commit": "04d7c9783a66e7216ad020b1775417462b5b8a5d",
     "blob_sha": "003a0a0588ca2ba2a4eb7243d1c80e753e139446",
     "license": "MIT",
-    "retrieved_at": "2026-10-02T10:07:09+00:00",
+    "retrieved_at": "2026-10-02T10:10:18+00:00",
     "note": "Derived mapping only; upstream QR images are not copied."
   },
   "counts": {
