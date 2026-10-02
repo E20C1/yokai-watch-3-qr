@@ -6,6 +6,7 @@ on:
     paths:
       - ".github/workflows/community-sync.yml"
       - "tools/compare_community_catalog.py"
+      - "tools/apply_community_layer.py"
       - "data/qr2-jp40.js"
   workflow_dispatch:
 
@@ -23,16 +24,21 @@ jobs:
           python-version: "3.12"
       - name: Compare upstream catalog with JP4.0 QR2 table
         run: python tools/compare_community_catalog.py
+      - name: Apply verified community labels to app
+        run: python tools/apply_community_layer.py
       - name: Validate local QR2 dataset
         run: python tools/validate_dataset.py
-      - name: Commit generated comparison
+      - name: Validate JavaScript
+        run: node --check src/app.js
+      - name: Commit generated comparison and integration
         run: |
-          if [ -z "$(git status --porcelain -- data/community-yu08083.json data/community-comparison.json docs/COMMUNITY_COMPARISON.md)" ]; then
+          paths="data/community-yu08083.json data/community-comparison.json docs/COMMUNITY_COMPARISON.md src/app.js data/metadata.json"
+          if [ -z "$(git status --porcelain -- $paths)" ]; then
             echo "No generated changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/community-yu08083.json data/community-comparison.json docs/COMMUNITY_COMPARISON.md
-          git commit -m "data: compare Yu08083 verified YW3 catalog"
+          git add $paths
+          git commit -m "feat: use verified Yu08083 YW3 reward catalog"
           git push
