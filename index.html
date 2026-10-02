@@ -52,6 +52,16 @@
               <span>アイテム名 / Item ID / Type / Flag</span>
               <input id="generatorQuery" type="search" placeholder="例: 禁断の果実 / Forbidden Fruit / C6458704 / Q1B">
             </label>
+            <div class="generator-view-controls">
+              <label class="field generator-view-mode">
+                <span>表示方法</span>
+                <select id="generatorViewMode">
+                  <option value="grouped" selected>報酬ごとにまとめる</option>
+                  <option value="entries">QR2_INFOを全件表示</option>
+                </select>
+              </label>
+              <p class="subtle generator-view-help">検索欄が空でも閲覧できます。報酬をクリックすると対応するType範囲を展開します。</p>
+            </div>
             <div id="generatorMatches" class="result-list"></div>
           </section>
 
