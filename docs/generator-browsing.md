@@ -1,10 +1,11 @@
 # Generator browsing
 
-The Generator search panel supports browsing the full JP Ver.4.0 QR2_INFO dataset without entering a query.
+Generator の検索欄は空欄のままでも利用できます。
 
-- All 2,143 entries are available when the search box is empty.
-- Results are rendered incrementally in batches of 80 as the user scrolls.
-- Selecting a result while browsing does not collapse the result list into a search for that selected reward.
-- Entering a Japanese name, English alias, Item ID, Type, or Flag filters the same dataset; filtered results are also loaded incrementally.
+既定の「報酬ごとにまとめる」表示では、同じ Item1 / 数量 / Item2 / 数量を持つ QR2_INFO を1つの報酬グループとしてまとめます。報酬行をクリックすると、その報酬に対応する QR2_INFO / Type 範囲を展開し、個別の範囲を選択してQR生成へ進めます。
 
-The batching is intentional so initial page load does not create thousands of result-row DOM nodes at once, especially on mobile browsers.
+「QR2_INFOを全件表示」へ切り替えると、従来どおり2,143件のエントリを個別に閲覧できます。
+
+どちらの表示も初期描画は80件単位で、一覧末尾付近までスクロールすると次の80件を追加します。検索時も同じ方式です。
+
+この段階描画は、特にスマートフォンで数千個のDOM要素を初回から生成しないためのものです。
