@@ -21,6 +21,9 @@ const state = {
   metadata: null,
   selected: null,
   explorerLimit: 100,
+  generatorLimit: 80,
+  generatorQuery: "",
+  generatorResults: [],
   generated: [],
 };
 
@@ -185,65 +188,90 @@ function selectedRowCard(row) {
     </div>`;
 }
 
-function selectRow(row, { jump = false } = {}) {
+function selectRow(row, { jump = false, syncQuery = jump } = {}) {
   state.selected = row;
   $("#selectedEntry").innerHTML = selectedRowCard(row);
   $("#manualType").value = row.typeStart;
-  $("#generatorQuery").value = effectText(row);
-  renderGeneratorMatches($("#generatorQuery").value);
+
+  // Browsing the result list should not collapse it to the selected reward.
+  // Explorer / Analyzer jumps still synchronize the search field.
+  if (syncQuery) {
+    $("#generatorQuery").value = effectText(row);
+    renderGeneratorMatches($("#generatorQuery").value);
+  }
+
   if (jump) {
     switchTab("generator");
     $("#selectedEntry").scrollIntoView({ behavior: "smooth", block: "start" });
   }
 }
 
+const GENERATOR_BATCH_SIZE = 80;
+
 function generatorMatches(query) {
   const q = query.trim().toLowerCase();
-  if (!q) {
-    return state.rows
-      .filter((row) => itemInfo(row.item1).mapped && row.item1 !== ZERO)
-      .sort((a, b) => {
-        const aSpecial = specialBadges(a).length ? 0 : 1;
-        const bSpecial = specialBadges(b).length ? 0 : 1;
-        return aSpecial - bSpecial || a.index - b.index;
-      })
-      .slice(0, 30);
-  }
-
-  return state.rows.filter((row) => rowSearchText(row).includes(q)).slice(0, 50);
+  if (!q) return state.rows;
+  return state.rows.filter((row) => rowSearchText(row).includes(q));
 }
 
-function renderGeneratorMatches(query) {
+function generatorRowHtml(row) {
+  const mapped = itemInfo(row.item1).mapped;
+  return `
+    <button class="result-row" type="button" data-index="${row.index}">
+      <span class="result-main">
+        <strong>${escapeHtml(effectText(row))}</strong>
+        <small>Type ${row.typeStart}–${row.typeEnd} · #${row.index}</small>
+      </span>
+      <span class="result-meta">
+        ${mapped ? "" : '<span class="badge warning">未特定</span>'}
+        ${specialBadges(row).map((x) => `<span class="badge">${escapeHtml(x)}</span>`).join("")}
+      </span>
+    </button>`;
+}
+
+function renderGeneratorMatches(query, { reset = true } = {}) {
   const box = $("#generatorMatches");
-  const matches = generatorMatches(query);
+  const previousScrollTop = box.scrollTop;
+
+  if (reset) {
+    state.generatorQuery = query;
+    state.generatorLimit = GENERATOR_BATCH_SIZE;
+    state.generatorResults = generatorMatches(query);
+  }
+
+  const matches = state.generatorResults;
   if (!matches.length) {
     box.innerHTML = `<div class="empty-state compact">一致するQR2_INFOがありません。</div>`;
     return;
   }
 
-  box.innerHTML = matches
-    .map((row) => {
-      const mapped = itemInfo(row.item1).mapped;
-      return `
-        <button class="result-row" type="button" data-index="${row.index}">
-          <span class="result-main">
-            <strong>${escapeHtml(effectText(row))}</strong>
-            <small>Type ${row.typeStart}–${row.typeEnd} · #${row.index}</small>
-          </span>
-          <span class="result-meta">
-            ${mapped ? "" : '<span class="badge warning">未特定</span>'}
-            ${specialBadges(row).map((x) => `<span class="badge">${escapeHtml(x)}</span>`).join("")}
-          </span>
-        </button>`;
-    })
-    .join("");
+  const visible = matches.slice(0, state.generatorLimit);
+  const hasMore = visible.length < matches.length;
+  const summary = `表示 ${visible.length.toLocaleString()} / ${matches.length.toLocaleString()}件`;
+
+  box.innerHTML = `
+    <div class="subtle">${summary}${hasMore ? " · 下へスクロールすると続きを読み込みます" : ""}</div>
+    ${visible.map(generatorRowHtml).join("")}
+    ${hasMore ? '<div class="subtle">続きを読み込み中…</div>' : ""}`;
 
   $$(".result-row", box).forEach((button) => {
     button.addEventListener("click", () => {
       const row = state.rows.find((x) => x.index === Number(button.dataset.index));
-      selectRow(row);
+      selectRow(row, { syncQuery: false });
     });
   });
+
+  // Re-rendering a larger batch should keep the user's current browse position.
+  box.scrollTop = reset ? 0 : previousScrollTop;
+}
+
+function loadMoreGeneratorMatches() {
+  if (state.generatorLimit >= state.generatorResults.length) return;
+  state.generatorLimit = Math.min(
+    state.generatorLimit + GENERATOR_BATCH_SIZE,
+    state.generatorResults.length
+  );
+  renderGeneratorMatches(state.generatorQuery, { reset: false });
 }
 
 function resolveType(row) {
@@ -522,6 +550,17 @@ function bindEvents() {
   $("#generatorQuery").addEventListener("input", (event) => {
     renderGeneratorMatches(event.target.value);
   });
+
+  const generatorBox = $("#generatorMatches");
+  generatorBox.addEventListener(
+    "scroll",
+    () => {
+      const nearBottom =
+        generatorBox.scrollTop + generatorBox.clientHeight >= generatorBox.scrollHeight - 180;
+      if (nearBottom) loadMoreGeneratorMatches();
+    },
+    { passive: true }
+  );
 
   $("#typeMode").addEventListener("change", () => {
     $("#manualTypeWrap").hidden = $("#typeMode").value !== "manual";
