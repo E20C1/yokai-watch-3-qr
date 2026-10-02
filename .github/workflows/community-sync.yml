@@ -27,7 +27,7 @@ jobs:
         run: python tools/validate_dataset.py
       - name: Commit generated comparison
         run: |
-          if git diff --quiet -- data/community-yu08083.json data/community-comparison.json docs/COMMUNITY_COMPARISON.md; then
+          if [ -z "$(git status --porcelain -- data/community-yu08083.json data/community-comparison.json docs/COMMUNITY_COMPARISON.md)" ]; then
             echo "No generated changes."
             exit 0
           fi
