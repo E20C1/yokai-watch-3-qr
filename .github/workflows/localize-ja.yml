@@ -1,0 +1,378 @@
+name: Localize JP 4.0 item names
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - ".github/workflows/localize-ja.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  localize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Apply Japanese Ver.4.0 names
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json
+
+          names_path = Path("data/item-names.json")
+          data = json.loads(names_path.read_text(encoding="utf-8"))
+
+          ja = {
+            "0xD24D4C6D": "古びたコイン",
+            "0xEAE34BF3": "桃コイン",
+            "0xE35507D8": "水色コイン",
+            "0x04ED2ADF": "青コイン",
+            "0x9DE47B65": "緑コイン",
+            "0x0380EEC6": "黄色コイン",
+            "0x9A89BF7C": "赤コイン",
+            "0x73EA1A49": "紫コイン",
+            "0x7487DE50": "オレンジコイン",
+            "0xC126B9FF": "レジェンドコイン",
+            "0x0DB3C73B": "極・桃コイン",
+            "0x03684F09": "超・桃コイン",
+            "0x60694E14": "ドリームコイン・武",
+            "0x8E672F38": "ドリームコイン・白金",
+            "0x176E7E82": "ドリームコイン・光",
+            "0xF9601FAE": "ドリームコイン・富",
+            "0x69DF023F": "ドリームコイン・姫",
+            "0x1ED832A9": "ドリームコイン・知",
+            "0x7E1FBB4C": "ドリームコイン・自慢",
+            "0x09188BDA": "ドリームコイン・紳士",
+            "0x2F28D8D3": "エンブレムコイン",
+            "0x025EB4BA": "シヴァラクストーン",
+            "0x7559842C": "ノストラダマストーン",
+            "0xB6218969": "超・赤コイン",
+            "0xDF504CA7": "めでたいコイン",
+            "0xD41673C7": "パンドラストーン",
+            "0xF54BE4D7": "秘宝ストーン",
+            "0x3F85A5B9": "ブラックコイン",
+            "0x2235D819": "１つ星コイン",
+            "0xED662E25": "超・青コイン",
+            "0x3A1812EB": "ニャステトストーン",
+            "0xC64B7DE6": "地獄コイン",
+            "0x7302BB86": "極・赤コイン",
+            "0x269E94F8": "超・黄色コイン",
+            "0xF47D1F64": "極・水色コイン",
+            "0xC3D6CAB4": "カーメンストーン",
+            "0xD569E598": "メリケン粉",
+            "0x9011DA60": "ドリームコインＧ１",
+            "0xE716EAF6": "ドリームコインＧ２",
+            "0x0E754FC3": "ドリームコインＧ４",
+            "0x1A737E48": "極・青コイン",
+            "0x04058B10": "超・水色コイン",
+            "0xB4D1FA22": "ゴーキングストーン",
+            "0x4D1F227D": "ズラビスストーン",
+            "0x5199A46E": "超・オレンジコイン",
+            "0x9D0CDAAA": "極・オレンジコイン",
+            "0x9A611EB3": "超・紫コイン",
+            "0xEA0BEA3C": "極・黄色コイン",
+            "0xA3114351": "リアクションストーン",
+            "0x4882952F": "超ブラックコイン",
+            "0x67EED90B": "黄金のアンク",
+            "0x79727F55": "ドリームコインＧ３",
+            "0x7AB4F7AD": "極・緑コイン",
+            "0x746F7F9F": "超・緑コイン",
+            "0x28451CCA": "鬼ガシャコイン",
+            "0x873B3015": "メリケンロッド",
+            "0x55D8BB89": "極楽玉",
+            "0x6D744EDE": "極・紫コイン",
+            "0xB14C4D70": "封印されしコイン",
+            "0x004494F7": "偉人バッジ",
+            "0xF03C0083": "メリケンブレード",
+            "0x4B441DD7": "天ぷらコイン",
+            "0xD5208874": "すしコイン",
+            "0x195FA5B6": "メリケンシールド",
+            "0xFE0DDBB7": "ぐうたらコイン",
+            "0x7EF5E84A": "三成の御旗",
+            "0x4134D904": "サンサンコイン",
+            "0x9C3A2119": "日ノ鳥ストーン",
+            "0xEB3D118F": "クレクレストーン",
+            "0x72344035": "ボケルストーン",
+            "0x053370A3": "エルドラストーン",
+            "0x5BE960BD": "スペシャルコイン",
+            "0x582FE845": "トレジャーコイン",
+            "0x362ABC1E": "鉄竜ストーン∞",
+            "0x56ED35FB": "鉄狐ストーン∞",
+            "0xF4644AE8": "ジャックのカード",
+            "0x13DC67EF": "１０のカード",
+            "0x1A6A2BC4": "キングのカード",
+            "0x6D6D1B52": "クイーンのカード",
+            "0x64DB5779": "ジョーカーのカード",
+            "0xAB152568": "山田レーダー",
+            "0x285C4946": "ガッツなメンコ",
+            "0xF3098EF1": "ムゲン地獄の調査報告書",
+            "0x6E589520": "議長の錫杖",
+            "0x10E9E99D": "大王の勾玉",
+            "0x8056F40C": "ずばばんアーム",
+            "0x412D8C88": "惨劇ストーン∞",
+            "0xF751C49A": "覚醒エンマ魔笛",
+            "0x6C42B56D": "日ノ鳥Ｓ∞の欠片１",
+            "0x1B4585FB": "日ノ鳥Ｓ∞の欠片２",
+            "0x85211058": "クレクレＳ∞の欠片１",
+            "0xF22620CE": "クレクレＳ∞の欠片２",
+            "0x6B2F7174": "ボケルＳ∞の欠片１",
+            "0x1C2841E2": "ボケルＳ∞の欠片２",
+            "0x8C975C73": "エルドラＳ∞の欠片１",
+            "0xFB906CE5": "エルドラＳ∞の欠片２",
+            "0xA84E29BD": "地獄ストーン∞",
+            "0x38F1342C": "伝説ストーン∞",
+            "0xCB567D2C": "５つ星コイン",
+            "0x2CEE502B": "どきどきコイン（妖）",
+            "0x4C29D9CE": "どきどきコイン（怪）",
+            "0x3B2EE958": "どきどきコイン（魂）",
+            "0x3C432D41": "せんぷうコイン",
+            "0xA54A7CFB": "さすらいコイン",
+            "0x35F5616A": "わくわくコイン（花）",
+            "0x67048A0D": "わくわくコイン（鳥）",
+            "0x1003BA9B": "わくわくコイン（風）",
+            "0x890AEB21": "わくわくコイン（月）",
+            "0xE07B2EEF": "おかわりコイン",
+            "0x70C4337E": "おみやげコイン（Ｌ）",
+            "0x07C303E8": "おみやげコイン（Ｆ）",
+            "0x315E2D8B": "おみやげコイン（Ｓ）",
+            "0x46591D1D": "おみやげコイン（Ｋ）",
+            "0xA8577C31": "さくらＥＸコイン",
+            "0x7F2940FF": "ラストブシニャンパス",
+            "0xE14DD55C": "プラチナ鬼パス",
+            "0x964AE5CA": "キラコマパス",
+            "0x0F43B470": "ブルジョワＧパス",
+            "0x3633E992": "まんぷくコイン",
+            "0xB1C5E5BD": "パーツのチケット①",
+            "0xC6C2D52B": "パーツのチケット②",
+            "0xC6458704": "禁断の果実",
+            "0x784484E6": "スピーチ姫パス",
+            "0xE8FB9977": "トリベアパス",
+            "0x9FFCA9E1": "自慢ハッタンパス",
+            "0xCD0D4286": "ジェントル面犬パス",
+            "0xD37BB7DE": "Ｓストーン",
+            "0xA47C8748": "鉄鬼ストーン",
+            "0xDACDFBF5": "ぬらり神の手形",
+            "0xADCACB63": "覚醒日ノ神の手形",
+            "0x9B57E500": "先代閻魔大王の手形",
+            "0xEC50D596": "覚醒エンマの手形",
+            "0xD83D88BE": "鉄なべコイン",
+            "0xAF3AB828": "ヌー２３号のコイン",
+            "0x663271BE": "妖気のつぶ",
+            "0x5F422C5C": "わくわくコイン（天）",
+            "0x837A2FF2": "ごちそうコイン",
+            "0x958C6D32": "ラスブシストーン",
+            "0xE28B5DA4": "地獄ストーン",
+            "0x824CD441": "伝説ストーン",
+          }
+
+          category_ja = {
+            "Coin": "コイン",
+            "Dream Coin": "ドリームコイン",
+            "Stone": "ストーン",
+            "Consumable": "どうぐ",
+            "Equipment": "そうび",
+            "Infinite Stone": "ストーン∞",
+            "Fragment": "欠片",
+            "Key Item": "たいせつ",
+            "Pass": "パス",
+            "Ticket": "チケット",
+            "Tag": "手形",
+          }
+
+          current_ids = set(data)
+          mapped_ids = set(ja)
+          missing = sorted(current_ids - mapped_ids)
+          extra = sorted(mapped_ids - current_ids)
+          if missing or extra:
+            raise SystemExit(f"Japanese map mismatch. missing={missing} extra={extra}")
+
+          for item_id, item in data.items():
+            old_name = item["name"]
+            old_category = item["category"]
+            item["name_en"] = old_name
+            item["category_en"] = old_category
+            item["name"] = ja[item_id]
+            item["category"] = category_ja.get(old_category, old_category)
+            item["source"] = "JP Ver.4.0 public game-data table + YW3 Item ID cross-reference"
+
+          names_path.write_text(
+            json.dumps(data, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+          )
+
+          app_path = Path("src/app.js")
+          app = app_path.read_text(encoding="utf-8")
+          replacements = {
+            'if (key === ZERO) return { name: "—", category: "None", mapped: true };':
+              'if (key === ZERO) return { name: "—", name_en: "—", category: "なし", category_en: "None", mapped: true };',
+            'return { name: `Unknown item ${key}`, category: "Unmapped", mapped: false };':
+              'return { name: `未特定アイテム ${key}`, name_en: `Unknown item ${key}`, category: "未特定", category_en: "Unmapped", mapped: false };',
+            'if (!parts.length) parts.push("No item reward");':
+              'if (!parts.length) parts.push("アイテム報酬なし");',
+            'if (row.item2 !== ZERO) badges.push("2 items");':
+              'if (row.item2 !== ZERO) badges.push("2アイテム");',
+            'if (row.randomTable !== ZERO) badges.push("Random table");':
+              'if (row.randomTable !== ZERO) badges.push("抽選テーブル");',
+            'if (row.u1 || row.u2) badges.push(`u:${row.u1}/${row.u2}`);':
+              'if (row.u1 || row.u2) badges.push(`内部:${row.u1}/${row.u2}`);',
+            '    a.category,\n    b.name,\n    b.category,':
+              '    a.category,\n    a.name_en,\n    a.category_en,\n    b.name,\n    b.category,\n    b.name_en,\n    b.category_en,',
+            "${badges || '<span class=\"badge muted\">simple reward</span>'}":
+              "${badges || '<span class=\"badge muted\">通常報酬</span>'}",
+            "${mapped ? \"\" : '<span class=\"badge warning\">unmapped</span>'}":
+              "${mapped ? \"\" : '<span class=\"badge warning\">未特定</span>'}",
+            'setStatus("Generator self-test failed. Do not use generated QRs.", "error");':
+              'setStatus("生成エンジンの自己テストに失敗しました。QRを使用しないでください。", "error");',
+            'if (!state.selected) throw new Error("Select a QR entry first.");':
+              'if (!state.selected) throw new Error("先にQRエントリを選択してください。");',
+            '`Generated ${state.generated.length} QR${state.generated.length === 1 ? "" : "s"} for Type ${type}.`':
+              '`Type ${type} のQRを ${state.generated.length} 枚生成しました。`',
+            '<div class="analysis-bad"><strong>Invalid / unsupported</strong>':
+              '<div class="analysis-bad"><strong>無効 / 未対応</strong>',
+            '<div><div class="eyebrow">V2 checksum</div><h3>Valid</h3></div>':
+              '<div><div class="eyebrow">V2 checksum</div><h3>有効</h3></div>',
+            "${matching || '<div class=\"empty-state compact\">No QR2_INFO range contains this Type.</div>'}":
+              "${matching || '<div class=\"empty-state compact\">このTypeに対応するQR2_INFO範囲がありません。</div>'}",
+            'if (!decoded) throw new Error("QR code was not detected in the image.");':
+              'if (!decoded) throw new Error("画像からQRコードを検出できませんでした。");',
+            'setStatus("QR image decoded.", "success");':
+              'setStatus("QR画像を読み取りました。", "success");',
+            'throw new Error("Failed to load local data files.");':
+              'throw new Error("ローカルデータファイルの読み込みに失敗しました。");',
+            'setStatus("JP Ver.4.0 dataset loaded.", "success");':
+              'setStatus("日本版 Ver.4.0 データセットを読み込みました。", "success");',
+          }
+          for old, new in replacements.items():
+            if old not in app:
+              raise SystemExit(f"app.js replacement target not found: {old[:100]}")
+            app = app.replace(old, new)
+          app_path.write_text(app, encoding="utf-8")
+
+          index_path = Path("index.html")
+          html = index_path.read_text(encoding="utf-8")
+          html_replacements = {
+            '>Generator</button>': '>生成</button>',
+            '>Explorer</button>': '>一覧</button>',
+            '>Analyzer</button>': '>解析</button>',
+            '>Research</button>': '>研究データ</button>',
+            '<div class="eyebrow">1. Find an effect</div>': '<div class="eyebrow">1. 効果を探す</div>',
+            '<span id="entryCount">—</span> entries': '<span id="entryCount">—</span> 件',
+            'placeholder="例: Forbidden Fruit / C6458704 / Q1B"': 'placeholder="例: 禁断の果実 / Forbidden Fruit / C6458704 / Q1B"',
+            '<div class="eyebrow">2. Selected QR2_INFO</div>': '<div class="eyebrow">2. 選択中の QR2_INFO</div>',
+            '<span>Type selection</span>': '<span>Typeの選択</span>',
+            '<span>Manual Type</span>': '<span>Typeを手動指定</span>',
+            '<span>Variation mode</span>': '<span>Variation方式</span>',
+            '<span id="variationSeedLabel">Start variation</span>': '<span id="variationSeedLabel">開始Variation</span>',
+            '>Clear</button>': '>クリア</button>',
+            '<div class="eyebrow">3. Output</div>': '<div class="eyebrow">3. 出力</div>',
+            '<h2>QR2_INFO Explorer</h2>': '<h2>QR2_INFO 一覧</h2>',
+            '<span>Search</span>': '<span>検索</span>',
+            'placeholder="item / hex / Type / flag"': 'placeholder="アイテム名 / 英語名 / Hex / Type / Flag"',
+            '<span>Filter</span>': '<span>フィルター</span>',
+            '<option value="all">All</option>': '<option value="all">すべて</option>',
+            '<option value="simple">Simple rewards</option>': '<option value="simple">通常報酬</option>',
+            '<option value="flags">Flag entries</option>': '<option value="flags">Flagあり</option>',
+            '<option value="item2">Two-item entries</option>': '<option value="item2">2アイテム報酬</option>',
+            '<option value="random">Random table entries</option>': '<option value="random">抽選テーブル使用</option>',
+            '<option value="unmapped">Unmapped item names</option>': '<option value="unmapped">名称未特定</option>',
+            '<th>Effect</th>': '<th>効果</th>',
+            '<th>Special</th>': '<th>特殊</th>',
+            '<div class="eyebrow">Decode / verify</div>': '<div class="eyebrow">復号 / 検証</div>',
+            '<div class="eyebrow">Analysis</div>': '<div class="eyebrow">解析</div>',
+            '<div class="eyebrow">Dataset overview</div>': '<div class="eyebrow">データセット概要</div>',
+            '<h3>Item name coverage</h3>': '<h3>アイテム名対応状況</h3>',
+            '<strong id="mappedItems">—</strong> unique IDs mapped': '<strong id="mappedItems">—</strong> 件のIDを名称解決済み',
+            '<p>表示名は公開されているYW3 Item ID資料を基礎にしています。未対応IDはHexのまま表示し、推測で名称を付けません。</p>': '<p>主表示は日本版Ver.4.0の公開ゲームデータ表とYW3 Item ID表を照合した日本語名です。英語名は検索用エイリアスとして保持し、未対応IDには推測で名称を付けません。</p>',
+            '<h3>V2 layout</h3>': '<h3>V2構造</h3>',
+            '<h3>Compatibility status</h3>': '<h3>互換性状況</h3>',
+          }
+          for old, new in html_replacements.items():
+            if old not in html:
+              raise SystemExit(f"index.html replacement target not found: {old[:100]}")
+            html = html.replace(old, new)
+          index_path.write_text(html, encoding="utf-8")
+
+          meta_path = Path("data/metadata.json")
+          meta = json.loads(meta_path.read_text(encoding="utf-8"))
+          meta["localization"] = {
+            "primaryLanguage": "ja",
+            "mappedJapaneseItemNames": len(ja),
+            "englishAliasesRetained": True,
+            "method": "Cross-reference public JP Ver.4.0 item tables with YW3 hashed Item IDs",
+          }
+          meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+          docs = '''# 日本語アイテム名の照合方針
+
+このプロジェクトでは英語名を機械翻訳せず、日本版『妖怪ウォッチ3』Ver.4.0で使われる名称を主表示にします。
+
+## 照合方法
+
+1. `QR2_INFO` に格納されている Item ID を基準にする。
+2. YKW Modding の YW3 Item ID 資料で、ハッシュ化された Item ID と英語版の項目を確認する。
+3. 日本版 Ver.4.0 の公開ゲームデータ表（どうぐ / そうび / たいせつ）と項目順・カテゴリ・内容を照合し、日本版名称を確定する。
+4. 日本語名を主表示、英語名を検索用エイリアスとして保持する。
+5. 根拠を確定できない ID は推測で命名せず、Hex ID のまま扱う。
+
+## 参照先
+
+- とげにゃん「妖怪ウォッチ3 どうぐ一覧」Ver.4.0
+  - https://togenyanweb.appspot.com/Yokai/yw3/CONSUME_latest.html
+- とげにゃん「妖怪ウォッチ3 そうび一覧」Ver.4.0
+  - https://togenyanweb.appspot.com/Yokai/yw3/EQUIPMENT_latest.html
+- とげにゃん「妖怪ウォッチ3 たいせつ一覧」Ver.4.0
+  - https://togenyanweb.appspot.com/Yokai/yw3/IMPORTANT_latest.html
+- YKW Modding `YW3 Item IDs`
+  - https://ykw-modding.github.io/yo-docs/modding-resources/item-ids/YW3ItemIDs.html
+
+この名称表はゲーム本体ファイルそのものを配布するものではありません。
+'''
+          Path("docs/japanese-item-names.md").write_text(docs, encoding="utf-8")
+
+          readme_path = Path("README.md")
+          readme = readme_path.read_text(encoding="utf-8")
+          marker = "## Japanese item-name localization"
+          if marker not in readme:
+            readme += f'''\n\n{marker}\n\n日本版 Ver.4.0 の名称を主表示にし、英語名を検索用エイリアスとして保持します。照合方法と出典は [`docs/japanese-item-names.md`](docs/japanese-item-names.md) を参照してください。\n'''
+            readme_path.write_text(readme, encoding="utf-8")
+
+          print(f"Localized {len(ja)} mapped Item IDs.")
+          PY
+
+      - name: Validate localization and JavaScript
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json
+          data = json.load(open('data/item-names.json', encoding='utf-8'))
+          assert len(data) == 140, len(data)
+          assert data['0xC6458704']['name'] == '禁断の果実'
+          assert data['0xC6458704']['name_en'] == 'Forbidden Fruit'
+          assert data['0xD24D4C6D']['name'] == '古びたコイン'
+          assert data['0x6E589520']['name'] == '議長の錫杖'
+          assert data['0xDACDFBF5']['name'] == 'ぬらり神の手形'
+          assert all('name_en' in x and 'category_en' in x for x in data.values())
+          print('Japanese item-name assertions: PASS')
+          PY
+          node --check src/app.js
+          python3 tools/validate_dataset.py
+          python3 tools/qr_v2.py Q1B --variation 0000 | grep -F 'Q1B00008CLTN07O0A2VJ3EU5L3LETAB3G'
+
+      - name: Commit localization
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -f .github/workflows/localize-ja.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "feat: localize JP 4.0 item names and reward UI"
+          git push
